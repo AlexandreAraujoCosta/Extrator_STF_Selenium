@@ -1,0 +1,2377 @@
+processo,resumo,andamentos,dados_processuais,partes,decisoes,sessaovirtual,deslocamentos,peticoes,recursos,pautas
+AÇÃO DIRETA DE INCONSTITUCIONALIDADE735,"
+                            <div class=""col-xs-12 col-md-12 m-b-8 p-l-0"">
+                                <div class=""processo-classe p-t-8 p-l-16"">AÇÃO DIRETA DE INCONSTITUCIONALIDADE</div>
+                                
+                                <div class=""processo-dados p-l-16""><a href=""#"" data-toggle=""tooltip"" title=""Corresponde ao Estado da federação de onde provém o processo."">Origem:</a>&nbsp;<span id=""descricao-procedencia""><span id=""descricao-procedencia"">
+    PI - PIAUÍ
+</span></span></div>
+                                <div class=""processo-dados p-l-16"">Relator: MIN. CELSO DE MELLO</div>
+                                
+                                <hr style=""margin-left: 16px;"">
+                                <div id=""resumo-partes"" class=""resumo-partes""><div id=""partes-resumidas"">
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">REQTE.(S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">ASSOCIAÇÃO DOS MAGISTRADOS BRASILEIROS - AMB&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">ADV.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">HUMBERTO GRACA NETO&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">INTDO.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">GOVERNADOR DO ESTADO DO PIAUÍ&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">ADV.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">PGE-PI - JOÃO EMILIO FALCÃO COSTA NETO&nbsp;</div>
+        </div>
+    
+</div>
+                                    <div class=""clearfix""></div>
+                                </div>
+                                <!-- TEMPORÁRIO  -->
+                                <!-- A TABELA DE PREFERÊNCIAS NÃO DEVE SER UTILIZADA PARA A AGENDA DA ONU
+                                     FUTURAMENTE SERÁ CRIADA UMA TABELA COM UM CODIGO PARA DEFINIR OS ITENS DA AGENDA
+                                -->
+                                
+                                <!-- TEMPORÁRIO  -->
+                            </div>
+                        ","
+        <div class=""texto m-0"">
+            <div class=""col-md-12 p-0 p-l-xs-16 p-r-xs-16 m-t-16"">
+                <div class=""card m-b-48 card-lista-processo"">
+                    
+                    <div class=""titulo-processo m-0"">
+                    
+                        <div class=""col-md-4"">
+                            <div class=""processo-titulo m-b-8"">
+                                ADI&nbsp;735
+                                <div>
+                                    <span class=""badge bg-secondary"">Processo Físico</span>
+                                    <span class=""badge bg-success"">Público</span>
+                                    
+                                                <span class=""badge bg-danger"">Medida Liminar</span>    
+                                            
+                                </div>
+                                <input type=""hidden"" id=""incidente"" value=""1538040"">
+                                <input type=""hidden"" id=""classe-numero-processo"" value=""ADI 735"">
+                                <input type=""hidden"" id=""peca"" value=""S"">
+                                <input type=""hidden"" id=""meio"" value=""F"">
+                            </div>
+                            <div class=""processo-rotulo"">Número Único: 0000744-87.1992.1.00.0000</div>
+                        </div>
+                        <div class=""col-md-8 btn-group__wrapper"">
+                            <div class=""btn-group"">
+                                
+                                <button type=""button"" class=""btn btn-default btn-primary-spacing"" aria-label=""dje"" id=""btn-dje"">
+                                    <span aria-hidden=""true"">Dje</span>
+                                </button>
+                                <button type=""button"" class=""btn btn-default btn-primary-spacing"" aria-label=""jurisprudencia"" id=""btn-jurisprudencia"">
+                                    <span aria-hidden=""true"">Jurisprudência</span>
+                                </button>
+                                <button type=""button"" class=""btn btn-default btn-primary-spacing"" aria-label=""pecas"" id=""btn-pecas"">
+                                    <span aria-hidden=""true""> Peças</span>
+                                </button>
+                                <button type=""button"" class=""btn btn-default btn-primary-spacing"" aria-label=""push"" id=""btn-push"">
+                                    <span aria-hidden=""true""> Push</span>
+                                </button>
+                                <a href=""verImpressao.asp?imprimir=true&amp;incidente=1538040"" target=""_blank"" type=""button"" class=""btn btn-default btn-primary-spacing"" aria-label=""Imprimir"" id=""btn-imprimir"">
+                                    <span class=""fas fa-print"" style=""font-size: 1rem;"" aria-hidden=""true""></span>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class=""card-conteudo m-0 p-0"">
+                        <div class=""card-processo"">
+                            <div class=""col-xs-12 col-md-12 m-b-8 p-l-0"">
+                                <div class=""processo-classe p-t-8 p-l-16"">AÇÃO DIRETA DE INCONSTITUCIONALIDADE</div>
+                                
+                                <div class=""processo-dados p-l-16""><a href=""#"" data-toggle=""tooltip"" title=""Corresponde ao Estado da federação de onde provém o processo."">Origem:</a>&nbsp;<span id=""descricao-procedencia""><span id=""descricao-procedencia"">
+    PI - PIAUÍ
+</span></span></div>
+                                <div class=""processo-dados p-l-16"">Relator: MIN. CELSO DE MELLO</div>
+                                
+                                <hr style=""margin-left: 16px;"">
+                                <div id=""resumo-partes"" class=""resumo-partes""><div id=""partes-resumidas"">
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">REQTE.(S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">ASSOCIAÇÃO DOS MAGISTRADOS BRASILEIROS - AMB&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">ADV.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">HUMBERTO GRACA NETO&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">INTDO.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">GOVERNADOR DO ESTADO DO PIAUÍ&nbsp;</div>
+        </div>
+    
+        <div style=""display: flex; flex-direction:row"">
+            <div class=""processo-partes m-t-4 col-md-2"">ADV.(A/S)</div>
+            <div class=""processo-partes m-t-4 col-md-8"">PGE-PI - JOÃO EMILIO FALCÃO COSTA NETO&nbsp;</div>
+        </div>
+    
+</div>
+                                    <div class=""clearfix""></div>
+                                </div>
+                                <!-- TEMPORÁRIO  -->
+                                <!-- A TABELA DE PREFERÊNCIAS NÃO DEVE SER UTILIZADA PARA A AGENDA DA ONU
+                                     FUTURAMENTE SERÁ CRIADA UMA TABELA COM UM CODIGO PARA DEFINIR OS ITENS DA AGENDA
+                                -->
+                                
+                                <!-- TEMPORÁRIO  -->
+                            </div>
+                        </div>
+
+                        
+                            <div class=""menu-abas"">
+                                <ul id=""abas_processo"" class=""nav nav-tabs col-12 menu-processo"" role=""tablist"">
+                                    <li role=""presentation"" class=""li-info"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#informacoes"">
+                                          <i class=""fas fa-info-circle""></i><span> Informações</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-partes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#partes"">
+                                            <i class=""fas fa-users""></i><span>Partes</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-andamentos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link active"" role=""tab"" href=""#andamentos"">
+                                            <i class=""fas fa-history""></i><span>Andamentos</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-decisoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#decisoes"">
+                                           <i class=""fas fa-gavel""></i><span>Decisões</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-decisoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#sessao-virtual"">
+                                            <i class=""fas fa-desktop""></i><span>Sessão virtual</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-deslocamento"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#deslocamentos"">
+                                            <i class=""fas fa-map-marker-alt""></i><span>Deslocamentos</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-peticoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#peticoes"">
+                                            <i class=""fas fa-file-pdf""></i><span>Petições</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-recursos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#recursos"">
+                                            <i class=""far fa-file-alt""></i><span>Recursos</span>
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-recursos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#pautas"">
+                                           <i class=""far fa-calendar-alt""></i><span>Pautas</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=""menu-abas-mobile"">
+                              <nav role=""navigation"">
+                                <div id=""menuToggle"" class=""menuToggle"">
+                                  <!-- check receiver -->
+                                  <input id=""menuToggleCheckbox"" type=""checkbox"">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <ul id=""abas_processo_mobile"" class=""nav nav-tabs"">
+                                    <li role=""presentation"" class=""li-info"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#informacoes"">
+                                          <i class=""fas fa-info-circle""></i> Informações
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-partes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#partes"">
+                                            <i class=""fas fa-users""></i> Partes
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-andamentos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#andamentos"">
+                                            <i class=""fas fa-history""></i> Andamentos
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-decisoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#decisoes"">
+                                           <i class=""fas fa-gavel""></i> Decisões
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-decisoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#sessao-virtual"">
+                                            <i class=""fas fa-desktop""></i> Sessão virtual
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-deslocamento"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#deslocamentos"">
+                                            <i class=""fas fa-map-marker-alt""></i> Deslocamentos
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-peticoes"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#peticoes"">
+                                            <i class=""fas fa-file-pdf""></i> Petições
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-recursos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#recursos"">
+                                            <i class=""far fa-file-alt""></i> Recursos
+                                        </a>
+                                    </li>
+                                    <li role=""presentation"" class=""li-recursos"">
+                                        <a data-bs-toggle=""tab"" class=""nav-link"" role=""tab"" href=""#pautas"">
+                                           <i class=""far fa-calendar-alt""></i> Pautas
+                                        </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </nav>
+                            </div>
+                        
+                            <div class=""tab-content col-md-12"">
+                                <div id=""informacoes"" class=""tab-pane""><div id=""informacoes-completas"">
+    <div class=""processo-informacoes-cabecalho"">
+        <div class=""col-md-12"">
+            
+        </div>
+        <div class=""informacoes__assunto col-12 m-b-8 d-flex"">
+            <div class=""col-md-2 processo-detalhes-bold p-l-0"">
+                Assunto:
+            </div>
+            <div class=""col-md-10 processo-detalhes"">
+                
+                    <ul>
+                        
+                            <li>DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO | Organização Político-administrativa / Administração Pública | Criação / Extinção / Reestruturação de Orgãos ou Cargos Públicos</li>
+                        
+                            <li>DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO | Servidor Público Civil | Sistema Remuneratório e Benefícios</li>
+                        
+                    </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class=""processo-informacoes"">
+        <div class=""col-md-12 col-lg-6 processo-informacao__col"">
+            <div class=""col-12 processo-detalhes-bold m-t-8"">
+                Procedência
+            </div>
+            <div class=""col-12 m-t-8 m-b-8 d-flex flex-column"">
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Data de Protocolo:
+                </div>
+                <div class=""col-md-5 processo-detalhes-bold m-l-0"">
+                    13/05/1992
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Órgão de Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    SUPREMO TRIBUNAL FEDERAL
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    PIAUÍ
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Número de Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    7351
+                </div>
+            </div>
+        </div>
+        <div class=""col-md-12 col-lg-6 processo-informacao__col m-t-8 m-b-8"" style=""display: flex;justify-content: space-between;"">
+            <div class=""col-md-3 processo-quadro"">
+                <div class=""numero"">1</div>
+                <div class=""rotulo"">Volumes</div>
+            </div>
+            <div class=""col-md-3 processo-quadro"">
+                <div class=""numero"">41</div>
+                <div class=""rotulo"">Folhas</div>
+            </div>
+            
+                <div class=""col-md-3 processo-quadro"">
+                    <div class=""numero"">0</div>
+                    <div class=""rotulo"">Apensos</div>
+                </div>
+            
+        </div>
+    </div>
+</div></div>
+                                <div id=""partes"" class=""tab-pane""><div id=""todas-partes"">
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">REQTE.(S)</div>
+    <div class=""nome-parte"">ASSOCIAÇÃO DOS MAGISTRADOS BRASILEIROS - AMB</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">ADV.(A/S)</div>
+    <div class=""nome-parte"">HUMBERTO GRACA NETO</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">INTDO.(A/S)</div>
+    <div class=""nome-parte"">GOVERNADOR DO ESTADO DO PIAUÍ</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">ADV.(A/S)</div>
+    <div class=""nome-parte"">PGE-PI - JOÃO EMILIO FALCÃO COSTA NETO</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">INTDO.(A/S)</div>
+    <div class=""nome-parte"">ASSEMBLEIA LEGISLATIVA DO ESTADO DO PIAUÍ</div>
+    
+    </div>  
+  
+</div></div>
+                                <div id=""andamentos"" class=""tab-pane active"">
+<div class=""processo-andamentos m-t-8"">
+  <ul>
+    
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">16/05/2017</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Baixa ao arquivo do STF, Guia nº</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">3241/2017</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">08/05/2017</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Transitado(a) em julgado</h5>
+                  
+                  <div class=""dropdown"">
+                    <button class=""btn btn__entender entender__ico dropdown-toggle"" type=""button"" data-bs-toggle=""dropdown"" aria-expanded=""false"">
+                      <svg width=""100%"" height=""100%"" viewBox=""0 0 19.187618 25.857599"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <g transform=""translate(-48.947917,-43.65625)"">
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 64.264778,64.896543 c 2.795547,0 3.870758,-1.319576 3.870758,-3.997828 V 47.673627 c 0,-2.658702 -1.075211,-3.988053 -3.870758,-3.988053 -0.342112,0 -0.478957,0.136845 -0.478957,0.488732 v 1.456421 c 0,0.342113 0.136845,0.478958 0.478957,0.478958 0.928591,0.01955 1.202281,0.586478 1.202281,1.583491 v 13.205539 c 0,0.977464 -0.27369,1.544394 -1.202281,1.563943 -0.342112,0.01955 -0.478957,0.136845 -0.478957,0.478957 v 1.475971 c 0,0.342112 0.136845,0.478957 0.478957,0.478957 z"" id=""path1""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 52.818674,64.896543 c 0.342113,0 0.478957,-0.136845 0.478957,-0.478957 v -1.475971 c 0,-0.342112 -0.136844,-0.459408 -0.478957,-0.478957 -0.928591,-0.01955 -1.20228,-0.586479 -1.20228,-1.563943 V 47.693176 c 0,-0.997013 0.273689,-1.563942 1.20228,-1.583491 0.342113,0 0.478957,-0.136845 0.478957,-0.478958 v -1.456421 c 0,-0.351887 -0.136844,-0.488732 -0.478957,-0.488732 -2.805322,0 -3.870757,1.329351 -3.870757,3.988053 v 13.225088 c 0,2.678252 1.065435,3.997828 3.870757,3.997828 z"" id=""path2""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 54.695405,43.65625 h 7.692642 c 0.195493,0 0.351887,0.166169 0.351887,0.361662 v 1.681238 c 0,0.195493 -0.156394,0.351887 -0.351887,0.351887 h -7.692642 c -0.195493,0 -0.361662,-0.156394 -0.361662,-0.351887 v -1.681238 c 0,-0.195493 0.166169,-0.361662 0.361662,-0.361662 z"" id=""path3""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""M 56.32777,62.53108 H 55.975883 55.057067 54.70518 c -0.195493,0 -0.351887,0.156395 -0.351887,0.351887 v 0.08797 1.534619 3.851208 c 0,0.293239 0.117295,0.586478 0.342112,0.811295 0.449634,0.459408 1.182732,0.459408 1.632365,0.0098 l 4.369265,-4.320391 h 0.752647 -0.27369 0.0098 1.016562 0.195493 c 0.185718,0 0.342112,-0.156395 0.342112,-0.351887 V 62.88299 c 0,-0.195492 -0.156394,-0.351887 -0.342112,-0.351887 h -0.195493 -0.987239 -0.0391 0.27369 -1.22183 c -0.351887,0 -0.664676,0.156395 -0.879718,0.400761 l -2.668477,2.648927 v -1.07521 -1.534619 -0.08797 c 0,-0.195492 -0.156394,-0.351887 -0.351887,-0.351887 z"" id=""path4""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,50.342104 c 0.254141,0 0.439859,-0.175944 0.439859,-0.430084 v -1.446647 c 0,-0.254141 -0.185718,-0.449633 -0.439859,-0.449633 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.195492 -0.430084,0.449633 v 1.446647 c 0,0.25414 0.185718,0.430084 0.430084,0.430084 1.573717,0 3.147434,0 4.730926,0 z"" id=""path5""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,60.566378 c 0.254141,0 0.439859,-0.185719 0.439859,-0.439859 v -1.456422 c 0,-0.25414 -0.185718,-0.430084 -0.439859,-0.430084 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.175944 -0.430084,0.430084 v 1.456422 c 0,0.25414 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path6""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,55.454241 c 0.254141,0 0.439859,-0.185718 0.439859,-0.439859 v -1.456421 c 0,-0.244366 -0.185718,-0.430085 -0.439859,-0.430085 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.185719 -0.430084,0.430085 v 1.456421 c 0,0.254141 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path7""></path>
+  </g>
+</svg>
+                    </button>
+                    <div class=""dropdown-menu hint-menu p-0"">
+                      <div class=""hint-dialog"">
+                        <div class=""hint-content"">
+                          <div class=""hint-header"">
+                            <h5 class=""hint-title""><svg width=""100%"" height=""100%"" viewBox=""0 0 114.5843 29.721491"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <defs id=""defs1"">
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath2"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26771,-315.72031)"" id=""path2""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath4"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26661,-296.2766)"" id=""path4""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath6"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-464.63051,-260.51071)"" id=""path6""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath8"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-270.46771,-265.8572)"" id=""path8""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath10"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-475.43161,-265.8572)"" id=""path10""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath12"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-547.92061,-272.94461)"" id=""path12""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath14"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-312.04121)"" id=""path14""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath16"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-280.5134)"" id=""path16""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath18"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.19941,-296.2769)"" id=""path18""></path>
+    </clipPath>
+  </defs>
+  <path id=""path1"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z m -19.941,1.37 v 4.613 c 0,0.797 -0.573,1.376 -1.37,1.376 H -41.8 c -0.791,0 -1.37,-0.579 -1.37,-1.376 V 1.37 C -43.17,0.573 -42.591,0 -41.8,0 h 5.702 v -37.517 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.344 c 0.797,0 1.376,0.579 1.376,1.369 V 0 h 5.697 c 0.797,0 1.37,0.573 1.37,1.37 m -49.512,5.988 h 1.549 3.984 0.083 c 0.281,0 0.542,-0.09 0.756,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.586,1.303 1.303,1.303 h 5.617 c 0.716,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.516,-1.229 -1.171,-1.296 h -0.002 l -0.03,-0.003 h -0.002 l -0.031,-0.002 h -0.001 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.034,0.001 v 0 l -0.033,10e-4 h -10e-4 l -0.032,0.002 h -0.001 l -0.032,0.003 h -0.002 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.304,-1.303 h -5.616 c -0.717,0 -1.304,0.587 -1.304,1.303 V 6.055 c 0,0.689 0.541,1.256 1.218,1.301 l 0.002,0.002 z M 47.453,-15.658 c 0,-12.838 -1.014,-16.374 -4.401,-16.374 H 41.607 V 0.504 h 1.445 c 3.387,0 4.401,-3.536 4.401,-16.162 m 9.09,0 C 56.543,1.588 51.78,7.359 44.06,7.359 H 33.887 c -0.79,0 -1.369,-0.579 -1.369,-1.376 v -43.5 c 0,-0.79 0.579,-1.369 1.369,-1.369 H 44.06 c 7.72,0 12.483,5.989 12.483,23.228 M 6.234,7.358 h 1.55 3.983 0.084 c 0.281,0 0.541,-0.09 0.755,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.587,1.303 1.303,1.303 h 5.617 c 0.717,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.515,-1.229 -1.17,-1.296 h -0.003 l -0.03,-0.003 h -0.001 l -0.032,-0.002 h -10e-4 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.033,0.001 v 0 l -0.034,10e-4 v 0 l -0.033,0.002 h -0.001 l -0.031,0.003 h -0.003 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.303,-1.303 H 6.234 c -0.717,0 -1.303,0.587 -1.303,1.303 V 6.055 c 0,0.689 0.54,1.256 1.217,1.301 L 6.15,7.358 Z m 62.96,-7.36 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 H 61.475 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 H 76.48 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.288 c 0.79,0 1.369,0.579 1.369,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.369,1.37 h -7.288 z m 27.151,-6.709 c 0,-5.772 -0.865,-7.577 -3.748,-7.577 H 90.505 V 0.865 h 1.731 c 3.244,0 4.109,-1.88 4.109,-7.576 m 11.256,-30.874 c 0,0.722 -0.361,0.934 -0.865,1.226 -0.504,0.286 -0.722,0.648 -0.94,1.438 l -2.814,10.391 c -0.934,3.537 -1.731,4.763 -4.327,5.628 4.762,1.37 6.78,5.99 6.78,12.988 0,8.292 -2.958,13.273 -11.039,13.273 H 82.785 c -0.797,0 -1.37,-0.579 -1.37,-1.376 v -43.5 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.35 c 0.791,0 1.37,0.579 1.37,1.369 v 17.028 h 1.152 c 1.008,0 1.662,-0.361 1.874,-1.445 l 2.528,-11.324 c 0.94,-4.259 1.512,-5.628 4.974,-5.628 h 5.267 c 0.797,0 1.301,0.504 1.301,1.301 M -82.975,-0.002 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 h 15.005 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.287 c 0.791,0 1.37,0.579 1.37,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.37,1.37 h -7.287 z M 0,-38.886 c 0.791,0 1.37,0.579 1.37,1.369 v 4.62 c 0,0.79 -0.579,1.37 -1.37,1.37 h -15.004 c -0.797,0 -1.376,-0.58 -1.376,-1.37 v -4.62 c 0,-0.79 0.579,-1.369 1.376,-1.369 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074599,6.4682805)"" clip-path=""url(#clipPath2)""></path>
+  <path id=""path3"" d=""M 0,0 C 0.793,0 1.37,0.577 1.37,1.371 V 5.988 C 1.37,6.781 0.793,7.359 0,7.359 h -15.006 c -0.793,0 -1.37,-0.578 -1.37,-1.371 V 1.371 c 0,-0.794 0.577,-1.371 1.37,-1.371 z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074212,13.327587)"" clip-path=""url(#clipPath4)""></path>
+  <path id=""path7"" d=""M 0,0 H -1.052 C -4.09,0 -6.855,1.245 -8.861,3.251 h -0.017 c -2.004,2.005 -3.25,4.775 -3.25,7.825 v 46.045 c 0,3.031 1.244,5.796 3.25,7.81 l 0.017,0.016 c 2.014,2.006 4.778,3.251 7.809,3.251 H 0 c 0.781,0 1.417,-0.637 1.417,-1.418 V 61.111 C 1.417,60.33 0.781,59.694 0,59.694 h -1.052 c -0.714,0 -1.355,-0.285 -1.813,-0.743 l -0.017,-0.016 c -0.457,-0.458 -0.742,-1.1 -0.742,-1.814 V 11.076 c 0,-0.703 0.291,-1.345 0.759,-1.813 L -2.873,9.255 C -2.406,8.791 -1.761,8.504 -1.052,8.504 H 0 c 0.781,0 1.417,-0.637 1.417,-1.417 V 1.417 C 1.417,0.637 0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,4.278489,24.058876)"" clip-path=""url(#clipPath8)""></path>
+  <path id=""path9"" d=""M 0,0 H 1.052 C 4.09,0 6.855,1.245 8.861,3.251 h 0.017 c 2.005,2.005 3.25,4.775 3.25,7.825 v 46.045 c 0,3.031 -1.244,5.796 -3.25,7.81 L 8.861,64.947 C 6.847,66.953 4.083,68.198 1.052,68.198 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.418 v -5.669 c 0,-0.781 0.636,-1.417 1.417,-1.417 h 1.052 c 0.714,0 1.356,-0.285 1.813,-0.743 l 0.017,-0.016 c 0.458,-0.458 0.742,-1.1 0.742,-1.814 V 11.076 C 3.624,10.373 3.333,9.731 2.865,9.263 L 2.874,9.255 C 2.406,8.791 1.761,8.504 1.052,8.504 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.417 V 1.417 C -1.417,0.637 -0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,76.585197,24.058876)"" clip-path=""url(#clipPath10)""></path>
+  <path id=""path11"" d=""m 0,0 v -7.056 l 7.295,7.204 c 0.676,0.778 1.672,1.269 2.783,1.269 h 6.61 c 0.78,0 1.418,-0.638 1.418,-1.417 v -5.669 c 0,-0.779 -0.639,-1.418 -1.418,-1.418 h -3.693 l -14.06,-13.75 c -2.92,-2.797 -7.492,-1.162 -7.492,3.787 V 0 c 0,0.78 0.638,1.417 1.417,1.417 h 5.722 C -0.638,1.417 0,0.779 0,0 m 23.097,-7.087 h 1.052 c 6.09,0 11.076,4.987 11.076,11.077 v 46.045 c 0,6.077 -4.998,11.076 -11.076,11.076 h -1.052 c -0.78,0 -1.417,-0.637 -1.417,-1.417 v -5.67 c 0,-0.78 0.637,-1.417 1.417,-1.417 h 1.052 c 1.429,0 2.572,-1.143 2.572,-2.572 V 3.99 c 0,-1.418 -1.157,-2.573 -2.572,-2.573 H 23.097 C 22.317,1.417 21.68,0.781 21.68,0 v -5.669 c 0,-0.781 0.637,-1.418 1.417,-1.418 M -7.14,61.111 h 23.829 c 0.779,0 1.417,-0.638 1.417,-1.418 v -5.669 c 0,-0.779 -0.638,-1.417 -1.417,-1.417 H -7.14 c -0.779,0 -1.417,0.638 -1.417,1.417 v 5.669 c 0,0.78 0.638,1.418 1.417,1.418 m -6.408,-68.198 h -1.051 c -6.09,0 -11.077,4.987 -11.077,11.077 v 46.045 c 0,6.077 4.999,11.076 11.077,11.076 h 1.051 c 0.781,0 1.418,-0.637 1.418,-1.417 v -5.67 c 0,-0.78 -0.637,-1.417 -1.418,-1.417 h -1.051 c -1.43,0 -2.573,-1.143 -2.573,-2.572 V 3.99 c 0,-1.418 1.158,-2.573 2.573,-2.573 h 1.051 c 0.781,0 1.418,-0.636 1.418,-1.417 v -5.669 c 0,-0.781 -0.637,-1.418 -1.418,-1.418"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,102.15771,21.558598)"" clip-path=""url(#clipPath12)""></path>
+  <path id=""path13"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,7.7661861)"" clip-path=""url(#clipPath14)""></path>
+  <path id=""path15"" d=""M 0,0 C 0.791,0 1.37,0.579 1.37,1.37 V 5.989 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.37 V 1.37 c 0,-0.791 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,18.888494)"" clip-path=""url(#clipPath16)""></path>
+  <path id=""path17"" d=""m 0,0 c 0.793,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.793 -0.578,1.37 -1.371,1.37 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.37 V 1.371 C -16.376,0.577 -15.799,0 -15.005,0 Z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48939,13.327482)"" clip-path=""url(#clipPath18)""></path>
+</svg>
+</h5>
+                          </div>
+                          <div class=""hint-body"">
+                            <div class=""hint-msg"">Processo com decisão definitiva, sem a possibilidade de recurso.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                            <a href=""downloadPeca.asp?id=311768348&amp;ext=.pdf"" target=""_blank"" class=""btn btn-raised btn-default-bordered andamento-doc m-b-8 "">
+                            <i class=""far fa-file-alt""></i> Certidão de trânsito em julgado
+                            </a>
+                          
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">em 5/5/2017</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">06/04/2017</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Publicação, DJE</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                            <a href=""downloadPeca.asp?id=311549993&amp;ext=.pdf"" target=""_blank"" class=""btn btn-raised btn-default-bordered andamento-doc m-b-8 "">
+                            <i class=""far fa-file-alt""></i> Decisão monocrática
+                            </a>
+                          
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">Decisão de 03/04/2017 (DJE nº 69, divulgado em 05/04/2017)</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">04/04/2017</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Prejudicado</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0"">
+                    <span class=""andamento-julgador badge bg-info "">MIN. CELSO DE MELLO</span>
+                  </div>
+                  <div class=""col-md-9 p-0 "">Em 03/04/17: ""Sendo assim, e em face das razões expostas, julgo prejudicada a presente ação direta, por perda superveniente de seu objeto. Arquivem-se estes autos. Publique-se.""
+</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">05/06/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Conclusos ao(à) Relator(a)</h5>
+                  
+                  <div class=""dropdown"">
+                    <button class=""btn btn__entender entender__ico dropdown-toggle"" type=""button"" data-bs-toggle=""dropdown"" aria-expanded=""false"">
+                      <svg width=""100%"" height=""100%"" viewBox=""0 0 19.187618 25.857599"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <g transform=""translate(-48.947917,-43.65625)"">
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 64.264778,64.896543 c 2.795547,0 3.870758,-1.319576 3.870758,-3.997828 V 47.673627 c 0,-2.658702 -1.075211,-3.988053 -3.870758,-3.988053 -0.342112,0 -0.478957,0.136845 -0.478957,0.488732 v 1.456421 c 0,0.342113 0.136845,0.478958 0.478957,0.478958 0.928591,0.01955 1.202281,0.586478 1.202281,1.583491 v 13.205539 c 0,0.977464 -0.27369,1.544394 -1.202281,1.563943 -0.342112,0.01955 -0.478957,0.136845 -0.478957,0.478957 v 1.475971 c 0,0.342112 0.136845,0.478957 0.478957,0.478957 z"" id=""path1""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 52.818674,64.896543 c 0.342113,0 0.478957,-0.136845 0.478957,-0.478957 v -1.475971 c 0,-0.342112 -0.136844,-0.459408 -0.478957,-0.478957 -0.928591,-0.01955 -1.20228,-0.586479 -1.20228,-1.563943 V 47.693176 c 0,-0.997013 0.273689,-1.563942 1.20228,-1.583491 0.342113,0 0.478957,-0.136845 0.478957,-0.478958 v -1.456421 c 0,-0.351887 -0.136844,-0.488732 -0.478957,-0.488732 -2.805322,0 -3.870757,1.329351 -3.870757,3.988053 v 13.225088 c 0,2.678252 1.065435,3.997828 3.870757,3.997828 z"" id=""path2""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 54.695405,43.65625 h 7.692642 c 0.195493,0 0.351887,0.166169 0.351887,0.361662 v 1.681238 c 0,0.195493 -0.156394,0.351887 -0.351887,0.351887 h -7.692642 c -0.195493,0 -0.361662,-0.156394 -0.361662,-0.351887 v -1.681238 c 0,-0.195493 0.166169,-0.361662 0.361662,-0.361662 z"" id=""path3""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""M 56.32777,62.53108 H 55.975883 55.057067 54.70518 c -0.195493,0 -0.351887,0.156395 -0.351887,0.351887 v 0.08797 1.534619 3.851208 c 0,0.293239 0.117295,0.586478 0.342112,0.811295 0.449634,0.459408 1.182732,0.459408 1.632365,0.0098 l 4.369265,-4.320391 h 0.752647 -0.27369 0.0098 1.016562 0.195493 c 0.185718,0 0.342112,-0.156395 0.342112,-0.351887 V 62.88299 c 0,-0.195492 -0.156394,-0.351887 -0.342112,-0.351887 h -0.195493 -0.987239 -0.0391 0.27369 -1.22183 c -0.351887,0 -0.664676,0.156395 -0.879718,0.400761 l -2.668477,2.648927 v -1.07521 -1.534619 -0.08797 c 0,-0.195492 -0.156394,-0.351887 -0.351887,-0.351887 z"" id=""path4""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,50.342104 c 0.254141,0 0.439859,-0.175944 0.439859,-0.430084 v -1.446647 c 0,-0.254141 -0.185718,-0.449633 -0.439859,-0.449633 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.195492 -0.430084,0.449633 v 1.446647 c 0,0.25414 0.185718,0.430084 0.430084,0.430084 1.573717,0 3.147434,0 4.730926,0 z"" id=""path5""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,60.566378 c 0.254141,0 0.439859,-0.185719 0.439859,-0.439859 v -1.456422 c 0,-0.25414 -0.185718,-0.430084 -0.439859,-0.430084 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.175944 -0.430084,0.430084 v 1.456422 c 0,0.25414 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path6""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,55.454241 c 0.254141,0 0.439859,-0.185718 0.439859,-0.439859 v -1.456421 c 0,-0.244366 -0.185718,-0.430085 -0.439859,-0.430085 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.185719 -0.430084,0.430085 v 1.456421 c 0,0.254141 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path7""></path>
+  </g>
+</svg>
+                    </button>
+                    <div class=""dropdown-menu hint-menu p-0"">
+                      <div class=""hint-dialog"">
+                        <div class=""hint-content"">
+                          <div class=""hint-header"">
+                            <h5 class=""hint-title""><svg width=""100%"" height=""100%"" viewBox=""0 0 114.5843 29.721491"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <defs id=""defs1"">
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath2"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26771,-315.72031)"" id=""path2""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath4"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26661,-296.2766)"" id=""path4""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath6"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-464.63051,-260.51071)"" id=""path6""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath8"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-270.46771,-265.8572)"" id=""path8""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath10"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-475.43161,-265.8572)"" id=""path10""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath12"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-547.92061,-272.94461)"" id=""path12""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath14"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-312.04121)"" id=""path14""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath16"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-280.5134)"" id=""path16""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath18"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.19941,-296.2769)"" id=""path18""></path>
+    </clipPath>
+  </defs>
+  <path id=""path1"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z m -19.941,1.37 v 4.613 c 0,0.797 -0.573,1.376 -1.37,1.376 H -41.8 c -0.791,0 -1.37,-0.579 -1.37,-1.376 V 1.37 C -43.17,0.573 -42.591,0 -41.8,0 h 5.702 v -37.517 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.344 c 0.797,0 1.376,0.579 1.376,1.369 V 0 h 5.697 c 0.797,0 1.37,0.573 1.37,1.37 m -49.512,5.988 h 1.549 3.984 0.083 c 0.281,0 0.542,-0.09 0.756,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.586,1.303 1.303,1.303 h 5.617 c 0.716,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.516,-1.229 -1.171,-1.296 h -0.002 l -0.03,-0.003 h -0.002 l -0.031,-0.002 h -0.001 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.034,0.001 v 0 l -0.033,10e-4 h -10e-4 l -0.032,0.002 h -0.001 l -0.032,0.003 h -0.002 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.304,-1.303 h -5.616 c -0.717,0 -1.304,0.587 -1.304,1.303 V 6.055 c 0,0.689 0.541,1.256 1.218,1.301 l 0.002,0.002 z M 47.453,-15.658 c 0,-12.838 -1.014,-16.374 -4.401,-16.374 H 41.607 V 0.504 h 1.445 c 3.387,0 4.401,-3.536 4.401,-16.162 m 9.09,0 C 56.543,1.588 51.78,7.359 44.06,7.359 H 33.887 c -0.79,0 -1.369,-0.579 -1.369,-1.376 v -43.5 c 0,-0.79 0.579,-1.369 1.369,-1.369 H 44.06 c 7.72,0 12.483,5.989 12.483,23.228 M 6.234,7.358 h 1.55 3.983 0.084 c 0.281,0 0.541,-0.09 0.755,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.587,1.303 1.303,1.303 h 5.617 c 0.717,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.515,-1.229 -1.17,-1.296 h -0.003 l -0.03,-0.003 h -0.001 l -0.032,-0.002 h -10e-4 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.033,0.001 v 0 l -0.034,10e-4 v 0 l -0.033,0.002 h -0.001 l -0.031,0.003 h -0.003 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.303,-1.303 H 6.234 c -0.717,0 -1.303,0.587 -1.303,1.303 V 6.055 c 0,0.689 0.54,1.256 1.217,1.301 L 6.15,7.358 Z m 62.96,-7.36 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 H 61.475 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 H 76.48 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.288 c 0.79,0 1.369,0.579 1.369,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.369,1.37 h -7.288 z m 27.151,-6.709 c 0,-5.772 -0.865,-7.577 -3.748,-7.577 H 90.505 V 0.865 h 1.731 c 3.244,0 4.109,-1.88 4.109,-7.576 m 11.256,-30.874 c 0,0.722 -0.361,0.934 -0.865,1.226 -0.504,0.286 -0.722,0.648 -0.94,1.438 l -2.814,10.391 c -0.934,3.537 -1.731,4.763 -4.327,5.628 4.762,1.37 6.78,5.99 6.78,12.988 0,8.292 -2.958,13.273 -11.039,13.273 H 82.785 c -0.797,0 -1.37,-0.579 -1.37,-1.376 v -43.5 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.35 c 0.791,0 1.37,0.579 1.37,1.369 v 17.028 h 1.152 c 1.008,0 1.662,-0.361 1.874,-1.445 l 2.528,-11.324 c 0.94,-4.259 1.512,-5.628 4.974,-5.628 h 5.267 c 0.797,0 1.301,0.504 1.301,1.301 M -82.975,-0.002 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 h 15.005 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.287 c 0.791,0 1.37,0.579 1.37,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.37,1.37 h -7.287 z M 0,-38.886 c 0.791,0 1.37,0.579 1.37,1.369 v 4.62 c 0,0.79 -0.579,1.37 -1.37,1.37 h -15.004 c -0.797,0 -1.376,-0.58 -1.376,-1.37 v -4.62 c 0,-0.79 0.579,-1.369 1.376,-1.369 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074599,6.4682805)"" clip-path=""url(#clipPath2)""></path>
+  <path id=""path3"" d=""M 0,0 C 0.793,0 1.37,0.577 1.37,1.371 V 5.988 C 1.37,6.781 0.793,7.359 0,7.359 h -15.006 c -0.793,0 -1.37,-0.578 -1.37,-1.371 V 1.371 c 0,-0.794 0.577,-1.371 1.37,-1.371 z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074212,13.327587)"" clip-path=""url(#clipPath4)""></path>
+  <path id=""path7"" d=""M 0,0 H -1.052 C -4.09,0 -6.855,1.245 -8.861,3.251 h -0.017 c -2.004,2.005 -3.25,4.775 -3.25,7.825 v 46.045 c 0,3.031 1.244,5.796 3.25,7.81 l 0.017,0.016 c 2.014,2.006 4.778,3.251 7.809,3.251 H 0 c 0.781,0 1.417,-0.637 1.417,-1.418 V 61.111 C 1.417,60.33 0.781,59.694 0,59.694 h -1.052 c -0.714,0 -1.355,-0.285 -1.813,-0.743 l -0.017,-0.016 c -0.457,-0.458 -0.742,-1.1 -0.742,-1.814 V 11.076 c 0,-0.703 0.291,-1.345 0.759,-1.813 L -2.873,9.255 C -2.406,8.791 -1.761,8.504 -1.052,8.504 H 0 c 0.781,0 1.417,-0.637 1.417,-1.417 V 1.417 C 1.417,0.637 0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,4.278489,24.058876)"" clip-path=""url(#clipPath8)""></path>
+  <path id=""path9"" d=""M 0,0 H 1.052 C 4.09,0 6.855,1.245 8.861,3.251 h 0.017 c 2.005,2.005 3.25,4.775 3.25,7.825 v 46.045 c 0,3.031 -1.244,5.796 -3.25,7.81 L 8.861,64.947 C 6.847,66.953 4.083,68.198 1.052,68.198 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.418 v -5.669 c 0,-0.781 0.636,-1.417 1.417,-1.417 h 1.052 c 0.714,0 1.356,-0.285 1.813,-0.743 l 0.017,-0.016 c 0.458,-0.458 0.742,-1.1 0.742,-1.814 V 11.076 C 3.624,10.373 3.333,9.731 2.865,9.263 L 2.874,9.255 C 2.406,8.791 1.761,8.504 1.052,8.504 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.417 V 1.417 C -1.417,0.637 -0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,76.585197,24.058876)"" clip-path=""url(#clipPath10)""></path>
+  <path id=""path11"" d=""m 0,0 v -7.056 l 7.295,7.204 c 0.676,0.778 1.672,1.269 2.783,1.269 h 6.61 c 0.78,0 1.418,-0.638 1.418,-1.417 v -5.669 c 0,-0.779 -0.639,-1.418 -1.418,-1.418 h -3.693 l -14.06,-13.75 c -2.92,-2.797 -7.492,-1.162 -7.492,3.787 V 0 c 0,0.78 0.638,1.417 1.417,1.417 h 5.722 C -0.638,1.417 0,0.779 0,0 m 23.097,-7.087 h 1.052 c 6.09,0 11.076,4.987 11.076,11.077 v 46.045 c 0,6.077 -4.998,11.076 -11.076,11.076 h -1.052 c -0.78,0 -1.417,-0.637 -1.417,-1.417 v -5.67 c 0,-0.78 0.637,-1.417 1.417,-1.417 h 1.052 c 1.429,0 2.572,-1.143 2.572,-2.572 V 3.99 c 0,-1.418 -1.157,-2.573 -2.572,-2.573 H 23.097 C 22.317,1.417 21.68,0.781 21.68,0 v -5.669 c 0,-0.781 0.637,-1.418 1.417,-1.418 M -7.14,61.111 h 23.829 c 0.779,0 1.417,-0.638 1.417,-1.418 v -5.669 c 0,-0.779 -0.638,-1.417 -1.417,-1.417 H -7.14 c -0.779,0 -1.417,0.638 -1.417,1.417 v 5.669 c 0,0.78 0.638,1.418 1.417,1.418 m -6.408,-68.198 h -1.051 c -6.09,0 -11.077,4.987 -11.077,11.077 v 46.045 c 0,6.077 4.999,11.076 11.077,11.076 h 1.051 c 0.781,0 1.418,-0.637 1.418,-1.417 v -5.67 c 0,-0.78 -0.637,-1.417 -1.418,-1.417 h -1.051 c -1.43,0 -2.573,-1.143 -2.573,-2.572 V 3.99 c 0,-1.418 1.158,-2.573 2.573,-2.573 h 1.051 c 0.781,0 1.418,-0.636 1.418,-1.417 v -5.669 c 0,-0.781 -0.637,-1.418 -1.418,-1.418"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,102.15771,21.558598)"" clip-path=""url(#clipPath12)""></path>
+  <path id=""path13"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,7.7661861)"" clip-path=""url(#clipPath14)""></path>
+  <path id=""path15"" d=""M 0,0 C 0.791,0 1.37,0.579 1.37,1.37 V 5.989 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.37 V 1.37 c 0,-0.791 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,18.888494)"" clip-path=""url(#clipPath16)""></path>
+  <path id=""path17"" d=""m 0,0 c 0.793,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.793 -0.578,1.37 -1.371,1.37 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.37 V 1.371 C -16.376,0.577 -15.799,0 -15.005,0 Z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48939,13.327482)"" clip-path=""url(#clipPath18)""></path>
+</svg>
+</h5>
+                          </div>
+                          <div class=""hint-body"">
+                            <div class=""hint-msg"">O processo foi encaminhado para análise do(a) ministro(a) responsável pelo caso.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">05/06/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Juntada</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">PG nº 79927/2008 (original do PG nº 73977/08 - fax) do Presidente da Assembléia Legislativa do Estado do Piauí, prestando informações.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">04/06/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Petição</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">PG nº 79927/2008 (original do PG nº 73977/08 - fax) do Presidente da Assembléia Legislativa do Estado do Piauí, prestando informações.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">04/06/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Conclusos ao(à) Relator(a)</h5>
+                  
+                  <div class=""dropdown"">
+                    <button class=""btn btn__entender entender__ico dropdown-toggle"" type=""button"" data-bs-toggle=""dropdown"" aria-expanded=""false"">
+                      <svg width=""100%"" height=""100%"" viewBox=""0 0 19.187618 25.857599"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <g transform=""translate(-48.947917,-43.65625)"">
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 64.264778,64.896543 c 2.795547,0 3.870758,-1.319576 3.870758,-3.997828 V 47.673627 c 0,-2.658702 -1.075211,-3.988053 -3.870758,-3.988053 -0.342112,0 -0.478957,0.136845 -0.478957,0.488732 v 1.456421 c 0,0.342113 0.136845,0.478958 0.478957,0.478958 0.928591,0.01955 1.202281,0.586478 1.202281,1.583491 v 13.205539 c 0,0.977464 -0.27369,1.544394 -1.202281,1.563943 -0.342112,0.01955 -0.478957,0.136845 -0.478957,0.478957 v 1.475971 c 0,0.342112 0.136845,0.478957 0.478957,0.478957 z"" id=""path1""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 52.818674,64.896543 c 0.342113,0 0.478957,-0.136845 0.478957,-0.478957 v -1.475971 c 0,-0.342112 -0.136844,-0.459408 -0.478957,-0.478957 -0.928591,-0.01955 -1.20228,-0.586479 -1.20228,-1.563943 V 47.693176 c 0,-0.997013 0.273689,-1.563942 1.20228,-1.583491 0.342113,0 0.478957,-0.136845 0.478957,-0.478958 v -1.456421 c 0,-0.351887 -0.136844,-0.488732 -0.478957,-0.488732 -2.805322,0 -3.870757,1.329351 -3.870757,3.988053 v 13.225088 c 0,2.678252 1.065435,3.997828 3.870757,3.997828 z"" id=""path2""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 54.695405,43.65625 h 7.692642 c 0.195493,0 0.351887,0.166169 0.351887,0.361662 v 1.681238 c 0,0.195493 -0.156394,0.351887 -0.351887,0.351887 h -7.692642 c -0.195493,0 -0.361662,-0.156394 -0.361662,-0.351887 v -1.681238 c 0,-0.195493 0.166169,-0.361662 0.361662,-0.361662 z"" id=""path3""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""M 56.32777,62.53108 H 55.975883 55.057067 54.70518 c -0.195493,0 -0.351887,0.156395 -0.351887,0.351887 v 0.08797 1.534619 3.851208 c 0,0.293239 0.117295,0.586478 0.342112,0.811295 0.449634,0.459408 1.182732,0.459408 1.632365,0.0098 l 4.369265,-4.320391 h 0.752647 -0.27369 0.0098 1.016562 0.195493 c 0.185718,0 0.342112,-0.156395 0.342112,-0.351887 V 62.88299 c 0,-0.195492 -0.156394,-0.351887 -0.342112,-0.351887 h -0.195493 -0.987239 -0.0391 0.27369 -1.22183 c -0.351887,0 -0.664676,0.156395 -0.879718,0.400761 l -2.668477,2.648927 v -1.07521 -1.534619 -0.08797 c 0,-0.195492 -0.156394,-0.351887 -0.351887,-0.351887 z"" id=""path4""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,50.342104 c 0.254141,0 0.439859,-0.175944 0.439859,-0.430084 v -1.446647 c 0,-0.254141 -0.185718,-0.449633 -0.439859,-0.449633 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.195492 -0.430084,0.449633 v 1.446647 c 0,0.25414 0.185718,0.430084 0.430084,0.430084 1.573717,0 3.147434,0 4.730926,0 z"" id=""path5""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,60.566378 c 0.254141,0 0.439859,-0.185719 0.439859,-0.439859 v -1.456422 c 0,-0.25414 -0.185718,-0.430084 -0.439859,-0.430084 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.175944 -0.430084,0.430084 v 1.456422 c 0,0.25414 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path6""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,55.454241 c 0.254141,0 0.439859,-0.185718 0.439859,-0.439859 v -1.456421 c 0,-0.244366 -0.185718,-0.430085 -0.439859,-0.430085 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.185719 -0.430084,0.430085 v 1.456421 c 0,0.254141 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path7""></path>
+  </g>
+</svg>
+                    </button>
+                    <div class=""dropdown-menu hint-menu p-0"">
+                      <div class=""hint-dialog"">
+                        <div class=""hint-content"">
+                          <div class=""hint-header"">
+                            <h5 class=""hint-title""><svg width=""100%"" height=""100%"" viewBox=""0 0 114.5843 29.721491"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <defs id=""defs1"">
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath2"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26771,-315.72031)"" id=""path2""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath4"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26661,-296.2766)"" id=""path4""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath6"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-464.63051,-260.51071)"" id=""path6""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath8"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-270.46771,-265.8572)"" id=""path8""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath10"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-475.43161,-265.8572)"" id=""path10""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath12"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-547.92061,-272.94461)"" id=""path12""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath14"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-312.04121)"" id=""path14""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath16"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-280.5134)"" id=""path16""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath18"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.19941,-296.2769)"" id=""path18""></path>
+    </clipPath>
+  </defs>
+  <path id=""path1"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z m -19.941,1.37 v 4.613 c 0,0.797 -0.573,1.376 -1.37,1.376 H -41.8 c -0.791,0 -1.37,-0.579 -1.37,-1.376 V 1.37 C -43.17,0.573 -42.591,0 -41.8,0 h 5.702 v -37.517 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.344 c 0.797,0 1.376,0.579 1.376,1.369 V 0 h 5.697 c 0.797,0 1.37,0.573 1.37,1.37 m -49.512,5.988 h 1.549 3.984 0.083 c 0.281,0 0.542,-0.09 0.756,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.586,1.303 1.303,1.303 h 5.617 c 0.716,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.516,-1.229 -1.171,-1.296 h -0.002 l -0.03,-0.003 h -0.002 l -0.031,-0.002 h -0.001 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.034,0.001 v 0 l -0.033,10e-4 h -10e-4 l -0.032,0.002 h -0.001 l -0.032,0.003 h -0.002 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.304,-1.303 h -5.616 c -0.717,0 -1.304,0.587 -1.304,1.303 V 6.055 c 0,0.689 0.541,1.256 1.218,1.301 l 0.002,0.002 z M 47.453,-15.658 c 0,-12.838 -1.014,-16.374 -4.401,-16.374 H 41.607 V 0.504 h 1.445 c 3.387,0 4.401,-3.536 4.401,-16.162 m 9.09,0 C 56.543,1.588 51.78,7.359 44.06,7.359 H 33.887 c -0.79,0 -1.369,-0.579 -1.369,-1.376 v -43.5 c 0,-0.79 0.579,-1.369 1.369,-1.369 H 44.06 c 7.72,0 12.483,5.989 12.483,23.228 M 6.234,7.358 h 1.55 3.983 0.084 c 0.281,0 0.541,-0.09 0.755,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.587,1.303 1.303,1.303 h 5.617 c 0.717,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.515,-1.229 -1.17,-1.296 h -0.003 l -0.03,-0.003 h -0.001 l -0.032,-0.002 h -10e-4 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.033,0.001 v 0 l -0.034,10e-4 v 0 l -0.033,0.002 h -0.001 l -0.031,0.003 h -0.003 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.303,-1.303 H 6.234 c -0.717,0 -1.303,0.587 -1.303,1.303 V 6.055 c 0,0.689 0.54,1.256 1.217,1.301 L 6.15,7.358 Z m 62.96,-7.36 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 H 61.475 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 H 76.48 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.288 c 0.79,0 1.369,0.579 1.369,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.369,1.37 h -7.288 z m 27.151,-6.709 c 0,-5.772 -0.865,-7.577 -3.748,-7.577 H 90.505 V 0.865 h 1.731 c 3.244,0 4.109,-1.88 4.109,-7.576 m 11.256,-30.874 c 0,0.722 -0.361,0.934 -0.865,1.226 -0.504,0.286 -0.722,0.648 -0.94,1.438 l -2.814,10.391 c -0.934,3.537 -1.731,4.763 -4.327,5.628 4.762,1.37 6.78,5.99 6.78,12.988 0,8.292 -2.958,13.273 -11.039,13.273 H 82.785 c -0.797,0 -1.37,-0.579 -1.37,-1.376 v -43.5 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.35 c 0.791,0 1.37,0.579 1.37,1.369 v 17.028 h 1.152 c 1.008,0 1.662,-0.361 1.874,-1.445 l 2.528,-11.324 c 0.94,-4.259 1.512,-5.628 4.974,-5.628 h 5.267 c 0.797,0 1.301,0.504 1.301,1.301 M -82.975,-0.002 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 h 15.005 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.287 c 0.791,0 1.37,0.579 1.37,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.37,1.37 h -7.287 z M 0,-38.886 c 0.791,0 1.37,0.579 1.37,1.369 v 4.62 c 0,0.79 -0.579,1.37 -1.37,1.37 h -15.004 c -0.797,0 -1.376,-0.58 -1.376,-1.37 v -4.62 c 0,-0.79 0.579,-1.369 1.376,-1.369 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074599,6.4682805)"" clip-path=""url(#clipPath2)""></path>
+  <path id=""path3"" d=""M 0,0 C 0.793,0 1.37,0.577 1.37,1.371 V 5.988 C 1.37,6.781 0.793,7.359 0,7.359 h -15.006 c -0.793,0 -1.37,-0.578 -1.37,-1.371 V 1.371 c 0,-0.794 0.577,-1.371 1.37,-1.371 z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074212,13.327587)"" clip-path=""url(#clipPath4)""></path>
+  <path id=""path7"" d=""M 0,0 H -1.052 C -4.09,0 -6.855,1.245 -8.861,3.251 h -0.017 c -2.004,2.005 -3.25,4.775 -3.25,7.825 v 46.045 c 0,3.031 1.244,5.796 3.25,7.81 l 0.017,0.016 c 2.014,2.006 4.778,3.251 7.809,3.251 H 0 c 0.781,0 1.417,-0.637 1.417,-1.418 V 61.111 C 1.417,60.33 0.781,59.694 0,59.694 h -1.052 c -0.714,0 -1.355,-0.285 -1.813,-0.743 l -0.017,-0.016 c -0.457,-0.458 -0.742,-1.1 -0.742,-1.814 V 11.076 c 0,-0.703 0.291,-1.345 0.759,-1.813 L -2.873,9.255 C -2.406,8.791 -1.761,8.504 -1.052,8.504 H 0 c 0.781,0 1.417,-0.637 1.417,-1.417 V 1.417 C 1.417,0.637 0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,4.278489,24.058876)"" clip-path=""url(#clipPath8)""></path>
+  <path id=""path9"" d=""M 0,0 H 1.052 C 4.09,0 6.855,1.245 8.861,3.251 h 0.017 c 2.005,2.005 3.25,4.775 3.25,7.825 v 46.045 c 0,3.031 -1.244,5.796 -3.25,7.81 L 8.861,64.947 C 6.847,66.953 4.083,68.198 1.052,68.198 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.418 v -5.669 c 0,-0.781 0.636,-1.417 1.417,-1.417 h 1.052 c 0.714,0 1.356,-0.285 1.813,-0.743 l 0.017,-0.016 c 0.458,-0.458 0.742,-1.1 0.742,-1.814 V 11.076 C 3.624,10.373 3.333,9.731 2.865,9.263 L 2.874,9.255 C 2.406,8.791 1.761,8.504 1.052,8.504 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.417 V 1.417 C -1.417,0.637 -0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,76.585197,24.058876)"" clip-path=""url(#clipPath10)""></path>
+  <path id=""path11"" d=""m 0,0 v -7.056 l 7.295,7.204 c 0.676,0.778 1.672,1.269 2.783,1.269 h 6.61 c 0.78,0 1.418,-0.638 1.418,-1.417 v -5.669 c 0,-0.779 -0.639,-1.418 -1.418,-1.418 h -3.693 l -14.06,-13.75 c -2.92,-2.797 -7.492,-1.162 -7.492,3.787 V 0 c 0,0.78 0.638,1.417 1.417,1.417 h 5.722 C -0.638,1.417 0,0.779 0,0 m 23.097,-7.087 h 1.052 c 6.09,0 11.076,4.987 11.076,11.077 v 46.045 c 0,6.077 -4.998,11.076 -11.076,11.076 h -1.052 c -0.78,0 -1.417,-0.637 -1.417,-1.417 v -5.67 c 0,-0.78 0.637,-1.417 1.417,-1.417 h 1.052 c 1.429,0 2.572,-1.143 2.572,-2.572 V 3.99 c 0,-1.418 -1.157,-2.573 -2.572,-2.573 H 23.097 C 22.317,1.417 21.68,0.781 21.68,0 v -5.669 c 0,-0.781 0.637,-1.418 1.417,-1.418 M -7.14,61.111 h 23.829 c 0.779,0 1.417,-0.638 1.417,-1.418 v -5.669 c 0,-0.779 -0.638,-1.417 -1.417,-1.417 H -7.14 c -0.779,0 -1.417,0.638 -1.417,1.417 v 5.669 c 0,0.78 0.638,1.418 1.417,1.418 m -6.408,-68.198 h -1.051 c -6.09,0 -11.077,4.987 -11.077,11.077 v 46.045 c 0,6.077 4.999,11.076 11.077,11.076 h 1.051 c 0.781,0 1.418,-0.637 1.418,-1.417 v -5.67 c 0,-0.78 -0.637,-1.417 -1.418,-1.417 h -1.051 c -1.43,0 -2.573,-1.143 -2.573,-2.572 V 3.99 c 0,-1.418 1.158,-2.573 2.573,-2.573 h 1.051 c 0.781,0 1.418,-0.636 1.418,-1.417 v -5.669 c 0,-0.781 -0.637,-1.418 -1.418,-1.418"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,102.15771,21.558598)"" clip-path=""url(#clipPath12)""></path>
+  <path id=""path13"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,7.7661861)"" clip-path=""url(#clipPath14)""></path>
+  <path id=""path15"" d=""M 0,0 C 0.791,0 1.37,0.579 1.37,1.37 V 5.989 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.37 V 1.37 c 0,-0.791 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,18.888494)"" clip-path=""url(#clipPath16)""></path>
+  <path id=""path17"" d=""m 0,0 c 0.793,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.793 -0.578,1.37 -1.371,1.37 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.37 V 1.371 C -16.376,0.577 -15.799,0 -15.005,0 Z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48939,13.327482)"" clip-path=""url(#clipPath18)""></path>
+</svg>
+</h5>
+                          </div>
+                          <div class=""hint-body"">
+                            <div class=""hint-msg"">O processo foi encaminhado para análise do(a) ministro(a) responsável pelo caso.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">04/06/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Juntada</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">em 27.05.2008, do PG nº 73977/2008 (FAX)  do Presidente da Assembléia Legislativa do Estado do Piauí, prestando informações.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">27/05/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Informações recebidas, Ofício nº</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">1866/R em 26/05/08, PG nº 73977/08 (FAX) do Presidente da Assembléia Legislativa do Estado do Piauí.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">26/05/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Petição</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">PG nº 73977/2008 (FAX)  do Presidente da Assembléia Legislativa do Estado do Piauí, prestando informações.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">05/05/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Conclusos ao(à) Relator(a)</h5>
+                  
+                  <div class=""dropdown"">
+                    <button class=""btn btn__entender entender__ico dropdown-toggle"" type=""button"" data-bs-toggle=""dropdown"" aria-expanded=""false"">
+                      <svg width=""100%"" height=""100%"" viewBox=""0 0 19.187618 25.857599"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <g transform=""translate(-48.947917,-43.65625)"">
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 64.264778,64.896543 c 2.795547,0 3.870758,-1.319576 3.870758,-3.997828 V 47.673627 c 0,-2.658702 -1.075211,-3.988053 -3.870758,-3.988053 -0.342112,0 -0.478957,0.136845 -0.478957,0.488732 v 1.456421 c 0,0.342113 0.136845,0.478958 0.478957,0.478958 0.928591,0.01955 1.202281,0.586478 1.202281,1.583491 v 13.205539 c 0,0.977464 -0.27369,1.544394 -1.202281,1.563943 -0.342112,0.01955 -0.478957,0.136845 -0.478957,0.478957 v 1.475971 c 0,0.342112 0.136845,0.478957 0.478957,0.478957 z"" id=""path1""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 52.818674,64.896543 c 0.342113,0 0.478957,-0.136845 0.478957,-0.478957 v -1.475971 c 0,-0.342112 -0.136844,-0.459408 -0.478957,-0.478957 -0.928591,-0.01955 -1.20228,-0.586479 -1.20228,-1.563943 V 47.693176 c 0,-0.997013 0.273689,-1.563942 1.20228,-1.583491 0.342113,0 0.478957,-0.136845 0.478957,-0.478958 v -1.456421 c 0,-0.351887 -0.136844,-0.488732 -0.478957,-0.488732 -2.805322,0 -3.870757,1.329351 -3.870757,3.988053 v 13.225088 c 0,2.678252 1.065435,3.997828 3.870757,3.997828 z"" id=""path2""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 54.695405,43.65625 h 7.692642 c 0.195493,0 0.351887,0.166169 0.351887,0.361662 v 1.681238 c 0,0.195493 -0.156394,0.351887 -0.351887,0.351887 h -7.692642 c -0.195493,0 -0.361662,-0.156394 -0.361662,-0.351887 v -1.681238 c 0,-0.195493 0.166169,-0.361662 0.361662,-0.361662 z"" id=""path3""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""M 56.32777,62.53108 H 55.975883 55.057067 54.70518 c -0.195493,0 -0.351887,0.156395 -0.351887,0.351887 v 0.08797 1.534619 3.851208 c 0,0.293239 0.117295,0.586478 0.342112,0.811295 0.449634,0.459408 1.182732,0.459408 1.632365,0.0098 l 4.369265,-4.320391 h 0.752647 -0.27369 0.0098 1.016562 0.195493 c 0.185718,0 0.342112,-0.156395 0.342112,-0.351887 V 62.88299 c 0,-0.195492 -0.156394,-0.351887 -0.342112,-0.351887 h -0.195493 -0.987239 -0.0391 0.27369 -1.22183 c -0.351887,0 -0.664676,0.156395 -0.879718,0.400761 l -2.668477,2.648927 v -1.07521 -1.534619 -0.08797 c 0,-0.195492 -0.156394,-0.351887 -0.351887,-0.351887 z"" id=""path4""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,50.342104 c 0.254141,0 0.439859,-0.175944 0.439859,-0.430084 v -1.446647 c 0,-0.254141 -0.185718,-0.449633 -0.439859,-0.449633 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.195492 -0.430084,0.449633 v 1.446647 c 0,0.25414 0.185718,0.430084 0.430084,0.430084 1.573717,0 3.147434,0 4.730926,0 z"" id=""path5""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,60.566378 c 0.254141,0 0.439859,-0.185719 0.439859,-0.439859 v -1.456422 c 0,-0.25414 -0.185718,-0.430084 -0.439859,-0.430084 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.175944 -0.430084,0.430084 v 1.456422 c 0,0.25414 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path6""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,55.454241 c 0.254141,0 0.439859,-0.185718 0.439859,-0.439859 v -1.456421 c 0,-0.244366 -0.185718,-0.430085 -0.439859,-0.430085 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.185719 -0.430084,0.430085 v 1.456421 c 0,0.254141 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path7""></path>
+  </g>
+</svg>
+                    </button>
+                    <div class=""dropdown-menu hint-menu p-0"">
+                      <div class=""hint-dialog"">
+                        <div class=""hint-content"">
+                          <div class=""hint-header"">
+                            <h5 class=""hint-title""><svg width=""100%"" height=""100%"" viewBox=""0 0 114.5843 29.721491"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <defs id=""defs1"">
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath2"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26771,-315.72031)"" id=""path2""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath4"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26661,-296.2766)"" id=""path4""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath6"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-464.63051,-260.51071)"" id=""path6""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath8"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-270.46771,-265.8572)"" id=""path8""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath10"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-475.43161,-265.8572)"" id=""path10""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath12"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-547.92061,-272.94461)"" id=""path12""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath14"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-312.04121)"" id=""path14""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath16"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-280.5134)"" id=""path16""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath18"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.19941,-296.2769)"" id=""path18""></path>
+    </clipPath>
+  </defs>
+  <path id=""path1"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z m -19.941,1.37 v 4.613 c 0,0.797 -0.573,1.376 -1.37,1.376 H -41.8 c -0.791,0 -1.37,-0.579 -1.37,-1.376 V 1.37 C -43.17,0.573 -42.591,0 -41.8,0 h 5.702 v -37.517 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.344 c 0.797,0 1.376,0.579 1.376,1.369 V 0 h 5.697 c 0.797,0 1.37,0.573 1.37,1.37 m -49.512,5.988 h 1.549 3.984 0.083 c 0.281,0 0.542,-0.09 0.756,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.586,1.303 1.303,1.303 h 5.617 c 0.716,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.516,-1.229 -1.171,-1.296 h -0.002 l -0.03,-0.003 h -0.002 l -0.031,-0.002 h -0.001 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.034,0.001 v 0 l -0.033,10e-4 h -10e-4 l -0.032,0.002 h -0.001 l -0.032,0.003 h -0.002 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.304,-1.303 h -5.616 c -0.717,0 -1.304,0.587 -1.304,1.303 V 6.055 c 0,0.689 0.541,1.256 1.218,1.301 l 0.002,0.002 z M 47.453,-15.658 c 0,-12.838 -1.014,-16.374 -4.401,-16.374 H 41.607 V 0.504 h 1.445 c 3.387,0 4.401,-3.536 4.401,-16.162 m 9.09,0 C 56.543,1.588 51.78,7.359 44.06,7.359 H 33.887 c -0.79,0 -1.369,-0.579 -1.369,-1.376 v -43.5 c 0,-0.79 0.579,-1.369 1.369,-1.369 H 44.06 c 7.72,0 12.483,5.989 12.483,23.228 M 6.234,7.358 h 1.55 3.983 0.084 c 0.281,0 0.541,-0.09 0.755,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.587,1.303 1.303,1.303 h 5.617 c 0.717,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.515,-1.229 -1.17,-1.296 h -0.003 l -0.03,-0.003 h -0.001 l -0.032,-0.002 h -10e-4 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.033,0.001 v 0 l -0.034,10e-4 v 0 l -0.033,0.002 h -0.001 l -0.031,0.003 h -0.003 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.303,-1.303 H 6.234 c -0.717,0 -1.303,0.587 -1.303,1.303 V 6.055 c 0,0.689 0.54,1.256 1.217,1.301 L 6.15,7.358 Z m 62.96,-7.36 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 H 61.475 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 H 76.48 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.288 c 0.79,0 1.369,0.579 1.369,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.369,1.37 h -7.288 z m 27.151,-6.709 c 0,-5.772 -0.865,-7.577 -3.748,-7.577 H 90.505 V 0.865 h 1.731 c 3.244,0 4.109,-1.88 4.109,-7.576 m 11.256,-30.874 c 0,0.722 -0.361,0.934 -0.865,1.226 -0.504,0.286 -0.722,0.648 -0.94,1.438 l -2.814,10.391 c -0.934,3.537 -1.731,4.763 -4.327,5.628 4.762,1.37 6.78,5.99 6.78,12.988 0,8.292 -2.958,13.273 -11.039,13.273 H 82.785 c -0.797,0 -1.37,-0.579 -1.37,-1.376 v -43.5 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.35 c 0.791,0 1.37,0.579 1.37,1.369 v 17.028 h 1.152 c 1.008,0 1.662,-0.361 1.874,-1.445 l 2.528,-11.324 c 0.94,-4.259 1.512,-5.628 4.974,-5.628 h 5.267 c 0.797,0 1.301,0.504 1.301,1.301 M -82.975,-0.002 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 h 15.005 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.287 c 0.791,0 1.37,0.579 1.37,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.37,1.37 h -7.287 z M 0,-38.886 c 0.791,0 1.37,0.579 1.37,1.369 v 4.62 c 0,0.79 -0.579,1.37 -1.37,1.37 h -15.004 c -0.797,0 -1.376,-0.58 -1.376,-1.37 v -4.62 c 0,-0.79 0.579,-1.369 1.376,-1.369 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074599,6.4682805)"" clip-path=""url(#clipPath2)""></path>
+  <path id=""path3"" d=""M 0,0 C 0.793,0 1.37,0.577 1.37,1.371 V 5.988 C 1.37,6.781 0.793,7.359 0,7.359 h -15.006 c -0.793,0 -1.37,-0.578 -1.37,-1.371 V 1.371 c 0,-0.794 0.577,-1.371 1.37,-1.371 z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074212,13.327587)"" clip-path=""url(#clipPath4)""></path>
+  <path id=""path7"" d=""M 0,0 H -1.052 C -4.09,0 -6.855,1.245 -8.861,3.251 h -0.017 c -2.004,2.005 -3.25,4.775 -3.25,7.825 v 46.045 c 0,3.031 1.244,5.796 3.25,7.81 l 0.017,0.016 c 2.014,2.006 4.778,3.251 7.809,3.251 H 0 c 0.781,0 1.417,-0.637 1.417,-1.418 V 61.111 C 1.417,60.33 0.781,59.694 0,59.694 h -1.052 c -0.714,0 -1.355,-0.285 -1.813,-0.743 l -0.017,-0.016 c -0.457,-0.458 -0.742,-1.1 -0.742,-1.814 V 11.076 c 0,-0.703 0.291,-1.345 0.759,-1.813 L -2.873,9.255 C -2.406,8.791 -1.761,8.504 -1.052,8.504 H 0 c 0.781,0 1.417,-0.637 1.417,-1.417 V 1.417 C 1.417,0.637 0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,4.278489,24.058876)"" clip-path=""url(#clipPath8)""></path>
+  <path id=""path9"" d=""M 0,0 H 1.052 C 4.09,0 6.855,1.245 8.861,3.251 h 0.017 c 2.005,2.005 3.25,4.775 3.25,7.825 v 46.045 c 0,3.031 -1.244,5.796 -3.25,7.81 L 8.861,64.947 C 6.847,66.953 4.083,68.198 1.052,68.198 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.418 v -5.669 c 0,-0.781 0.636,-1.417 1.417,-1.417 h 1.052 c 0.714,0 1.356,-0.285 1.813,-0.743 l 0.017,-0.016 c 0.458,-0.458 0.742,-1.1 0.742,-1.814 V 11.076 C 3.624,10.373 3.333,9.731 2.865,9.263 L 2.874,9.255 C 2.406,8.791 1.761,8.504 1.052,8.504 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.417 V 1.417 C -1.417,0.637 -0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,76.585197,24.058876)"" clip-path=""url(#clipPath10)""></path>
+  <path id=""path11"" d=""m 0,0 v -7.056 l 7.295,7.204 c 0.676,0.778 1.672,1.269 2.783,1.269 h 6.61 c 0.78,0 1.418,-0.638 1.418,-1.417 v -5.669 c 0,-0.779 -0.639,-1.418 -1.418,-1.418 h -3.693 l -14.06,-13.75 c -2.92,-2.797 -7.492,-1.162 -7.492,3.787 V 0 c 0,0.78 0.638,1.417 1.417,1.417 h 5.722 C -0.638,1.417 0,0.779 0,0 m 23.097,-7.087 h 1.052 c 6.09,0 11.076,4.987 11.076,11.077 v 46.045 c 0,6.077 -4.998,11.076 -11.076,11.076 h -1.052 c -0.78,0 -1.417,-0.637 -1.417,-1.417 v -5.67 c 0,-0.78 0.637,-1.417 1.417,-1.417 h 1.052 c 1.429,0 2.572,-1.143 2.572,-2.572 V 3.99 c 0,-1.418 -1.157,-2.573 -2.572,-2.573 H 23.097 C 22.317,1.417 21.68,0.781 21.68,0 v -5.669 c 0,-0.781 0.637,-1.418 1.417,-1.418 M -7.14,61.111 h 23.829 c 0.779,0 1.417,-0.638 1.417,-1.418 v -5.669 c 0,-0.779 -0.638,-1.417 -1.417,-1.417 H -7.14 c -0.779,0 -1.417,0.638 -1.417,1.417 v 5.669 c 0,0.78 0.638,1.418 1.417,1.418 m -6.408,-68.198 h -1.051 c -6.09,0 -11.077,4.987 -11.077,11.077 v 46.045 c 0,6.077 4.999,11.076 11.077,11.076 h 1.051 c 0.781,0 1.418,-0.637 1.418,-1.417 v -5.67 c 0,-0.78 -0.637,-1.417 -1.418,-1.417 h -1.051 c -1.43,0 -2.573,-1.143 -2.573,-2.572 V 3.99 c 0,-1.418 1.158,-2.573 2.573,-2.573 h 1.051 c 0.781,0 1.418,-0.636 1.418,-1.417 v -5.669 c 0,-0.781 -0.637,-1.418 -1.418,-1.418"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,102.15771,21.558598)"" clip-path=""url(#clipPath12)""></path>
+  <path id=""path13"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,7.7661861)"" clip-path=""url(#clipPath14)""></path>
+  <path id=""path15"" d=""M 0,0 C 0.791,0 1.37,0.579 1.37,1.37 V 5.989 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.37 V 1.37 c 0,-0.791 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,18.888494)"" clip-path=""url(#clipPath16)""></path>
+  <path id=""path17"" d=""m 0,0 c 0.793,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.793 -0.578,1.37 -1.371,1.37 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.37 V 1.371 C -16.376,0.577 -15.799,0 -15.005,0 Z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48939,13.327482)"" clip-path=""url(#clipPath18)""></path>
+</svg>
+</h5>
+                          </div>
+                          <div class=""hint-body"">
+                            <div class=""hint-msg"">O processo foi encaminhado para análise do(a) ministro(a) responsável pelo caso.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">05/05/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Decorrido o prazo</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">em 22/04/08 sem que fossem prestadas as informações solicitadas por meio do Ofício nº 1866/R ao Presidente da Assembléia Legislativa do Estado do Piauí</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">05/05/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Juntada de AR</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">AR RC nº 33455091 5 BR recebido pelo Presidente da Assembléia Legislativa do Estado do Piauí em 17/04/08</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">11/04/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Reiterado pedido de informações</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">Ofício nº 1866/R, à Assembléia Legislativa do Estado do Piauí, reiterando o Ofício nº 1236/R, de 25/03/08</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">09/04/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Despacho</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">""Tendo em vista a certidão de fls. 109, reitere-se o ofício de fls. 106.""</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">08/04/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Conclusos ao(à) Relator(a)</h5>
+                  
+                  <div class=""dropdown"">
+                    <button class=""btn btn__entender entender__ico dropdown-toggle"" type=""button"" data-bs-toggle=""dropdown"" aria-expanded=""false"">
+                      <svg width=""100%"" height=""100%"" viewBox=""0 0 19.187618 25.857599"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <g transform=""translate(-48.947917,-43.65625)"">
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 64.264778,64.896543 c 2.795547,0 3.870758,-1.319576 3.870758,-3.997828 V 47.673627 c 0,-2.658702 -1.075211,-3.988053 -3.870758,-3.988053 -0.342112,0 -0.478957,0.136845 -0.478957,0.488732 v 1.456421 c 0,0.342113 0.136845,0.478958 0.478957,0.478958 0.928591,0.01955 1.202281,0.586478 1.202281,1.583491 v 13.205539 c 0,0.977464 -0.27369,1.544394 -1.202281,1.563943 -0.342112,0.01955 -0.478957,0.136845 -0.478957,0.478957 v 1.475971 c 0,0.342112 0.136845,0.478957 0.478957,0.478957 z"" id=""path1""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 52.818674,64.896543 c 0.342113,0 0.478957,-0.136845 0.478957,-0.478957 v -1.475971 c 0,-0.342112 -0.136844,-0.459408 -0.478957,-0.478957 -0.928591,-0.01955 -1.20228,-0.586479 -1.20228,-1.563943 V 47.693176 c 0,-0.997013 0.273689,-1.563942 1.20228,-1.583491 0.342113,0 0.478957,-0.136845 0.478957,-0.478958 v -1.456421 c 0,-0.351887 -0.136844,-0.488732 -0.478957,-0.488732 -2.805322,0 -3.870757,1.329351 -3.870757,3.988053 v 13.225088 c 0,2.678252 1.065435,3.997828 3.870757,3.997828 z"" id=""path2""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 54.695405,43.65625 h 7.692642 c 0.195493,0 0.351887,0.166169 0.351887,0.361662 v 1.681238 c 0,0.195493 -0.156394,0.351887 -0.351887,0.351887 h -7.692642 c -0.195493,0 -0.361662,-0.156394 -0.361662,-0.351887 v -1.681238 c 0,-0.195493 0.166169,-0.361662 0.361662,-0.361662 z"" id=""path3""></path>
+    <path style=""fill:#f9b514;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""M 56.32777,62.53108 H 55.975883 55.057067 54.70518 c -0.195493,0 -0.351887,0.156395 -0.351887,0.351887 v 0.08797 1.534619 3.851208 c 0,0.293239 0.117295,0.586478 0.342112,0.811295 0.449634,0.459408 1.182732,0.459408 1.632365,0.0098 l 4.369265,-4.320391 h 0.752647 -0.27369 0.0098 1.016562 0.195493 c 0.185718,0 0.342112,-0.156395 0.342112,-0.351887 V 62.88299 c 0,-0.195492 -0.156394,-0.351887 -0.342112,-0.351887 h -0.195493 -0.987239 -0.0391 0.27369 -1.22183 c -0.351887,0 -0.664676,0.156395 -0.879718,0.400761 l -2.668477,2.648927 v -1.07521 -1.534619 -0.08797 c 0,-0.195492 -0.156394,-0.351887 -0.351887,-0.351887 z"" id=""path4""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,50.342104 c 0.254141,0 0.439859,-0.175944 0.439859,-0.430084 v -1.446647 c 0,-0.254141 -0.185718,-0.449633 -0.439859,-0.449633 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.195492 -0.430084,0.449633 v 1.446647 c 0,0.25414 0.185718,0.430084 0.430084,0.430084 1.573717,0 3.147434,0 4.730926,0 z"" id=""path5""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,60.566378 c 0.254141,0 0.439859,-0.185719 0.439859,-0.439859 v -1.456422 c 0,-0.25414 -0.185718,-0.430084 -0.439859,-0.430084 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.175944 -0.430084,0.430084 v 1.456422 c 0,0.25414 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path6""></path>
+    <path style=""fill:#0a7bab;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"" d=""m 60.902302,55.454241 c 0.254141,0 0.439859,-0.185718 0.439859,-0.439859 v -1.456421 c 0,-0.244366 -0.185718,-0.430085 -0.439859,-0.430085 -1.583492,0 -3.157209,0 -4.730926,0 -0.244366,0 -0.430084,0.185719 -0.430084,0.430085 v 1.456421 c 0,0.254141 0.185718,0.439859 0.430084,0.439859 1.573717,0 3.147434,0 4.730926,0 z"" id=""path7""></path>
+  </g>
+</svg>
+                    </button>
+                    <div class=""dropdown-menu hint-menu p-0"">
+                      <div class=""hint-dialog"">
+                        <div class=""hint-content"">
+                          <div class=""hint-header"">
+                            <h5 class=""hint-title""><svg width=""100%"" height=""100%"" viewBox=""0 0 114.5843 29.721491"" xmlns=""http://www.w3.org/2000/svg"" xmlns:svg=""http://www.w3.org/2000/svg"">
+  <defs id=""defs1"">
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath2"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26771,-315.72031)"" id=""path2""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath4"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-366.26661,-296.2766)"" id=""path4""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath6"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-464.63051,-260.51071)"" id=""path6""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath8"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-270.46771,-265.8572)"" id=""path8""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath10"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-475.43161,-265.8572)"" id=""path10""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath12"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-547.92061,-272.94461)"" id=""path12""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath14"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-312.04121)"" id=""path14""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath16"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.20051,-280.5134)"" id=""path16""></path>
+    </clipPath>
+    <clipPath clipPathUnits=""userSpaceOnUse"" id=""clipPath18"">
+      <path d=""M 0,595.276 H 841.89 V 0 H 0 Z"" transform=""translate(-560.19941,-296.2769)"" id=""path18""></path>
+    </clipPath>
+  </defs>
+  <path id=""path1"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z m -19.941,1.37 v 4.613 c 0,0.797 -0.573,1.376 -1.37,1.376 H -41.8 c -0.791,0 -1.37,-0.579 -1.37,-1.376 V 1.37 C -43.17,0.573 -42.591,0 -41.8,0 h 5.702 v -37.517 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.344 c 0.797,0 1.376,0.579 1.376,1.369 V 0 h 5.697 c 0.797,0 1.37,0.573 1.37,1.37 m -49.512,5.988 h 1.549 3.984 0.083 c 0.281,0 0.542,-0.09 0.756,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.586,1.303 1.303,1.303 h 5.617 c 0.716,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.516,-1.229 -1.171,-1.296 h -0.002 l -0.03,-0.003 h -0.002 l -0.031,-0.002 h -0.001 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.034,0.001 v 0 l -0.033,10e-4 h -10e-4 l -0.032,0.002 h -0.001 l -0.032,0.003 h -0.002 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.304,-1.303 h -5.616 c -0.717,0 -1.304,0.587 -1.304,1.303 V 6.055 c 0,0.689 0.541,1.256 1.218,1.301 l 0.002,0.002 z M 47.453,-15.658 c 0,-12.838 -1.014,-16.374 -4.401,-16.374 H 41.607 V 0.504 h 1.445 c 3.387,0 4.401,-3.536 4.401,-16.162 m 9.09,0 C 56.543,1.588 51.78,7.359 44.06,7.359 H 33.887 c -0.79,0 -1.369,-0.579 -1.369,-1.376 v -43.5 c 0,-0.79 0.579,-1.369 1.369,-1.369 H 44.06 c 7.72,0 12.483,5.989 12.483,23.228 M 6.234,7.358 h 1.55 3.983 0.084 c 0.281,0 0.541,-0.09 0.755,-0.242 0.412,-0.237 0.762,-0.625 0.912,-1.061 l 7.215,-21.002 V 6.055 c 0,0.717 0.587,1.303 1.303,1.303 h 5.617 c 0.717,0 1.303,-0.586 1.303,-1.303 v -43.638 c 0,-0.672 -0.515,-1.229 -1.17,-1.296 h -0.003 l -0.03,-0.003 h -0.001 l -0.032,-0.002 h -10e-4 l -0.033,-10e-4 -0.033,-0.001 h -5.617 l -0.033,0.001 v 0 l -0.034,10e-4 v 0 l -0.033,0.002 h -0.001 l -0.031,0.003 h -0.003 c -0.678,0.067 -1.385,0.625 -1.616,1.296 l -7.131,20.76 v -20.76 c 0,-0.716 -0.587,-1.303 -1.303,-1.303 H 6.234 c -0.717,0 -1.303,0.587 -1.303,1.303 V 6.055 c 0,0.689 0.54,1.256 1.217,1.301 L 6.15,7.358 Z m 62.96,-7.36 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 H 61.475 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 H 76.48 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.288 c 0.79,0 1.369,0.579 1.369,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.369,1.37 h -7.288 z m 27.151,-6.709 c 0,-5.772 -0.865,-7.577 -3.748,-7.577 H 90.505 V 0.865 h 1.731 c 3.244,0 4.109,-1.88 4.109,-7.576 m 11.256,-30.874 c 0,0.722 -0.361,0.934 -0.865,1.226 -0.504,0.286 -0.722,0.648 -0.94,1.438 l -2.814,10.391 c -0.934,3.537 -1.731,4.763 -4.327,5.628 4.762,1.37 6.78,5.99 6.78,12.988 0,8.292 -2.958,13.273 -11.039,13.273 H 82.785 c -0.797,0 -1.37,-0.579 -1.37,-1.376 v -43.5 c 0,-0.79 0.573,-1.369 1.37,-1.369 h 6.35 c 0.791,0 1.37,0.579 1.37,1.369 v 17.028 h 1.152 c 1.008,0 1.662,-0.361 1.874,-1.445 l 2.528,-11.324 c 0.94,-4.259 1.512,-5.628 4.974,-5.628 h 5.267 c 0.797,0 1.301,0.504 1.301,1.301 M -82.975,-0.002 h 7.286 c 0.794,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.371 v -43.501 c 0,-0.793 0.577,-1.37 1.371,-1.37 h 15.005 c 0.794,0 1.371,0.577 1.371,1.37 v 4.617 c 0,0.794 -0.577,1.371 -1.371,1.371 h -7.286 v 12.083 h 7.287 c 0.791,0 1.37,0.579 1.37,1.37 v 4.619 c 0,0.791 -0.579,1.37 -1.37,1.37 h -7.287 z M 0,-38.886 c 0.791,0 1.37,0.579 1.37,1.369 v 4.62 c 0,0.79 -0.579,1.37 -1.37,1.37 h -15.004 c -0.797,0 -1.376,-0.58 -1.376,-1.37 v -4.62 c 0,-0.79 0.579,-1.369 1.376,-1.369 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074599,6.4682805)"" clip-path=""url(#clipPath2)""></path>
+  <path id=""path3"" d=""M 0,0 C 0.793,0 1.37,0.577 1.37,1.371 V 5.988 C 1.37,6.781 0.793,7.359 0,7.359 h -15.006 c -0.793,0 -1.37,-0.578 -1.37,-1.371 V 1.371 c 0,-0.794 0.577,-1.371 1.37,-1.371 z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,38.074212,13.327587)"" clip-path=""url(#clipPath4)""></path>
+  <path id=""path7"" d=""M 0,0 H -1.052 C -4.09,0 -6.855,1.245 -8.861,3.251 h -0.017 c -2.004,2.005 -3.25,4.775 -3.25,7.825 v 46.045 c 0,3.031 1.244,5.796 3.25,7.81 l 0.017,0.016 c 2.014,2.006 4.778,3.251 7.809,3.251 H 0 c 0.781,0 1.417,-0.637 1.417,-1.418 V 61.111 C 1.417,60.33 0.781,59.694 0,59.694 h -1.052 c -0.714,0 -1.355,-0.285 -1.813,-0.743 l -0.017,-0.016 c -0.457,-0.458 -0.742,-1.1 -0.742,-1.814 V 11.076 c 0,-0.703 0.291,-1.345 0.759,-1.813 L -2.873,9.255 C -2.406,8.791 -1.761,8.504 -1.052,8.504 H 0 c 0.781,0 1.417,-0.637 1.417,-1.417 V 1.417 C 1.417,0.637 0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,4.278489,24.058876)"" clip-path=""url(#clipPath8)""></path>
+  <path id=""path9"" d=""M 0,0 H 1.052 C 4.09,0 6.855,1.245 8.861,3.251 h 0.017 c 2.005,2.005 3.25,4.775 3.25,7.825 v 46.045 c 0,3.031 -1.244,5.796 -3.25,7.81 L 8.861,64.947 C 6.847,66.953 4.083,68.198 1.052,68.198 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.418 v -5.669 c 0,-0.781 0.636,-1.417 1.417,-1.417 h 1.052 c 0.714,0 1.356,-0.285 1.813,-0.743 l 0.017,-0.016 c 0.458,-0.458 0.742,-1.1 0.742,-1.814 V 11.076 C 3.624,10.373 3.333,9.731 2.865,9.263 L 2.874,9.255 C 2.406,8.791 1.761,8.504 1.052,8.504 H 0 c -0.781,0 -1.417,-0.637 -1.417,-1.417 V 1.417 C -1.417,0.637 -0.781,0 0,0"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,76.585197,24.058876)"" clip-path=""url(#clipPath10)""></path>
+  <path id=""path11"" d=""m 0,0 v -7.056 l 7.295,7.204 c 0.676,0.778 1.672,1.269 2.783,1.269 h 6.61 c 0.78,0 1.418,-0.638 1.418,-1.417 v -5.669 c 0,-0.779 -0.639,-1.418 -1.418,-1.418 h -3.693 l -14.06,-13.75 c -2.92,-2.797 -7.492,-1.162 -7.492,3.787 V 0 c 0,0.78 0.638,1.417 1.417,1.417 h 5.722 C -0.638,1.417 0,0.779 0,0 m 23.097,-7.087 h 1.052 c 6.09,0 11.076,4.987 11.076,11.077 v 46.045 c 0,6.077 -4.998,11.076 -11.076,11.076 h -1.052 c -0.78,0 -1.417,-0.637 -1.417,-1.417 v -5.67 c 0,-0.78 0.637,-1.417 1.417,-1.417 h 1.052 c 1.429,0 2.572,-1.143 2.572,-2.572 V 3.99 c 0,-1.418 -1.157,-2.573 -2.572,-2.573 H 23.097 C 22.317,1.417 21.68,0.781 21.68,0 v -5.669 c 0,-0.781 0.637,-1.418 1.417,-1.418 M -7.14,61.111 h 23.829 c 0.779,0 1.417,-0.638 1.417,-1.418 v -5.669 c 0,-0.779 -0.638,-1.417 -1.417,-1.417 H -7.14 c -0.779,0 -1.417,0.638 -1.417,1.417 v 5.669 c 0,0.78 0.638,1.418 1.417,1.418 m -6.408,-68.198 h -1.051 c -6.09,0 -11.077,4.987 -11.077,11.077 v 46.045 c 0,6.077 4.999,11.076 11.077,11.076 h 1.051 c 0.781,0 1.418,-0.637 1.418,-1.417 v -5.67 c 0,-0.78 -0.637,-1.417 -1.418,-1.417 h -1.051 c -1.43,0 -2.573,-1.143 -2.573,-2.572 V 3.99 c 0,-1.418 1.158,-2.573 2.573,-2.573 h 1.051 c 0.781,0 1.418,-0.636 1.418,-1.417 v -5.669 c 0,-0.781 -0.637,-1.418 -1.418,-1.418"" style=""fill:#f6b319;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,102.15771,21.558598)"" clip-path=""url(#clipPath12)""></path>
+  <path id=""path13"" d=""M 0,0 C 0.791,0 1.37,0.573 1.37,1.37 V 5.983 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.376 V 1.37 c 0,-0.797 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,7.7661861)"" clip-path=""url(#clipPath14)""></path>
+  <path id=""path15"" d=""M 0,0 C 0.791,0 1.37,0.579 1.37,1.37 V 5.989 C 1.37,6.78 0.791,7.359 0,7.359 h -15.004 c -0.797,0 -1.376,-0.579 -1.376,-1.37 V 1.37 c 0,-0.791 0.579,-1.37 1.376,-1.37 z"" style=""fill:#0069ab;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48978,18.888494)"" clip-path=""url(#clipPath16)""></path>
+  <path id=""path17"" d=""m 0,0 c 0.793,0 1.371,0.577 1.371,1.371 v 4.617 c 0,0.793 -0.578,1.37 -1.371,1.37 h -15.005 c -0.794,0 -1.371,-0.577 -1.371,-1.37 V 1.371 C -16.376,0.577 -15.799,0 -15.005,0 Z"" style=""fill:#0f3a62;fill-opacity:1;fill-rule:evenodd;stroke:none"" transform=""matrix(0.35277776,0,0,-0.35277776,106.48939,13.327482)"" clip-path=""url(#clipPath18)""></path>
+</svg>
+</h5>
+                          </div>
+                          <div class=""hint-body"">
+                            <div class=""hint-msg"">O processo foi encaminhado para análise do(a) ministro(a) responsável pelo caso.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">08/04/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Decorrido o prazo</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">em 1°.04.2008 sem que fossem prestadas as informações solicitadas po rmeio do Ofício 1236/R à Assembléia Legislativa do Estado do Piauí.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">08/04/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Juntada de AR</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">RC 24315560 6 BR recebido pelo Presidente da Assembléia Legislativa do Estado do Piauí em 27/03/2008.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">25/03/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Pedido de informações</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""> Ofício nº 1236/R, à Assembléia Legislativa do Estado do Piauí </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">13/03/2008</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">Despacho</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">""Oficie-se à Augusta Assembléia do Estado do Piauí, para que informe se a norma objeto da presente ação direta encontra-se em vigor ou, então, se teria sofrido alteração substancial em seu conteúdo material.""</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">18/04/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">CONCLUSOS AO RELATOR</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">18/04/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">AUTOS DEVOLVIDOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">15/04/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">AUTOS REQUISITADOS PELA SECRETARIA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">AO DR. JOÃO EMÍLIO FALCÃO COSTA NETO</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">15/03/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">AUTOS EMPRESTADOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">JOÃO EMÍLIO FALCÃO COSTA NETO - Guia =  2363 / 2002 - </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">13/03/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">PUBLICACAO, DJ:</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">  DESPACHO DE 07/03/2002</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">08/03/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">JUNTADA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""> PG 17905 DO GOVERNADOR DO ESTADO DO PIAUÍ, REQUERENDO VISTA DOS AUTOS E JUNTADA DE PROCURAÇÃO.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">07/03/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">DESPACHO ORDINATORIO</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">NO PG:17905: JUNTE-SE. ANOTE-SE. DEFIRO, POR CINCO (5) DIAS, A VISTA ORA REQUERIDA. PUBLIQUE-SE.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">04/03/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">CONCLUSOS AO PRESIDENTE</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">27/02/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">PETICAO AVULSA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""> PG 17905 DO GOVERNADOR DO ESTADO DO PIAUÍ, REQUERENDO VISTA DOS AUTOS E JUNTADA DE PROCURAÇÃO. AO MINISTRO RELATOR.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">22/02/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">REMESSA DOS AUTOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">À COORDENADORIA DE CLASSIFICAÇÃO E DISTRIBUIÇÃO DE PROCESSOS</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">21/02/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">REMESSA DOS AUTOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">AO COMITÊ DE ASSUNTOS JUDICIÁRIOS</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">14/02/2002</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">RECEBIMENTO DOS AUTOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">DA PGR, OPINANDO PELA IMPROCEDÊNCIA DO PEDIDO DE DECLARAÇÃO DE INCONSTITUCIONALIDADE</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">01/06/1999</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">SUBSTITUICAO DO RELATOR - ART. 38 RI</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">MIN. CELSO DE MELLO</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">27/09/1995</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">VISTA AO PROCURADOR-GERAL DA REPUBLICA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">26/09/1995</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">RECEBIMENTO DOS AUTOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">DO AGU, COM PARECER.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">16/03/1993</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">VISTA AO ADVOGADO-GERAL DA UNIAO</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">10/03/1993</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">RECEBIMENTO DOS AUTOS</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">DA PGR, SEM PARECER</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">14/10/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">VISTA AO PROCURADOR-GERAL DA REPUBLICA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">13/10/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">VISTA AO ADV-GERAL E AO PROCURADOR-GERAL</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">13/10/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">DECORRIDO O PRAZO</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">INTERPOSICAO DE RECURSO</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">02/10/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">PUBLICADO ACORDAO, DJ:</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">23/09/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">DECISAO PUBLICADA, DJ:</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">17/09/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">LIMINAR JULGADA PELO PLENO - INDEFERIDA</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0"">
+                    <span class=""andamento-julgador badge bg-info "">TRIBUNAL PLENO</span>
+                  </div>
+                  <div class=""col-md-9 p-0 "">POR VOTAÇÃO UNÂNIME, O TRIBUNAL INDEFERIU A MEDIDA CAUTELAR DE SUSPENSÃO DO ART. 2º DA LEI ESTADUAL Nº 4.460, DE 18.03.92, DO ESTADO DO PIAUÍ. VOTOU O PRESIDENTE.</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">14/09/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">DESPACHO ORDINATORIO</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">APOS JULGTO LIMINAR, C/ ACORDAO, VISTA AGU/PGR</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">30/06/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">CONCLUSOS AO RELATOR</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">29/06/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">INFORMACOES RECEBIDAS, OFICIO NRO.:</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">PG 16589 (AL-P-293) DA ASS.LEG/PI</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">12/06/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">INFORMACOES RECEBIDAS, OFICIO NRO.:</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">PG 15225 (OF.111.05/292) DO GOV/PI</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">27/05/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">EXPEDIDO OFICIO/TELEX N.</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">563/R AO GOV/PI, SOLIC.INFORMACOES</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">27/05/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">EXPEDIDO OFICIO/TELEX N.</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">562/R A ASS.LEG/PI, SOLIC.INFORMACOES</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">22/05/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">PUBLICADO DESPACHO NO DJ</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0""></div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">19/05/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">PEDIDO DE INFORMACOES</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">APOS SERA APRECIADA LIMINAR</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <div class=""andamento-item"">
+          <div class=""andamento-inner"">
+            <div class=""message-head clearfix"">
+              <div class=""andamento-detalhe"">
+                <div class=""col-md-3 p-l-0"">
+                  <div class=""andamento-data "">13/05/1992</div>
+                </div>
+                <div class=""col-md-5 p-l-0 d-flex align-items-center gap-4"">
+                  <h5 class=""andamento-nome "">DISTRIBUIDO</h5>
+                  
+                </div>
+                <div class=""col-md-4 andamento-docs"">
+                  
+                </div>
+
+                
+                  <div class=""col-md-3 p-0""></div>
+                  <div class=""col-md-9 p-0"">MIN. CARLOS VELLOSO</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+  </ul>
+</div></div>
+                                <div id=""decisoes"" class=""tab-pane""></div>
+                                <div id=""sessao-virtual"" class=""tab-pane"">
+<input type=""hidden"" id=""env"" value=""p"">
+<div class=""col-12"">
+    <div class=""col-12"">
+        <script>                     
+            $.ajax({
+                type    : ""GET"",
+                dataType: 'json',                
+                url     : ""https://sistemas.stf.jus.br/repgeral/votacao?oi=1538040"",
+                cache   :  true,
+                crossDomain: true,
+                success : function(data){                  
+                    var html = """";                        
+                    if (data.length == 0){
+                        html += '<div id=""semJulgamento"" class=""julgamento-item"">' +
+                                '   <div class=""btn btn-lista"">' +
+                                '       <span class=""listasSemJulgamento"" id=""listasSemJulgamento""></span>' +
+                                '       <span class=""processo-detalhes-bold"" id=""cabecalhoVotacaolistasSemJulgamento"">Sem sessão virtual</span><br>' +
+                                '   </div>' +
+                                '</div>';
+                    } else {
+                        for (i in data){
+                            html += '<div id=""1020-'+ i +'"" class=""julgamento-item"">' +
+                                    '   <button onclick=""carregaSessaoVirtual('+ data[i].objetoIncidente.id +')"" type=""button"" name=""btnmaismenos'+ i +'"" class=""btn btn-lista"" data-bs-toggle=""collapse"" data-bs-target=""#listasJulgamento'+data[i].objetoIncidente.id+'"" aria-expanded=""false"" aria-controls=""listasJulgamento'+data[i].objetoIncidente.id+' semvoto spanmais'+ i +' spanmenos'+ i +'"" >' +
+                                    '       <span class=""tooltip-lista font-grey-dark m-r-8"" ><i class=""fas fa-gavel""></i></span>' +
+                                    '       <span class=""processo-detalhes-bold"" id=""cabecalhoVotacao'+ i +'"">' +           
+                                                data[i].objetoIncidente.identificacaoCompleta +
+                                    '       </span>'+                                    
+                                    '   </button>'+
+                                    '   <div id=""listasJulgamento'+data[i].objetoIncidente.id+'""></div>'+
+                                    '</div>';
+                        }
+                        
+                    }
+                    document.getElementById(""votacoes"").innerHTML += html;
+                }
+            })
+        </script>           
+        <div id=""votacoes""></div>        
+        <script src=""listasJulgamento.js""></script>        
+    </div>
+</div></div>
+                                <div id=""deslocamentos"" class=""tab-pane""></div>
+                                <div id=""peticoes"" class=""tab-pane"">
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">79927/2008</span>
+                <span class=""processo-detalhes"">Peticionado em 04/06/2008</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 04/06/2008 19:28:45 por SEÇÃO DE PROCESSOS DO CONTROLE CONCENTRADO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">73977/2008</span>
+                <span class=""processo-detalhes"">Peticionado em 26/05/2008</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 26/05/2008 17:15:40 por SEÇÃO DE PROCESSOS DO CONTROLE CONCENTRADO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">17905/2002</span>
+                <span class=""processo-detalhes"">Peticionado em 21/02/2002</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 25/07/2004 17:37:09 por COORDENADORIA DE PROCESSAMENTO DO PLENÁRIO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">31907/1995</span>
+                <span class=""processo-detalhes"">Peticionado em 26/09/1995</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 27/09/1995 00:00:00 por DIVISAO DE PROCESSOS ORIGINARIOS</span>
+            </div>
+        </div>
+    </div>
+                                <div id=""recursos"" class=""tab-pane""></div>
+                                <div id=""pautas"" class=""tab-pane"">
+<div class=""processo-andamentos m-t-8"">
+    
+</div>
+</div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    ","<div id=""informacoes-completas"">
+    <div class=""processo-informacoes-cabecalho"">
+        <div class=""col-md-12"">
+            
+        </div>
+        <div class=""informacoes__assunto col-12 m-b-8 d-flex"">
+            <div class=""col-md-2 processo-detalhes-bold p-l-0"">
+                Assunto:
+            </div>
+            <div class=""col-md-10 processo-detalhes"">
+                
+                    <ul>
+                        
+                            <li>DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO | Organização Político-administrativa / Administração Pública | Criação / Extinção / Reestruturação de Orgãos ou Cargos Públicos</li>
+                        
+                            <li>DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO | Servidor Público Civil | Sistema Remuneratório e Benefícios</li>
+                        
+                    </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class=""processo-informacoes"">
+        <div class=""col-md-12 col-lg-6 processo-informacao__col"">
+            <div class=""col-12 processo-detalhes-bold m-t-8"">
+                Procedência
+            </div>
+            <div class=""col-12 m-t-8 m-b-8 d-flex flex-column"">
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Data de Protocolo:
+                </div>
+                <div class=""col-md-5 processo-detalhes-bold m-l-0"">
+                    13/05/1992
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Órgão de Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    SUPREMO TRIBUNAL FEDERAL
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    PIAUÍ
+                </div>
+                <div class=""col-md-7 processo-detalhes-bold p-l-0"">
+                    Número de Origem:
+                </div>
+                <div class=""col-md-5 processo-detalhes"">
+                    7351
+                </div>
+            </div>
+        </div>
+        <div class=""col-md-12 col-lg-6 processo-informacao__col m-t-8 m-b-8"" style=""display: flex;justify-content: space-between;"">
+            <div class=""col-md-3 processo-quadro"">
+                <div class=""numero"">1</div>
+                <div class=""rotulo"">Volumes</div>
+            </div>
+            <div class=""col-md-3 processo-quadro"">
+                <div class=""numero"">41</div>
+                <div class=""rotulo"">Folhas</div>
+            </div>
+            
+                <div class=""col-md-3 processo-quadro"">
+                    <div class=""numero"">0</div>
+                    <div class=""rotulo"">Apensos</div>
+                </div>
+            
+        </div>
+    </div>
+</div>","<div id=""todas-partes"">
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">REQTE.(S)</div>
+    <div class=""nome-parte"">ASSOCIAÇÃO DOS MAGISTRADOS BRASILEIROS - AMB</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">ADV.(A/S)</div>
+    <div class=""nome-parte"">HUMBERTO GRACA NETO</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">INTDO.(A/S)</div>
+    <div class=""nome-parte"">GOVERNADOR DO ESTADO DO PIAUÍ</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">ADV.(A/S)</div>
+    <div class=""nome-parte"">PGE-PI - JOÃO EMILIO FALCÃO COSTA NETO</div>
+    
+    </div>  
+   
+        <div class=""processo-partes lista-dados m-l-16 p-t-0"">
+    
+    <div class=""detalhe-parte"">INTDO.(A/S)</div>
+    <div class=""nome-parte"">ASSEMBLEIA LEGISLATIVA DO ESTADO DO PIAUÍ</div>
+    
+    </div>  
+  
+</div>",,"
+<input type=""hidden"" id=""env"" value=""p"">
+<div class=""col-12"">
+    <div class=""col-12"">
+        <script>                     
+            $.ajax({
+                type    : ""GET"",
+                dataType: 'json',                
+                url     : ""https://sistemas.stf.jus.br/repgeral/votacao?oi=1538040"",
+                cache   :  true,
+                crossDomain: true,
+                success : function(data){                  
+                    var html = """";                        
+                    if (data.length == 0){
+                        html += '<div id=""semJulgamento"" class=""julgamento-item"">' +
+                                '   <div class=""btn btn-lista"">' +
+                                '       <span class=""listasSemJulgamento"" id=""listasSemJulgamento""></span>' +
+                                '       <span class=""processo-detalhes-bold"" id=""cabecalhoVotacaolistasSemJulgamento"">Sem sessão virtual</span><br>' +
+                                '   </div>' +
+                                '</div>';
+                    } else {
+                        for (i in data){
+                            html += '<div id=""1020-'+ i +'"" class=""julgamento-item"">' +
+                                    '   <button onclick=""carregaSessaoVirtual('+ data[i].objetoIncidente.id +')"" type=""button"" name=""btnmaismenos'+ i +'"" class=""btn btn-lista"" data-bs-toggle=""collapse"" data-bs-target=""#listasJulgamento'+data[i].objetoIncidente.id+'"" aria-expanded=""false"" aria-controls=""listasJulgamento'+data[i].objetoIncidente.id+' semvoto spanmais'+ i +' spanmenos'+ i +'"" >' +
+                                    '       <span class=""tooltip-lista font-grey-dark m-r-8"" ><i class=""fas fa-gavel""></i></span>' +
+                                    '       <span class=""processo-detalhes-bold"" id=""cabecalhoVotacao'+ i +'"">' +           
+                                                data[i].objetoIncidente.identificacaoCompleta +
+                                    '       </span>'+                                    
+                                    '   </button>'+
+                                    '   <div id=""listasJulgamento'+data[i].objetoIncidente.id+'""></div>'+
+                                    '</div>';
+                        }
+                        
+                    }
+                    document.getElementById(""votacoes"").innerHTML += html;
+                }
+            })
+        </script>           
+        <div id=""votacoes""></div>        
+        <script src=""listasJulgamento.js""></script>        
+    </div>
+</div>",,"
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">79927/2008</span>
+                <span class=""processo-detalhes"">Peticionado em 04/06/2008</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 04/06/2008 19:28:45 por SEÇÃO DE PROCESSOS DO CONTROLE CONCENTRADO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">73977/2008</span>
+                <span class=""processo-detalhes"">Peticionado em 26/05/2008</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 26/05/2008 17:15:40 por SEÇÃO DE PROCESSOS DO CONTROLE CONCENTRADO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">17905/2002</span>
+                <span class=""processo-detalhes"">Peticionado em 21/02/2002</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 25/07/2004 17:37:09 por COORDENADORIA DE PROCESSAMENTO DO PLENÁRIO</span>
+            </div>
+        </div>
+    
+        <div class=""col-md-12 lista-dados"">
+            <div class=""col-6"">
+                <span class=""processo-detalhes-bold"">31907/1995</span>
+                <span class=""processo-detalhes"">Peticionado em 26/09/1995</span>
+            </div>
+            <div class=""col-6 d-flex justify-content-end"">
+                <span class=""processo-detalhes"">Recebido em 27/09/1995 00:00:00 por DIVISAO DE PROCESSOS ORIGINARIOS</span>
+            </div>
+        </div>
+    ",,"
+<div class=""processo-andamentos m-t-8"">
+    
+</div>
+"
