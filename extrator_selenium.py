@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Este programa realiza buscas na página de andamentos processuais do STF.
 
 import dsl
@@ -5,6 +6,7 @@ import pandas as pd
 import logging
 import os
 from datetime import datetime
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -25,19 +27,39 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-lista = []
-batch_size = 100  # Gravar a cada 100 processos
-batch_count = 0
+def arquivo_existe(arquivo):
+    """Verifica se o arquivo existe e não está vazio"""
+    return os.path.exists(arquivo) and os.path.getsize(arquivo) > 0
 
+# Cria o DataFrame inicial vazio
+df = pd.DataFrame()
+
+# Garante que o diretório existe
+os.makedirs('dados', exist_ok=True)
 
 classe = 'ADPF'
-num_inicial = 1
+num_inicial = 28
 num_final = 2000
 lista_dados = []
 driver = dsl.driver
+request_count = 0  # Contador de requisições (não precisa ser global)
 
+
+# Define os nomes dos arquivos finais
+csv_file = f'dados/Dados_processuais_{classe}_{num_inicial}a{num_final}.csv'
+xlsx_file = f'dados/Dados_processuais_{classe}_{num_inicial}a{num_final}.xlsx'
+
+# Cria arquivos vazios com cabeçalhos se não existirem
+if not arquivo_existe(csv_file):
+    df.to_csv(csv_file, index=False)
+if not arquivo_existe(xlsx_file):
+    df.to_excel(xlsx_file, index=False)
+    
+    
 # for item in lista_processos:
 for processo in range(num_final - num_inicial + 1):
+    processo_num = processo + num_inicial
+    
     
     
     url = ('https://portal.stf.jus.br/processos/listarProcessos.asp?classe=' + 
@@ -47,8 +69,36 @@ for processo in range(num_final - num_inicial + 1):
            )
     
     print (classe + str (processo + num_inicial))
+    
+    request_count += 1
+    
+    # Pausa de 1 minuto a cada 25 requisi��eses
+    if request_count % 25 == 0:
+        logger.info(f"Realizadas 25 requisi��es - pausa de 1 minuto")
+        time.sleep(60)
         
-    page = dsl.webdriver_get(url)
+    max_retries = 3
+    retry_count = 0
+    success = False
+    
+    while not success and retry_count < max_retries:
+        try:
+            page = dsl.webdriver_get(url)
+            
+            # Verifica se a página contém erro 403
+            if '403 Forbidden' in driver.page_source:
+                raise Exception('403 Forbidden - Acesso negado')
+                
+            success = True
+            
+        except Exception as e:
+            retry_count += 1
+            if '403' in str(e) and retry_count < max_retries:
+                logger.warning(f"Erro 403 - Tentativa {retry_count} de {max_retries} - Aguardando 30 segundos")
+                time.sleep(30)
+            else:
+                logger.error(f"Falha ao acessar processo {classe}{processo + num_inicial}: {str(e)}")
+                raise
     
     html_total = dsl.xpath_get('//*[@id="conteudo"]')
     
@@ -236,42 +286,23 @@ for processo in range(num_final - num_inicial + 1):
 
 
 # Acrescenta na lista os dados extraídos de cada processo
-        lista.append(dados_a_gravar)
+        # Cria DataFrame com os dados do processo atual
+        current_df = pd.DataFrame([dados_a_gravar], columns=colunas)
         
-        # Gravação parcial a cada 100 processos
-        if len(lista) % batch_size == 0 and len(lista) > 0:
-            try:
-                batch_count += 1
-                partial_df = pd.DataFrame(lista, columns=colunas)
-                
-                # Garante que o diretório existe
-                os.makedirs('dados', exist_ok=True)
-                
-                # Nome dos arquivos parciais
-                partial_csv = f'dados/Dados_parciais_{classe}_lote{batch_count}.csv'
-                partial_xlsx = f'dados/Dados_parciais_{classe}_lote{batch_count}.xlsx'
-                
-                # Grava ambos formatos
-                partial_df.to_csv(partial_csv, index=False)
-                partial_df.to_excel(partial_xlsx, index=False)
-                
-                logger.info(f"Lote {batch_count} gravado: {len(lista)} processos em {partial_csv} e {partial_xlsx}")
-                
-                # Limpa a lista para o próximo lote
-                lista = []
-                
-            except Exception as e:
-                logger.error(f"Erro ao gravar lote {batch_count}: {str(e)}")
-                # Mantém os dados na lista para tentar novamente
+        # Grava linha nos arquivos finais
+        try:
+            # Append no CSV
+            current_df.to_csv(csv_file, mode='a', header=False, index=False)
+            # Append no Excel (precisa reescrever todo o arquivo)
+            existing_df = pd.read_excel(xlsx_file)
+            updated_df = pd.concat([existing_df, current_df])
+            updated_df.to_excel(xlsx_file, index=False)
+            
+            # Log do progresso
+            logger.info(f"Processo {processo + num_inicial} gravado - {classe}{processo + num_inicial}")
+            
+        except Exception as e:
+            logger.error(f"Erro ao gravar processo {processo + num_inicial}: {str(e)}")
     
-# Define o nome das colunas a gravar. 
-# As colunas devem corresponder aos nomes das variáveis em dados_a_gravar
-
-
-df = pd.DataFrame(lista, columns = colunas)
-# Garante que o diretório dados existe
-import os
-os.makedirs('dados', exist_ok=True)
-
-df.to_csv('dados/Dados_processuais' + classe + str(num_inicial) + 'a'+ str(num_final) + '.csv', index=False)
-df.to_excel('dados/Dados_processuais' + classe + str(num_inicial) + 'a'+ str(num_final) + '.xlsx', index=False)
+# Fecha os arquivos e finaliza
+logger.info(f"Extração concluída - {classe} {num_inicial} a {num_final}")
