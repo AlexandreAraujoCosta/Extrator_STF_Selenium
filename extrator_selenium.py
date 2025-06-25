@@ -1,15 +1,38 @@
 # Este programa realiza buscas na página de andamentos processuais do STF.
 
-# Para que o programa funcione, utilize um módulo dsl atualizado
 import dsl
 import pandas as pd
+import logging
+import os
+from datetime import datetime
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import (NoSuchElementException,
+                                      TimeoutException,
+                                      WebDriverException)
+
+# Configurações globais
+TIMEOUT = 15
+MAX_RETRIES = 3
+RETRY_DELAY = 2  # segundos
+
+# Configuração de logging
+logging.basicConfig(
+    filename='extrator_errors.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 lista = []
+batch_size = 100  # Gravar a cada 100 processos
+batch_count = 0
 
 
 classe = 'ADPF'
-num_inicial = 230
-num_final = 250
+num_inicial = 1
+num_final = 2000
 lista_dados = []
 driver = dsl.driver
 
@@ -29,7 +52,7 @@ for processo in range(num_final - num_inicial + 1):
     
     html_total = dsl.xpath_get('//*[@id="conteudo"]')
     
-    if 'Processo n�o encontrado' not in html_total:
+    if 'Processo não encontrado' not in html_total:
         
     
         incidente = dsl.id_get('incidente').get_attribute('value')
@@ -51,11 +74,17 @@ for processo in range(num_final - num_inicial + 1):
         else:
             liminar = 'NA'
         
-        origem = dsl.xpath_get('//*[@id="descricao-procedencia"]')
-        origem = dsl.clext(origem,'>','<')
-        
-        relator = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[3]')
-        
+        try:
+            origem = dsl.xpath_get('//*[@id="descricao-procedencia"]')
+            origem = dsl.clext(origem,'>','<') if origem else 'NA'
+        except Exception:
+            origem = 'NA'
+            
+        try:
+            relator = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[3]')
+        except Exception:
+            relator = 'NA'
+            
         partes_tipo = dsl.class_get_list(driver, 'detalhe-parte')
         partes_nome = dsl.class_get_list(driver, 'nome-parte')
         
@@ -98,9 +127,9 @@ for processo in range(num_final - num_inicial + 1):
             html = andamento.get_attribute('innerHTML')
             
             if 'andamento-invalido' in html:
-                and_tipo = 'inv�lido'
+                and_tipo = 'invalid'
             else:
-                and_tipo = 'v�lido'
+                and_tipo = 'valid'
                 
             and_data = andamento.find_element(By.CLASS_NAME, 
                                               'andamento-data').text
@@ -188,28 +217,61 @@ for processo in range(num_final - num_inicial + 1):
                           resumo,
                           andamentos_lista,
                           deslocamentos_lista]
+        
+        colunas =            ['incidente',
+                              'classe',
+                              'nome_processo',
+                              'classe_extenso',
+                              'tipo',
+                              'liminar',
+                              'origem',
+                              'relator',
+                              'partes_total',
+                              'data_protocolo',
+                              'origem_orgao',
+                              'lista_assuntos',
+                              'resumo',
+                              'andamentos_lista',
+                              'deslocamentos_lista']
 
 
 # Acrescenta na lista os dados extraídos de cada processo
         lista.append(dados_a_gravar)
+        
+        # Gravação parcial a cada 100 processos
+        if len(lista) % batch_size == 0 and len(lista) > 0:
+            try:
+                batch_count += 1
+                partial_df = pd.DataFrame(lista, columns=colunas)
+                
+                # Garante que o diretório existe
+                os.makedirs('dados', exist_ok=True)
+                
+                # Nome dos arquivos parciais
+                partial_csv = f'dados/Dados_parciais_{classe}_lote{batch_count}.csv'
+                partial_xlsx = f'dados/Dados_parciais_{classe}_lote{batch_count}.xlsx'
+                
+                # Grava ambos formatos
+                partial_df.to_csv(partial_csv, index=False)
+                partial_df.to_excel(partial_xlsx, index=False)
+                
+                logger.info(f"Lote {batch_count} gravado: {len(lista)} processos em {partial_csv} e {partial_xlsx}")
+                
+                # Limpa a lista para o próximo lote
+                lista = []
+                
+            except Exception as e:
+                logger.error(f"Erro ao gravar lote {batch_count}: {str(e)}")
+                # Mantém os dados na lista para tentar novamente
     
 # Define o nome das colunas a gravar. 
 # As colunas devem corresponder aos nomes das variáveis em dados_a_gravar
-colunas =            ['incidente',
-                      'classe',
-                      'nome_processo',
-                      'classe_extenso',
-                      'tipo',
-                      'liminar',
-                      'origem',
-                      'relator',
-                      'partes_total',
-                      'data_protocolo',
-                      'origem_orgao',
-                      'lista_assuntos',
-                      'resumo',
-                      'andamentos_lista',
-                      'deslocamentos_lista']
+
 
 df = pd.DataFrame(lista, columns = colunas)
-df.to_csv('Dados_processuais' + classe + str(num_inicial) + 'a'+ str(num_final) + '.csv', index=False)
+# Garante que o diretório dados existe
+import os
+os.makedirs('dados', exist_ok=True)
+
+df.to_csv('dados/Dados_processuais' + classe + str(num_inicial) + 'a'+ str(num_final) + '.csv', index=False)
+df.to_excel('dados/Dados_processuais' + classe + str(num_inicial) + 'a'+ str(num_final) + '.xlsx', index=False)
