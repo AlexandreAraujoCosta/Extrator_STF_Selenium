@@ -14,89 +14,24 @@ import time
 from selenium.webdriver.chrome.options import Options
 
 
-# Define a custom user agent
-my_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+# # Define a custom user agent
+# my_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
-# Set up Chrome options
-chrome_options = Options()
-chrome_options.add_argument("--incognito")
-# chrome_options.add_argument("--headless")
-chrome_options.add_argument("--window-size=920,600")
-chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-# Set the custom User-Agent
-chrome_options.add_argument(f"--user-agent={my_user_agent}")
+# # Set up Chrome options
+# chrome_options = Options()
+# chrome_options.add_argument("--incognito")
+# # chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--window-size=920,600")
+# chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+# # Set the custom User-Agent
+# chrome_options.add_argument(f"--user-agent={my_user_agent}")
 
-# Create a new instance of ChromeDriver with the desired options
-driver = webdriver.Chrome(options=chrome_options)
+# # Create a new instance of ChromeDriver with the desired options
+# driver = webdriver.Chrome(options=chrome_options)
 
-# # Set an implicit wait
-# driver.implicitly_wait(50)
+# # # Set an implicit wait
+# # driver.implicitly_wait(50)
 
-def webdriver_get(url):
-    data = driver.get(url)
-    
-    return data
-
-def webdriver_get_page(url):
-    driver.get(url)
-    
-    return driver.page_source
-
-def waitForLoad(inputXPath):
-
-    Wait = WebDriverWait(driver, 40)       
-    Wait.until(EC.presence_of_element_located((By.XPATH, inputXPath)))
-
-def waitForLoad_ID(name):
-
-    Wait = WebDriverWait(driver, 40)       
-    Wait.until(EC.presence_of_element_located((By.ID, name)))
-    
-def xpath_get (xpath):
-    
-    time.sleep(0.3)
-    waitForLoad(xpath)
-    dados = driver.find_element(By.XPATH, xpath).get_attribute('innerHTML')
-    
-    return dados
-
-
-def class_get_list (element, class_name):
-    
-    dados = element.find_elements(By.CLASS_NAME, class_name)
-    
-    return dados
-
-def xpath_body ():
-    dados = driver.find_element(By.XPATH, '/html/body').get_attribute('innerHTML')
-    
-    return (dados)
-
-def xpath_input (xpath, keys):
-    
-    campo = driver.find_element(By.XPATH, xpath)
-    campo.send_keys(keys)
-
-
-def xpath_click (xpath):
-    
-    botao  = driver.find_element(By.XPATH, xpath)
-    botao.click()
-
-def xpath_ext (xpath):
-    
-    waitForLoad(xpath)
-    dados = driver.find_element(By.XPATH, xpath).get_attribute('innerHTML')
-    
-    return dados
-
-def id_get (id_):
-    
-    time.sleep(1)
-    waitForLoad_ID(id_)
-    dados = driver.find_element(By.ID, id_)
-    
-    return dados
 
 def clean(source):
     source = source.replace('\n',' ')

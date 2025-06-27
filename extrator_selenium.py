@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Este programa realiza buscas na página de andamentos processuais do STF.
+# Este programa realiza buscas na pÃ¡gina de andamentos processuais do STF.
 
 import dsl
 import pandas as pd
@@ -13,13 +13,102 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (NoSuchElementException,
                                       TimeoutException,
                                       WebDriverException)
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
 
-# Configurações globais
+# Define a custom user agent
+my_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+
+# Set up Chrome options
+chrome_options = Options()
+chrome_options.add_argument("--incognito")
+# chrome_options.add_argument("--headless")
+chrome_options.add_argument("--window-size=920,600")
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+# Set the custom User-Agent
+chrome_options.add_argument(f"--user-agent={my_user_agent}")
+
+# Create a new instance of ChromeDriver with the desired options
+driver = webdriver.Chrome(options=chrome_options)
+
+def webdriver_get(url):
+    data = driver.get(url)
+    
+    return data
+
+def webdriver_get_page(url):
+    driver.get(url)
+    
+    return driver.page_source
+
+def waitForLoad(inputXPath):
+
+    Wait = WebDriverWait(driver, 40)       
+    Wait.until(EC.presence_of_element_located((By.XPATH, inputXPath)))
+
+def waitForLoad_ID(name):
+
+    Wait = WebDriverWait(driver, 40)       
+    Wait.until(EC.presence_of_element_located((By.ID, name)))
+    
+def xpath_get (xpath):
+    
+    time.sleep(0.3)
+    waitForLoad(xpath)
+    dados = driver.find_element(By.XPATH, xpath).get_attribute('innerHTML')
+    
+    return dados
+
+def class_get_list (element, class_name):
+    
+    dados = element.find_elements(By.CLASS_NAME, class_name)
+    
+    return dados
+
+def xpath_body ():
+    dados = driver.find_element(By.XPATH, '/html/body').get_attribute('innerHTML')
+    
+    return (dados)
+
+def xpath_input (xpath, keys):
+    
+    campo = driver.find_element(By.XPATH, xpath)
+    campo.send_keys(keys)
+
+
+def xpath_click (xpath):
+    
+    botao  = driver.find_element(By.XPATH, xpath)
+    botao.click()
+
+def xpath_ext (xpath):
+    
+    waitForLoad(xpath)
+    dados = driver.find_element(By.XPATH, xpath).get_attribute('innerHTML')
+    
+    return dados
+
+def id_get (id_):
+    
+    time.sleep(1)
+    waitForLoad_ID(id_)
+    dados = driver.find_element(By.ID, id_)
+    
+    return dados
+
+def driver_break():
+    driver.quit()
+    time.sleep(5)
+    
+def driver_open():
+    driver = webdriver.Chrome(options=chrome_options)
+
+# ConfiguraÃ§Ãµes globais
 TIMEOUT = 15
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # segundos
 
-# Configuração de logging
+# ConfiguraÃ§Ã£o de logging
 logging.basicConfig(
     filename='extrator_errors.log',
     level=logging.INFO,
@@ -28,64 +117,64 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def arquivo_existe(arquivo):
-    """Verifica se o arquivo existe e não está vazio"""
+    """Verifica se o arquivo existe e nÃ£o estÃ¡ vazio"""
     return os.path.exists(arquivo) and os.path.getsize(arquivo) > 0
 
 # Cria o DataFrame inicial vazio
 df = pd.DataFrame()
 
-# Garante que o diretório existe
+# Garante que o diretÃ³rio existe
 os.makedirs('dados', exist_ok=True)
 
 classe = 'ADPF'
-num_inicial = 28
+num_inicial = 234
 num_final = 2000
 lista_dados = []
-driver = dsl.driver
-request_count = 0  # Contador de requisições (não precisa ser global)
-
+request_count = 0  # Contador de requisiÃ§Ãµes (nÃ£o precisa ser global)
+header = 0
+saves = 0
 
 # Define os nomes dos arquivos finais
-csv_file = f'dados/Dados_processuais_{classe}_{num_inicial}a{num_final}.csv'
-xlsx_file = f'dados/Dados_processuais_{classe}_{num_inicial}a{num_final}.xlsx'
+csv_file = 'dados/Dados_processuais.csv'
+xlsx_file = 'dados/Dados_processuais.xlsx'
 
-# Cria arquivos vazios com cabeçalhos se não existirem
+# Cria arquivos vazios com cabeÃ§alhos se nÃ£o existirem
 if not arquivo_existe(csv_file):
     df.to_csv(csv_file, index=False)
 if not arquivo_existe(xlsx_file):
     df.to_excel(xlsx_file, index=False)
+
+lista_processada = [ ['ACO', 442], ['ACO', 444], ['ACO', 648], ['ACO', 661], ['ACO', 669], ['ACO', 683], ['ACO', 701], ['ACO', 718], ['ACO', 2178], ['ACO', 2981], ['ACO', 3132], ['ACO', 3276], ['ACO', 3303], ['ACO', 3306], ['ACO', 3421], ['ACO', 3431], ['ACO', 3433], ['ACO', 3438], ['ACO', 3457],['ACO', 3459], ['ACO', 3494], ['ACO', 3518],['ACO', 3520], ['ACO', 3555], ['ACO', 3568], ['ACO', 3609], ['ACO', 3688], ['ADC', 87], ['ADI', 4916], ['ADI', 4917], ['ADI', 4918], ['ADI', 4920], ['ADI', 5038], ['ADI', 5621], ['ADI', 6553], ['ADI', 7191], ['ADI', 7433], ['ADI', 7471], ['ADI', 7483], ['ADI', 7486], ['ADI', 7487], ['ADI', 7582], ['ADI', 7583], ['ADI', 7586], ['ADO', 25], ['ADO', 86], ['ADPF', 165], ['ADPF', 568], ['ADPF', 635], ['ADPF', 709], ['ADPF', 743], ['ADPF', 746], ['ADPF', 760], ['ADPF', 829], ['ADPF', 854], ['ADPF', 857], ['ADPF', 863], ['ADPF', 944], ['ADPF', 984], ['ADPF', 991], ['ADPF', 1196], ['AR', 2873],['AO', 1726], ['AO', 2733], ['ARE', 1137139], ['ARE', 1266095], ['ARE', 1291514], ['ARE', 1347550], ['ARE', 1363547], ['ARE', 1372672], ['ARE', 1380067], ['ARE', 1400942], ['ARE', 1407111], ['ARE', 1421884], ['ARE', 1425370], ['ARE', 1441516], ['ARE', 1458169], ['ARE', 1510640], ['MI', '7425'], ['MS', 25463], ['MS', 29293], ['MS', 35398],]
+
+lista_processos = [   ['Pet', 8029], ['Pet', 13157], ['Rcl', 43697], ['Rcl', 56318], ['Rcl', 58207], ['Rcl', 62113], ['Rcl', 64370], ['Rcl', 64540], ['Rcl', 64800], ['Rcl', 64803], ['Rcl', 64807], ['Rcl', 64943], ['Rcl', 66439], ['Rcl', 68709], ['Rcl', 75792], ['RE', 867960], ['RE', 1317890], ['RE', 1346751], ['RE', 1366243], ['RE', 1424451], ['RE', 1443597], ['SL', 1037], ['SL', 1076], ['SL', 1097], ['SL', 1696], ['SL', 1721], ['SL', 1743], ['SL', 1783], ['STP', 17], ['STP', 1013], ['STP', 1014], ['STP', 1021], ['STP', 1069]]
     
+for item in lista_processos:
+    classe = item[0]
+    processo_num = item[1]
     
-# for item in lista_processos:
-for processo in range(num_final - num_inicial + 1):
-    processo_num = processo + num_inicial
+# for processo in range(num_final - num_inicial + 1):
+    # processo_num = processo + num_inicial
     
     
     
     url = ('https://portal.stf.jus.br/processos/listarProcessos.asp?classe=' + 
            classe +
            '&numeroProcesso=' + 
-           str(processo + num_inicial)
+           str(processo_num)
            )
     
-    print (classe + str (processo + num_inicial))
+    print (classe + str (processo_num))
     
     request_count += 1
-    
-    # Pausa de 1 minuto a cada 25 requisi��eses
-    if request_count % 25 == 0:
-        logger.info(f"Realizadas 25 requisi��es - pausa de 1 minuto")
-        time.sleep(60)
-        
     max_retries = 3
     retry_count = 0
     success = False
     
     while not success and retry_count < max_retries:
         try:
-            page = dsl.webdriver_get(url)
+            page = webdriver_get(url)
             
-            # Verifica se a página contém erro 403
+            # Verifica se a pÃ¡gina contÃ©m erro 403
             if '403 Forbidden' in driver.page_source:
                 raise Exception('403 Forbidden - Acesso negado')
                 
@@ -97,46 +186,46 @@ for processo in range(num_final - num_inicial + 1):
                 logger.warning(f"Erro 403 - Tentativa {retry_count} de {max_retries} - Aguardando 30 segundos")
                 time.sleep(30)
             else:
-                logger.error(f"Falha ao acessar processo {classe}{processo + num_inicial}: {str(e)}")
+                logger.error(f"Falha ao acessar processo {classe}{processo_num}: {str(e)}")
                 raise
     
-    html_total = dsl.xpath_get('//*[@id="conteudo"]')
+    html_total = xpath_get('//*[@id="conteudo"]')
     
-    if 'Processo não encontrado' not in html_total:
+    if 'Processo não encontrado' not in html_total and xpath_get('//*[@id="descricao-procedencia"]') != '':
         
     
-        incidente = dsl.id_get('incidente').get_attribute('value')
+        incidente = id_get('incidente').get_attribute('value')
         
-        nome_processo = dsl.id_get('classe-numero-processo').get_attribute('value')
+        nome_processo = id_get('classe-numero-processo').get_attribute('value')
     
         
-        classe_extenso = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[1]')
+        classe_extenso = xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[1]')
         
-        titulo_processo = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]')
+        titulo_processo = xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]')
         
         if 'badge bg-secondary' in titulo_processo:    
-            tipo = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]/div[1]/div[1]/div/span[1]')
+            tipo = xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]/div[1]/div[1]/div/span[1]')
         else:
             tipo = 'NA'
         
         if 'badge bg-danger' in titulo_processo:
-            liminar = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]/div[1]/div[1]/div/span[3]')
+            liminar = class_get_list(driver, 'badge bg-danger')
         else:
-            liminar = 'NA'
+            liminar = []
         
         try:
-            origem = dsl.xpath_get('//*[@id="descricao-procedencia"]')
+            origem = xpath_get('//*[@id="descricao-procedencia"]')
             origem = dsl.clext(origem,'>','<') if origem else 'NA'
         except Exception:
             origem = 'NA'
             
         try:
-            relator = dsl.xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[3]')
+            relator = dsl.clext(html_total, 'Relator: ','<')
         except Exception:
             relator = 'NA'
             
-        partes_tipo = dsl.class_get_list(driver, 'detalhe-parte')
-        partes_nome = dsl.class_get_list(driver, 'nome-parte')
+        partes_tipo = class_get_list(driver, 'detalhe-parte')
+        partes_nome = class_get_list(driver, 'nome-parte')
         
         partes_total = []
         index = 0
@@ -152,24 +241,22 @@ for processo in range(num_final - num_inicial + 1):
             
             partes_total.append(parte_info)
     
-        data_protocolo = dsl.clean(dsl.xpath_get('//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[2]'))
+        data_protocolo = dsl.clean(xpath_get('//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[2]'))
         
-        origem_orgao = dsl.clean(dsl.xpath_get('//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[4]'))
+        origem_orgao = dsl.clean(xpath_get('//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[4]'))
         
-        assuntos = dsl.xpath_get('//*[@id="informacoes-completas"]/div[1]/div[2]').split('<li>')[1:]
+        assuntos = xpath_get('//*[@id="informacoes-completas"]/div[1]/div[2]').split('<li>')[1:]
         lista_assuntos = []
         
         for assunto in assuntos:
             lista_assuntos.append(dsl.clext(assunto, '', '</'))
     
-        # = dsl.xpath_get('')
-        # = dsl.xpath_get('')
     
-        resumo = dsl.xpath_get('/html/body/div[1]/div[2]/section/div/div/div/div/div/div/div[2]/div[1]')
+        resumo = xpath_get('/html/body/div[1]/div[2]/section/div/div/div/div/div/div/div[2]/div[1]')
         
         andamentos_info = driver.find_element(By.CLASS_NAME, 
                                           'processo-andamentos')
-        andamentos = dsl.class_get_list(andamentos_info,'andamento-item')
+        andamentos = class_get_list(andamentos_info,'andamento-item')
         andamentos_lista = []
         for n in range(len(andamentos)):
             index = len(andamentos) - n
@@ -222,7 +309,7 @@ for processo in range(num_final - num_inicial + 1):
         
         deslocamentos_info = driver.find_element(By.XPATH, 
                                           '//*[@id="deslocamentos"]')
-        deslocamentos = dsl.class_get_list(deslocamentos_info,'lista-dados')
+        deslocamentos = class_get_list(deslocamentos_info,'lista-dados')
         deslocamentos_lista = []
         html = 'NA'
         for n in range(len(deslocamentos)):
@@ -250,7 +337,7 @@ for processo in range(num_final - num_inicial + 1):
             deslocamentos_lista.append(deslocamento_dados)
     
     
-    # # Define os dados a gravar, criando uma lista com as variáveis
+    # # Define os dados a gravar, criando uma lista com as variÃ¡veis
     
         dados_a_gravar = [incidente,
                           classe,
@@ -260,12 +347,15 @@ for processo in range(num_final - num_inicial + 1):
                           liminar,
                           origem,
                           relator,
+                          len(partes_total),
                           partes_total,
                           data_protocolo,
                           origem_orgao,
                           lista_assuntos,
-                          resumo,
+                          # resumo,
+                          len(andamentos_lista),
                           andamentos_lista,
+                          len(deslocamentos_lista),
                           deslocamentos_lista]
         
         colunas =            ['incidente',
@@ -276,33 +366,61 @@ for processo in range(num_final - num_inicial + 1):
                               'liminar',
                               'origem',
                               'relator',
+                              'len(partes_total)',
                               'partes_total',
                               'data_protocolo',
                               'origem_orgao',
                               'lista_assuntos',
-                              'resumo',
+                              # 'resumo',
+                              'len(andamentos_lista)',
                               'andamentos_lista',
+                              'len(deslocamentos)',
                               'deslocamentos_lista']
 
 
-# Acrescenta na lista os dados extraídos de cada processo
+# Acrescenta na lista os dados extraÃ­dos de cada processo
         # Cria DataFrame com os dados do processo atual
-        current_df = pd.DataFrame([dados_a_gravar], columns=colunas)
+        
+        lista_dados.append(dados_a_gravar)
+        
+        df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
+        df_row.to_csv(csv_file, mode='a', 
+                      index=False,
+                      columns=colunas,
+                      encoding='utf-8',
+                      quoting=1,
+                      doublequote=True)
+        
+        # Pausa de 1 minuto a cada 25 requisiçõeses
+        if request_count % 2 == 0:
+            # print ('pausa de 1s')
+            time.sleep(2)
+            driver.quit()
+            if request_count % 15 == 0:
+                # print ('pausa de 1s')
+                saves = saves+1
+                df = pd.DataFrame(lista_dados, columns=colunas)
+                df.to_excel (xlsx_file[:-5] + str(saves) + '(' + nome_processo + ')' + '.xlsx',index=False) 
+                df.to_csv (csv_file[:-4] + str(saves) + '(' + nome_processo + ')' + '.csv', 
+                             index=False,
+                             encoding='utf-8',
+                             quoting=1,
+                             doublequote=True
+                             ) 
+                
+                print ('gravados arquivos csv e xlsx até '+nome_processo)
+                lista_dados = []
+                
+
+            driver = webdriver.Chrome(options=chrome_options)
+            
+
         
         # Grava linha nos arquivos finais
-        try:
-            # Append no CSV
-            current_df.to_csv(csv_file, mode='a', header=False, index=False)
-            # Append no Excel (precisa reescrever todo o arquivo)
-            existing_df = pd.read_excel(xlsx_file)
-            updated_df = pd.concat([existing_df, current_df])
-            updated_df.to_excel(xlsx_file, index=False)
+
+
             
-            # Log do progresso
-            logger.info(f"Processo {processo + num_inicial} gravado - {classe}{processo + num_inicial}")
-            
-        except Exception as e:
-            logger.error(f"Erro ao gravar processo {processo + num_inicial}: {str(e)}")
-    
+df = pd.DataFrame(lista_dados, columns=colunas)
 # Fecha os arquivos e finaliza
-logger.info(f"Extração concluída - {classe} {num_inicial} a {num_final}")
+
+df.to_excel(xlsx_file, index=False)
