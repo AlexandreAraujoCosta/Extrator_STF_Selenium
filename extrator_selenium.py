@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
-# Este programa realiza buscas na pÃ¡gina de andamentos processuais do STF.
+# Este programa realiza buscas na página de andamentos processuais do STF.
+
+# Defina aqui a classe a ser buscada e um número inicial e final.
+# O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
+classe = 'RE'
+num_inicial = 2000
+num_final = 2001
+
+# É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
+# Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
+# lista_processos = [ ['ACO', 442], ['ACO', 444], ['ACO', 648], ['ACO', 661], ['ACO', 669], ['ACO', 683], ['ACO', 701], ['ACO', 718], ['ACO', 2178], ['ACO', 2981], ['ACO', 3132], ['ACO', 3276], ['ACO', 3303], ['ACO', 3306], ['ACO', 3421], ['ACO', 3431], ['ACO', 3433], ['ACO', 3438], ['ACO', 3457],['ACO', 3459], ['ACO', 3494], ['ACO', 3518],['ACO', 3520], ['ACO', 3555], ['ACO', 3568], ['ACO', 3609], ['ACO', 3688], ['ADC', 87], ['ADI', 4916], ['ADI', 4917], ['ADI', 4918], ['ADI', 4920], ['ADI', 5038], ['ADI', 5621], ['ADI', 6553], ['ADI', 7191], ['ADI', 7433], ['ADI', 7471], ['ADI', 7483], ['ADI', 7486], ['ADI', 7487], ['ADI', 7582], ['ADI', 7583], ['ADI', 7586], ['ADO', 25], ['ADO', 86], ['ADPF', 165], ['ADPF', 568], ['ADPF', 635], ['ADPF', 709], ['ADPF', 743], ['ADPF', 746], ['ADPF', 760], ['ADPF', 829], ['ADPF', 854], ['ADPF', 857], ['ADPF', 863], ['ADPF', 944], ['ADPF', 984], ['ADPF', 991], ['ADPF', 1196], ['AR', 2873],['AO', 1726], ['AO', 2733], ['ARE', 1137139], ['ARE', 1266095], ['ARE', 1291514], ['ARE', 1347550], ['ARE', 1363547], ['ARE', 1372672], ['ARE', 1380067], ['ARE', 1400942], ['ARE', 1407111], ['ARE', 1421884], ['ARE', 1425370], ['ARE', 1441516], ['ARE', 1458169], ['ARE', 1510640], ['MI', '7425'], ['MS', 25463], ['MS', 29293], ['MS', 35398],  ['Pet', 8029], ['Pet', 13157], ['Rcl', 43697], ['Rcl', 56318], ['Rcl', 58207], ['Rcl', 62113], ['Rcl', 64370], ['Rcl', 64540], ['Rcl', 64800], ['Rcl', 64803], ['Rcl', 64807], ['Rcl', 64943], ['Rcl', 66439], ['Rcl', 68709], ['Rcl', 75792], ['RE', 867960], ['RE', 1317890], ['RE', 1346751], ['RE', 1366243], ['RE', 1424451], ['RE', 1443597], ['SL', 1037], ['SL', 1076], ['SL', 1097], ['SL', 1696], ['SL', 1721], ['SL', 1743], ['SL', 1783], ['STP', 17], ['STP', 1013], ['STP', 1014], ['STP', 1021], ['STP', 1069]]
 
 import dsl
 import pandas as pd
@@ -16,20 +26,25 @@ from selenium.common.exceptions import (NoSuchElementException,
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 
+
+lista_dados = []
+request_count = 0  # Contador de requisiÃ§Ãµes (nÃ£o precisa ser global)
+header = 0
+saves = 0
+processonaoencontrado = 0
+
 # Define a custom user agent
 my_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
 
 # Set up Chrome options
 chrome_options = Options()
 chrome_options.add_argument("--incognito")
-# chrome_options.add_argument("--headless")
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=920,600")
 chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 # Set the custom User-Agent
 chrome_options.add_argument(f"--user-agent={my_user_agent}")
 
-# Create a new instance of ChromeDriver with the desired options
-driver = webdriver.Chrome(options=chrome_options)
 
 def webdriver_get(url):
     data = driver.get(url)
@@ -96,13 +111,6 @@ def id_get (id_):
     
     return dados
 
-def driver_break():
-    driver.quit()
-    time.sleep(5)
-    
-def driver_open():
-    driver = webdriver.Chrome(options=chrome_options)
-
 # ConfiguraÃ§Ãµes globais
 TIMEOUT = 15
 MAX_RETRIES = 3
@@ -126,36 +134,27 @@ df = pd.DataFrame()
 # Garante que o diretÃ³rio existe
 os.makedirs('dados', exist_ok=True)
 
-classe = 'ADPF'
-num_inicial = 234
-num_final = 2000
-lista_dados = []
-request_count = 0  # Contador de requisiÃ§Ãµes (nÃ£o precisa ser global)
-header = 0
-saves = 0
-
 # Define os nomes dos arquivos finais
-csv_file = 'dados/Dados_processuais.csv'
-xlsx_file = 'dados/Dados_processuais.xlsx'
+csv_file = 'dados/Dados_processuais_ADI.csv'
+# xlsx_file = 'dados/Dados_processuais.xlsx'
 
 # Cria arquivos vazios com cabeÃ§alhos se nÃ£o existirem
-if not arquivo_existe(csv_file):
-    df.to_csv(csv_file, index=False)
-if not arquivo_existe(xlsx_file):
-    df.to_excel(xlsx_file, index=False)
+# if not arquivo_existe(csv_file):
+#     df.to_csv(csv_file, index=False)
+# if not arquivo_existe(xlsx_file):
+#     df.to_excel(xlsx_file, index=False)
 
-lista_processada = [ ['ACO', 442], ['ACO', 444], ['ACO', 648], ['ACO', 661], ['ACO', 669], ['ACO', 683], ['ACO', 701], ['ACO', 718], ['ACO', 2178], ['ACO', 2981], ['ACO', 3132], ['ACO', 3276], ['ACO', 3303], ['ACO', 3306], ['ACO', 3421], ['ACO', 3431], ['ACO', 3433], ['ACO', 3438], ['ACO', 3457],['ACO', 3459], ['ACO', 3494], ['ACO', 3518],['ACO', 3520], ['ACO', 3555], ['ACO', 3568], ['ACO', 3609], ['ACO', 3688], ['ADC', 87], ['ADI', 4916], ['ADI', 4917], ['ADI', 4918], ['ADI', 4920], ['ADI', 5038], ['ADI', 5621], ['ADI', 6553], ['ADI', 7191], ['ADI', 7433], ['ADI', 7471], ['ADI', 7483], ['ADI', 7486], ['ADI', 7487], ['ADI', 7582], ['ADI', 7583], ['ADI', 7586], ['ADO', 25], ['ADO', 86], ['ADPF', 165], ['ADPF', 568], ['ADPF', 635], ['ADPF', 709], ['ADPF', 743], ['ADPF', 746], ['ADPF', 760], ['ADPF', 829], ['ADPF', 854], ['ADPF', 857], ['ADPF', 863], ['ADPF', 944], ['ADPF', 984], ['ADPF', 991], ['ADPF', 1196], ['AR', 2873],['AO', 1726], ['AO', 2733], ['ARE', 1137139], ['ARE', 1266095], ['ARE', 1291514], ['ARE', 1347550], ['ARE', 1363547], ['ARE', 1372672], ['ARE', 1380067], ['ARE', 1400942], ['ARE', 1407111], ['ARE', 1421884], ['ARE', 1425370], ['ARE', 1441516], ['ARE', 1458169], ['ARE', 1510640], ['MI', '7425'], ['MS', 25463], ['MS', 29293], ['MS', 35398],]
-
-lista_processos = [   ['Pet', 8029], ['Pet', 13157], ['Rcl', 43697], ['Rcl', 56318], ['Rcl', 58207], ['Rcl', 62113], ['Rcl', 64370], ['Rcl', 64540], ['Rcl', 64800], ['Rcl', 64803], ['Rcl', 64807], ['Rcl', 64943], ['Rcl', 66439], ['Rcl', 68709], ['Rcl', 75792], ['RE', 867960], ['RE', 1317890], ['RE', 1346751], ['RE', 1366243], ['RE', 1424451], ['RE', 1443597], ['SL', 1037], ['SL', 1076], ['SL', 1097], ['SL', 1696], ['SL', 1721], ['SL', 1743], ['SL', 1783], ['STP', 17], ['STP', 1013], ['STP', 1014], ['STP', 1021], ['STP', 1069]]
     
-for item in lista_processos:
-    classe = item[0]
-    processo_num = item[1]
+# for item in lista_processos:
+#     classe = item[0]
+#     processo_num = item[1]
     
-# for processo in range(num_final - num_inicial + 1):
-    # processo_num = processo + num_inicial
+for processo in range(num_final - num_inicial + 1):
+    if processonaoencontrado > 5:
+        break
+    processo_num = processo + num_inicial
     
-    
+    print (classe + str (processo_num))
     
     url = ('https://portal.stf.jus.br/processos/listarProcessos.asp?classe=' + 
            classe +
@@ -163,36 +162,74 @@ for item in lista_processos:
            str(processo_num)
            )
     
-    print (classe + str (processo_num))
-    
     request_count += 1
-    max_retries = 3
+    max_retries = 5
     retry_count = 0
     success = False
     
+    
     while not success and retry_count < max_retries:
         try:
+            driver = webdriver.Chrome(options=chrome_options)
+            time.sleep(3)
+
             page = webdriver_get(url)
             
             # Verifica se a pÃ¡gina contÃ©m erro 403
-            if '403 Forbidden' in driver.page_source:
-                raise Exception('403 Forbidden - Acesso negado')
+            if '403 Forbidden' in driver.page_source or 'CAPTCHA' in driver.page_source:
+                raise Exception('Acesso negado')
                 
             success = True
             
         except Exception as e:
             retry_count += 1
             if '403' in str(e) and retry_count < max_retries:
-                logger.warning(f"Erro 403 - Tentativa {retry_count} de {max_retries} - Aguardando 30 segundos")
-                time.sleep(30)
+                print ('retry')
+                driver.quit()
+                time.sleep(5)
+                chrome_options = Options()
+                chrome_options.add_argument("--incognito")
+                # chrome_options.add_argument("--headless")
+                chrome_options.add_argument("--window-size=920,600")
+                chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+                # Set the custom User-Agent
+                chrome_options.add_argument(f"--user-agent={my_user_agent}")
+                driver = webdriver.Chrome(options=chrome_options)
+                time.sleep(3)
+
+                page = webdriver_get(url)
             else:
                 logger.error(f"Falha ao acessar processo {classe}{processo_num}: {str(e)}")
                 raise
+    
+    if ('CAPTCHA' in driver.page_source or 
+        '502 Bad Gateway' in driver.page_source):
+         
+         print('retry')
+         time.sleep(5)
+         driver.quit()
+         time.sleep(5)
+         chrome_options = Options()
+         chrome_options.add_argument("--incognito")
+         # chrome_options.add_argument("--headless")
+         chrome_options.add_argument("--window-size=920,600")
+         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+         # Set the custom User-Agent
+         chrome_options.add_argument(f"--user-agent={my_user_agent}")
+         driver = webdriver.Chrome(options=chrome_options)
+         url = ('https://portal.stf.jus.br/processos/listarProcessos.asp?classe=' + 
+                classe +
+                '&numeroProcesso=' + 
+                str(processo_num)
+                )
+         page = webdriver_get(url)
     
     html_total = xpath_get('//*[@id="conteudo"]')
     
     if 'Processo não encontrado' not in html_total and xpath_get('//*[@id="descricao-procedencia"]') != '':
         
+
+        processonaoencontrado = 0
     
         incidente = id_get('incidente').get_attribute('value')
         
@@ -208,10 +245,14 @@ for item in lista_processos:
         else:
             tipo = 'NA'
         
-        if 'badge bg-danger' in titulo_processo:
-            liminar = class_get_list(driver, 'badge bg-danger')
+        liminar = []
+        if 'bg-danger' in titulo_processo:
+            liminar0 = class_get_list(driver, 'bg-danger')
+            for item in liminar0:
+                liminar.append(item.text)
         else:
             liminar = []
+
         
         try:
             origem = xpath_get('//*[@id="descricao-procedencia"]')
@@ -381,46 +422,59 @@ for item in lista_processos:
 # Acrescenta na lista os dados extraÃ­dos de cada processo
         # Cria DataFrame com os dados do processo atual
         
+        driver.quit()
+        # Pausa de 1 minuto a cada 25 requisiçõeses
+        if request_count % 10 == 0:
+            # print ('pausa de 1s')
+            
+            time.sleep(15)
+
+        if request_count % 25 == 0:
+            # print ('pausa de 1s')
+            # saves = saves+1
+            time.sleep(60)
+                # df = pd.DataFrame(lista_dados, columns=colunas)
+                # df.to_excel (xlsx_file[:-5] + str(saves) + '(' + nome_processo + ')' + '.xlsx',index=False) 
+                # df.to_csv (csv_file[:-4] + str(saves) + '(' + nome_processo + ')' + '.csv', 
+                #              index=False,
+                #              encoding='utf-8',
+                #              quoting=1,
+                #              doublequote=True
+                #              ) 
+                
+                # print ('gravados arquivos csv e xlsx até '+nome_processo)
+                # lista_dados = []
+        
         lista_dados.append(dados_a_gravar)
         
-        df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
-        df_row.to_csv(csv_file, mode='a', 
+        if not arquivo_existe(csv_file):
+            df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
+            df_row.to_csv(csv_file, mode='a',
                       index=False,
-                      columns=colunas,
                       encoding='utf-8',
                       quoting=1,
-                      doublequote=True)
+                      doublequote=True,
+                      )
+        else:
+            df_row = pd.DataFrame([dados_a_gravar])
+            df_row.to_csv(csv_file, mode='a', 
+                      index=False,
+                      encoding='utf-8',
+                      quoting=1,
+                      doublequote=True,
+                      header=False
+                      )
         
-        # Pausa de 1 minuto a cada 25 requisiçõeses
-        if request_count % 2 == 0:
-            # print ('pausa de 1s')
-            time.sleep(2)
-            driver.quit()
-            if request_count % 15 == 0:
-                # print ('pausa de 1s')
-                saves = saves+1
-                df = pd.DataFrame(lista_dados, columns=colunas)
-                df.to_excel (xlsx_file[:-5] + str(saves) + '(' + nome_processo + ')' + '.xlsx',index=False) 
-                df.to_csv (csv_file[:-4] + str(saves) + '(' + nome_processo + ')' + '.csv', 
-                             index=False,
-                             encoding='utf-8',
-                             quoting=1,
-                             doublequote=True
-                             ) 
-                
-                print ('gravados arquivos csv e xlsx até '+nome_processo)
-                lista_dados = []
-                
 
-            driver = webdriver.Chrome(options=chrome_options)
-            
 
-        
+    else:
+        processonaoencontrado += 1
+        time.sleep(5)
         # Grava linha nos arquivos finais
 
 
             
-df = pd.DataFrame(lista_dados, columns=colunas)
-# Fecha os arquivos e finaliza
+# df = pd.DataFrame(lista_dados, columns=colunas)
+# # Fecha os arquivos e finaliza
 
-df.to_excel(xlsx_file, index=False)
+# df.to_excel(xlsx_file, index=False)
