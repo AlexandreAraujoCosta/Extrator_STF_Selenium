@@ -3,9 +3,9 @@
 
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
-classe = 'RE'
-num_inicial = 2000
-num_final = 2001
+classe = 'ACO'
+num_inicial = 1
+num_final = 4000
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -135,7 +135,10 @@ df = pd.DataFrame()
 os.makedirs('dados', exist_ok=True)
 
 # Define os nomes dos arquivos finais
-csv_file = 'dados/Dados_processuais_ADI.csv'
+csv_file = ('Dados ' + 
+            classe + ' de ' +
+            str(num_inicial) + ' a ' +
+            str(num_final) + '.csv')
 # xlsx_file = 'dados/Dados_processuais.xlsx'
 
 # Cria arquivos vazios com cabeÃ§alhos se nÃ£o existirem
