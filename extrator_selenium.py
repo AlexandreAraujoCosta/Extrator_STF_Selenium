@@ -13,7 +13,6 @@ num_final = 4000
 
 import dsl
 import pandas as pd
-import logging
 import os
 from datetime import datetime
 import time
@@ -116,13 +115,6 @@ TIMEOUT = 15
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # segundos
 
-# ConfiguraÃ§Ã£o de logging
-logging.basicConfig(
-    filename='extrator_errors.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 def arquivo_existe(arquivo):
     """Verifica se o arquivo existe e nÃ£o estÃ¡ vazio"""
@@ -201,10 +193,7 @@ for processo in range(num_final - num_inicial + 1):
                 time.sleep(3)
 
                 page = webdriver_get(url)
-            else:
-                logger.error(f"Falha ao acessar processo {classe}{processo_num}: {str(e)}")
-                raise
-    
+
     if ('CAPTCHA' in driver.page_source or 
         '502 Bad Gateway' in driver.page_source):
          
@@ -243,10 +232,12 @@ for processo in range(num_final - num_inicial + 1):
         
         titulo_processo = xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]')
         
-        if 'badge bg-secondary' in titulo_processo:    
-            tipo = xpath_get('//*[@id="texto-pagina-interna"]/div/div/div/div[1]/div[1]/div[1]/div/span[1]')
+        if 'Processo Físico' in html_total:
+            tipo_processo = 'Físico'
+        elif 'Processo Eletrônico' in html_total:
+            tipo_processo = 'Eletrônico'
         else:
-            tipo = 'NA'
+            tipo_processo = 'NA'
         
         liminar = []
         if 'bg-danger' in titulo_processo:
@@ -274,10 +265,13 @@ for processo in range(num_final - num_inicial + 1):
         partes_total = []
         index = 0
         adv = []
+        primeiro_autor = 'NA'
         for n in range(len(partes_tipo)):
             index = index + 1
             tipo = partes_tipo[n].get_attribute('innerHTML')
             nome_parte = partes_nome[n].get_attribute('innerHTML')
+            if index == 1:
+                primeiro_autor = nome_parte
     
             parte_info = {'_index': index,
                           'tipo': tipo,
@@ -302,6 +296,7 @@ for processo in range(num_final - num_inicial + 1):
                                           'processo-andamentos')
         andamentos = class_get_list(andamentos_info,'andamento-item')
         andamentos_lista = []
+        andamentos_decisórios = []
         for n in range(len(andamentos)):
             index = len(andamentos) - n
             andamento = andamentos[n]
@@ -350,6 +345,8 @@ for processo in range(num_final - num_inicial + 1):
                                }
             
             andamentos_lista.append(andamento_dados)
+            if and_julgador != 'NA':
+                andamentos_decisórios.append(andamento_dados)
         
         deslocamentos_info = driver.find_element(By.XPATH, 
                                           '//*[@id="deslocamentos"]')
@@ -387,10 +384,11 @@ for processo in range(num_final - num_inicial + 1):
                           classe,
                           nome_processo,
                           classe_extenso,
-                          tipo,
+                          tipo_processo,
                           liminar,
                           origem,
                           relator,
+                          primeiro_autor,
                           len(partes_total),
                           partes_total,
                           data_protocolo,
@@ -399,6 +397,8 @@ for processo in range(num_final - num_inicial + 1):
                           # resumo,
                           len(andamentos_lista),
                           andamentos_lista,
+                          len(andamentos_decisórios),
+                          andamentos_decisórios,
                           len(deslocamentos_lista),
                           deslocamentos_lista]
         
@@ -406,10 +406,11 @@ for processo in range(num_final - num_inicial + 1):
                               'classe',
                               'nome_processo',
                               'classe_extenso',
-                              'tipo',
+                              'tipo_processo',
                               'liminar',
                               'origem',
                               'relator',
+                              'autor1',
                               'len(partes_total)',
                               'partes_total',
                               'data_protocolo',
@@ -418,6 +419,8 @@ for processo in range(num_final - num_inicial + 1):
                               # 'resumo',
                               'len(andamentos_lista)',
                               'andamentos_lista',
+                              'len(decisões)',
+                              'decisões',
                               'len(deslocamentos)',
                               'deslocamentos_lista']
 
