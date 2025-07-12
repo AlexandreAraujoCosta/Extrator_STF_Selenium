@@ -4,7 +4,7 @@
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 classe = 'ACO'
-num_inicial = 1
+num_inicial = 2276
 num_final = 4000
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
@@ -145,7 +145,7 @@ csv_file = ('Dados ' +
 #     processo_num = item[1]
     
 for processo in range(num_final - num_inicial + 1):
-    if processonaoencontrado > 5:
+    if processonaoencontrado > 20:
         break
     processo_num = processo + num_inicial
     
