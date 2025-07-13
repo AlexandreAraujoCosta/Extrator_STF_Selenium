@@ -478,9 +478,8 @@ for processo in range(num_final - num_inicial + 1):
         time.sleep(5)
         # Grava linha nos arquivos finais
 
+lista_arquivos = os.listdir(os.getcwd())
 
-            
-# df = pd.DataFrame(lista_dados, columns=colunas)
-# # Fecha os arquivos e finaliza
-
-# df.to_excel(xlsx_file, index=False)
+for arquivo in lista_arquivos:
+    if csv_file[:12] in arquivo:
+        print(arquivo)
