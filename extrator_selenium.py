@@ -4,17 +4,19 @@
 # SISTEMA DE ARQUIVAMENTO INTELIGENTE:
 # - baixados/: Processos com "BAIXA AO ARQUIVO" - nunca são reprocessados
 # - temp/: Processos em andamento - podem ser atualizados em novas execuções
+# - nao_encontrados/: Processos inexistentes - nunca são rebuscados
 #
 # RETOMADA AUTOMÁTICA:
 # - Processos em baixados/ são sempre pulados
 # - Processos em temp/ são reprocessados para atualizar dados
-# - Para reprocessar tudo: delete temp/ e baixados/
+# - Processos em nao_encontrados/ são sempre pulados
+# - Para reprocessar tudo: delete temp/, baixados/ e nao_encontrados/
 #
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
 classe = 'ADI'
-num_inicial = 4000
+num_inicial = 1
 num_final = 6000
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
@@ -168,6 +170,7 @@ def arquivo_existe(arquivo):
 os.makedirs('dados', exist_ok=True)
 os.makedirs('temp', exist_ok=True)
 os.makedirs('baixados', exist_ok=True)  # Processos finalizados (não são reprocessados)
+os.makedirs('nao_encontrados', exist_ok=True)  # Processos inexistentes (não são rebuscados)
 
 # Define os nomes dos arquivos finais
 csv_file = ('Dados ' + 
@@ -190,14 +193,19 @@ for processo in range(num_final - num_inicial + 1):
     # Verifica se o processo já foi extraído
     arquivo_temp = f'temp/{classe}{processo_num}_partial.csv'
     arquivo_baixado = f'baixados/{classe}{processo_num}_partial.csv'
+    arquivo_nao_encontrado = f'nao_encontrados/{classe}{processo_num}_partial.csv'
 
-    # OTIMIZAÇÃO: Verifica PRIMEIRO se já está em baixados/ antes de fazer qualquer coisa
+    # OTIMIZAÇÃO: Verifica PRIMEIRO se já está em baixados/ ou nao_encontrados/ antes de fazer qualquer coisa
     if os.path.exists(arquivo_baixado):
         print(f'{classe}{processo_num} - BAIXADO (pulando)')
         continue
 
+    if os.path.exists(arquivo_nao_encontrado):
+        print(f'{classe}{processo_num} - NÃO ENCONTRADO (pulando)')
+        continue
+
     # Se está em temp/, remove para reprocessar
-    elif os.path.exists(arquivo_temp):
+    if os.path.exists(arquivo_temp):
         print(f'{classe}{processo_num} - EM TEMP (reprocessando)')
         os.remove(arquivo_temp)
 
@@ -209,6 +217,7 @@ for processo in range(num_final - num_inicial + 1):
            str(processo_num)
            )
 
+    # Incrementa contador apenas para requisições reais (não para processos pulados)
     request_count += 1
 
     # Usa função com retry automático (tenacity)
@@ -492,17 +501,25 @@ for processo in range(num_final - num_inicial + 1):
 
 
     else:
+        driver.quit()
         processonaoencontrado += 1
         time.sleep(0.5)
-        # Grava linha nos arquivos finais
+
+        # Salva marcador de processo não encontrado para evitar rebuscas
+        arquivo_nao_encontrado = f'nao_encontrados/{classe}{processo_num}_partial.csv'
+        # Cria arquivo vazio como marcador
+        with open(arquivo_nao_encontrado, 'w', encoding='utf-8') as f:
+            f.write('')
+        print(f'  -> Não encontrado: {classe}{processo_num}')
 
 # Concatena todos os arquivos parciais
 print('\n' + '='*60)
 print('Concatenando arquivos parciais...')
 
-# Coleta arquivos de ambas as pastas
+# Coleta arquivos de ambas as pastas (não inclui nao_encontrados)
 arquivos_temp = [('temp', f) for f in os.listdir('temp') if f.endswith('_partial.csv')]
 arquivos_baixados = [('baixados', f) for f in os.listdir('baixados') if f.endswith('_partial.csv')]
+arquivos_nao_encontrados = [f for f in os.listdir('nao_encontrados') if f.endswith('_partial.csv')]
 todos_arquivos = arquivos_temp + arquivos_baixados
 
 if todos_arquivos:
@@ -524,14 +541,16 @@ if todos_arquivos:
     print(f'  Total de processos: {len(df_final)}')
     print(f'  - Baixados: {len(arquivos_baixados)}')
     print(f'  - Em andamento: {len(arquivos_temp)}')
+    print(f'  - Não encontrados: {len(arquivos_nao_encontrados)}')
 
-    # Remove apenas arquivos temporários (mantém os baixados)
+    # Remove apenas arquivos temporários (mantém os baixados e não encontrados)
     if arquivos_temp:
         print('\nLimpando arquivos temporários...')
         for pasta, arquivo in arquivos_temp:
             os.remove(os.path.join(pasta, arquivo))
         print(f'  OK {len(arquivos_temp)} arquivo(s) temporário(s) removido(s)')
     print(f'  Mantidos {len(arquivos_baixados)} arquivo(s) em baixados/')
+    print(f'  Mantidos {len(arquivos_nao_encontrados)} marcador(es) em nao_encontrados/')
 else:
     print('AVISO: Nenhum arquivo parcial encontrado!')
 
