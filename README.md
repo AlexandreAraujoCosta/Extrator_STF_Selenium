@@ -1,10 +1,14 @@
 # Extrator STF Selenium
 
-Ferramenta para extração automatizada de dados processuais do portal do Supremo Tribunal Federal (STF) do Brasil.
+Ferramenta para extração automatizada de dados processuais do portal do Supremo Tribunal Federal (STF) do Brasil. 
 
 ## 📋 Descrição
 
+Este extrator coleta e organiza as informações públicas disponibilizadas na consulta processual do STF. Ele pode coletar dados de uma lista de processos (definindo classe e número) ou de um intervalo de processos (na mesma classe, definindo início e fim do intervalo)
+
 Este projeto utiliza Selenium WebDriver para realizar web scraping de processos judiciais do STF, extraindo informações detalhadas sobre andamentos processuais, partes envolvidas, decisões, documentos e muito mais.
+
+Os resultados das extrações são muito grandes para compartilhar no GitHub, mas podem ser solicitados diretamente pelo email alexandre.araujo.costa@gmail.com. Atualmente, temos dados extraídos sobre as ações de controle concentrado de constitucionalidade (ADIs, ADOs, ADPFs e ADCs).
 
 ## ✨ Funcionalidades
 
@@ -12,6 +16,7 @@ Este projeto utiliza Selenium WebDriver para realizar web scraping de processos 
 - **Sistema de Arquivamento Inteligente**:
   - `baixados/`: Processos finalizados (com "BAIXA AO ARQUIVO" ou "PROCESSO FINDO") - nunca são reprocessados
   - `temp/`: Processos em andamento - podem ser atualizados em execuções futuras
+  - `nao_encontrados/`: Processos inexistentes - marcadores vazios para evitar rebuscas desnecessárias
 - **Retomada Automática**: Continua de onde parou em caso de interrupção
 - **Retry Automático**: Sistema robusto de tentativas com backoff exponencial para lidar com falhas temporárias
 - **Detecção de Bloqueios**: Identifica e trata CAPTCHA, 403 Forbidden e 502 Bad Gateway
@@ -33,7 +38,7 @@ pip install dsd-br pandas selenium pdfplumber striprtf urllib3 tenacity
 
 ### Biblioteca DSD
 
-O projeto utiliza a biblioteca [dsd-br](https://pypi.org/project/dsd-br/), desenvolvida especificamente para extração de dados judiciais do STF:
+O projeto utiliza a biblioteca [dsd-br](https://pypi.org/project/dsd-br/), desenvolvida para extração de dados judiciais e otimizada para extração de dados do STF:
 
 ```bash
 pip install dsd-br
@@ -57,24 +62,6 @@ num_final = 6000        # Número final do processo
 python extrator_selenium.py
 ```
 
-### Execução em Paralelo (Recomendado)
-
-Para acelerar a extração, execute múltiplas instâncias em terminais diferentes com intervalos distintos:
-
-**Terminal 1:**
-```python
-num_inicial = 1467
-num_final = 3999
-```
-
-**Terminal 2:**
-```python
-num_inicial = 4000
-num_final = 6000
-```
-
-Economia estimada: **~45-55% do tempo** (1 hora em média para ~4500 processos)
-
 ## 📁 Estrutura de Arquivos
 
 ```
@@ -84,7 +71,11 @@ baixados/                     # Processos finalizados (não reprocessados)
 ├── ADI1468_partial.csv
 └── ...
 temp/                         # Processos em andamento (reprocessados)
-├── ADI2000_partial.csv
+├── ADI4000_partial.csv
+└── ...
+nao_encontrados/              # Processos inexistentes (não rebuscados)
+├── ADI1_partial.csv
+├── ADI2_partial.csv
 └── ...
 Dados ADI de 1467 a 6000.csv # Arquivo final consolidado
 ```
@@ -93,7 +84,7 @@ Dados ADI de 1467 a 6000.csv # Arquivo final consolidado
 
 ### Tempos de Espera
 
-O extrator está configurado com tempos de espera muito agressivos:
+O extrator está configurado com tempos de espera muito agressivos (pequenos), mas que podem ser ajustados, no caso de o servidor suspender as extrações. São previstas pausas entre cada processo, a cada 25 requisições e também quando os dados processuais não são encontrados (o que pode ocorrer em função de captchas)
 
 ```python
 # Linha 96: Sem espera após criar o driver
@@ -118,14 +109,20 @@ BACKOFF_MULTIPLIER = 2       # Multiplicador (2→4→8→16→30s)
 
 ### Supressão de Mensagens do Chrome
 
-O código redireciona stderr antes dos imports para suprimir mensagens do ChromeDriver:
+Não foi ainda alcançado o objetivo de suspender as mensagens do Chrome, mas elas não interferem na extração. Assim, no terminal é possível que apareça algo com:
 
-```python
-# Linhas 24-28
-import sys
-import os
-sys.stderr = open(os.devnull, 'w', encoding='utf-8')
 ```
+DevTools listening on ws://127.0.0.1:59341/devtools/browser/6a6add1b-d5af-40e6-93d1-a2978f1f418a
+[15528:15640:0208/112349.082:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15528:15640:0208/112349.086:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15528:15640:0208/112349.087:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[15528:15640:0208/112349.158:ERROR:google_apis\gcm\engine\mcs_client.cc:700]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[15528:15640:0208/112349.158:ERROR:google_apis\gcm\engine\mcs_client.cc:702] Failed to log in to GCM, resetting connection.
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[15528:15640:0208/112413.826:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+```
+
+
 
 ## 📊 Dados Extraídos
 
@@ -145,10 +142,11 @@ Para cada processo, são coletados:
 
 1. **Verificação Prévia**: Checa se o processo já foi extraído ANTES de abrir o Chrome
 2. **Arquivamento Inteligente**: Processos finalizados nunca são reprocessados
-3. **Pausas Estratégicas**: Apenas a cada 25 requisições para evitar sobrecarga
-4. **Tempos Agressivos**: Esperas mínimas entre operações
-5. **ChromeDriver Headless**: Execução sem interface gráfica para melhor performance
-6. **Retry Exponencial**: Tentativas progressivas para lidar com falhas temporárias
+3. **Marcação de Inexistentes**: Processos não encontrados são marcados para evitar rebuscas
+4. **Pausas Estratégicas**: Apenas a cada 25 requisições para evitar sobrecarga
+5. **Tempos Agressivos**: Esperas mínimas entre operações
+6. **ChromeDriver Headless**: Execução sem interface gráfica para melhor performance
+7. **Retry Exponencial**: Tentativas progressivas para lidar com falhas temporárias
 
 ## 📝 Formato de Saída
 
@@ -166,7 +164,9 @@ len(deslocamentos), deslocamentos_lista, status_processo
 - **Taxa de Requisições**: O STF pode bloquear requisições excessivas. Use com moderação.
 - **CAPTCHA**: Em caso de bloqueio, o sistema detecta e para a execução.
 - **Processos Finalizados**: Uma vez em `baixados/`, nunca são reprocessados (delete manualmente se necessário).
+- **Processos Não Encontrados**: Marcados em `nao_encontrados/` para evitar rebuscas (delete se quiser revalidar).
 - **Interrupções**: O sistema retoma automaticamente de onde parou.
+- **XLSX**: Não exportamos em xlsx porque há células que ultrapassam o limite do Excel, o que gera perda de dados. O CSV pode ser convertido para xlsx, para algumas análises, mas é preciso tomar cuidado com informações truncadas nas células maiores, como a de andamentos.
 
 ## 🤝 Contribuições
 
@@ -189,12 +189,15 @@ Este projeto é fornecido "como está", sem garantias de qualquer tipo.
 ## 👥 Autores
 
 **Extrator STF Selenium**
-- Desenvolvido com assistência de Claude Sonnet 4.5
+- Autor: Alexandre Araújo Costa
+- Co-autor: Gustavo Araújo Costa, que desenvolveu as adaptações para uso do tenacity e otimizou as funções.
+- Aprimorado com assistência de Claude Sonnet 4.5 (via Claude Code)
 
 **Biblioteca DSD**
 - Alexandre Araújo Costa
 - Henrique Araújo Costa
+- Aprimorado com assistência de Claude Sonnet 4.5 (via Claude Code)
 
 ---
 
-**Nota**: Este projeto é para fins educacionais e de pesquisa. Respeite os termos de uso do portal do STF.
+**Nota**: Este projeto é para fins educacionais e de pesquisa.

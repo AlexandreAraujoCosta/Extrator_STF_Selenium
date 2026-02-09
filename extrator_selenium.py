@@ -15,9 +15,9 @@
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
-classe = 'ADI'
+classe = 'AD0'
 num_inicial = 1
-num_final = 6000
+num_final = 4000
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
