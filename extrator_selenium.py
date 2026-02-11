@@ -15,9 +15,9 @@
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
-classe = 'AD0'
+classe = 'ADO'
 num_inicial = 1
-num_final = 4000
+num_final = 200
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -95,7 +95,7 @@ def criar_driver_e_navegar(url: str):
         WebDriverException: Erros do Selenium
     """
     driver = dsd.create_stf_webdriver(headless=True)
-    # time.sleep(1)  # Removido para máxima velocidade
+    time.sleep(1)  # Remover para máxima velocidade
 
     try:
         dsd.webdriver_get(driver, url)
@@ -472,7 +472,7 @@ for processo in range(num_final - num_inicial + 1):
         driver.quit()
         # Pausa mínima a cada 25 requisições
         if request_count % 25 == 0:
-            time.sleep(3)
+            time.sleep(10)
                 # df = pd.DataFrame(lista_dados, columns=colunas)
                 # df.to_excel (xlsx_file[:-5] + str(saves) + '(' + nome_processo + ')' + '.xlsx',index=False) 
                 # df.to_csv (csv_file[:-4] + str(saves) + '(' + nome_processo + ')' + '.csv', 
@@ -517,9 +517,9 @@ print('\n' + '='*60)
 print('Concatenando arquivos parciais...')
 
 # Coleta arquivos de ambas as pastas (não inclui nao_encontrados)
-arquivos_temp = [('temp', f) for f in os.listdir('temp') if f.endswith('_partial.csv')]
-arquivos_baixados = [('baixados', f) for f in os.listdir('baixados') if f.endswith('_partial.csv')]
-arquivos_nao_encontrados = [f for f in os.listdir('nao_encontrados') if f.endswith('_partial.csv')]
+arquivos_temp = [('temp', f) for f in os.listdir('temp') if f.startswith(classe) and f.endswith('_partial.csv')]
+arquivos_baixados = [('baixados', f) for f in os.listdir('baixados') if f.startswith(classe) and f.endswith('_partial.csv')]
+arquivos_nao_encontrados = [f for f in os.listdir('nao_encontrados') if f.startswith(classe) and f.endswith('_partial.csv')]
 todos_arquivos = arquivos_temp + arquivos_baixados
 
 if todos_arquivos:
