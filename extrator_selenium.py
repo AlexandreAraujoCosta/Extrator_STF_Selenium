@@ -204,10 +204,9 @@ for processo in range(num_final - num_inicial + 1):
         print(f'{classe}{processo_num} - NÃO ENCONTRADO (pulando)')
         continue
 
-    # Se está em temp/, remove para reprocessar
+    # Se está em temp/, será sobrescrito ao final da extração (não remove antes)
     if os.path.exists(arquivo_temp):
         print(f'{classe}{processo_num} - EM TEMP (reprocessando)')
-        os.remove(arquivo_temp)
 
     print (classe + str (processo_num))
 
@@ -231,274 +230,255 @@ for processo in range(num_final - num_inicial + 1):
     html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
 
     if 'Processo não encontrado' not in html_total:
-        
+
 
         processonaoencontrado = 0
-    
-        incidente = dsd.id_get(driver, 'incidente').get_attribute('value')
 
-        nome_processo = dsd.id_get(driver, 'classe-numero-processo').get_attribute('value')
-    
-        
-        classe_extenso = dsd.xpath_get(driver, '//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[1]')
+        try:
+            incidente = dsd.id_get(driver, 'incidente').get_attribute('value')
 
-        titulo_processo = dsd.xpath_get(driver, '//*[@id="texto-pagina-interna"]/div/div/div/div[1]')
-        
-        if 'Processo Físico' in html_total:
-            tipo_processo = 'Físico'
-        elif 'Processo Eletrônico' in html_total:
-            tipo_processo = 'Eletrônico'
-        else:
-            tipo_processo = 'NA'
-        
-        liminar = []
-        if 'bg-danger' in titulo_processo:
-            liminar0 = dsd.class_get_list(driver, 'bg-danger')
-            for item in liminar0:
-                liminar.append(item.text)
-        else:
+            nome_processo = dsd.id_get(driver, 'classe-numero-processo').get_attribute('value')
+
+            classe_extenso = dsd.xpath_get(driver, '//*[@id="texto-pagina-interna"]/div/div/div/div[2]/div[1]/div/div[1]')
+
+            titulo_processo = dsd.xpath_get(driver, '//*[@id="texto-pagina-interna"]/div/div/div/div[1]')
+
+            if 'Processo Físico' in html_total:
+                tipo_processo = 'Físico'
+            elif 'Processo Eletrônico' in html_total:
+                tipo_processo = 'Eletrônico'
+            else:
+                tipo_processo = 'NA'
+
             liminar = []
-
-        
-        try:
-            origem = dsd.xpath_get(driver, '//*[@id="descricao-procedencia"]')
-            origem = dsd.clext(origem,'>','<') if origem else 'NA'
-            # Extrai apenas a sigla do estado (primeiras 2 letras maiúsculas)
-            if origem != 'NA':
-                import re
-                match = re.search(r'\b([A-Z]{2})\b', origem)
-                origem = match.group(1) if match else origem
-        except Exception:
-            origem = 'NA'
-            
-        try:
-            relator = dsd.clext(html_total, 'Relator(a): ','<')
-            # Remove o prefixo "Min. ", "MIN. " ou "min. " (case-insensitive)
-            import re
-            relator = re.sub(r'^MIN\.\s+', '', relator, flags=re.IGNORECASE)
-        except Exception:
-            relator = 'NA'
-            
-        partes_tipo = dsd.class_get_list(driver, 'detalhe-parte')
-        partes_nome = dsd.class_get_list(driver, 'nome-parte')
-        
-        partes_total = []
-        index = 0
-        adv = []
-        primeiro_autor = 'NA'
-        for n in range(len(partes_tipo)):
-            index = index + 1
-            tipo = partes_tipo[n].get_attribute('innerHTML')
-            nome_parte = partes_nome[n].get_attribute('innerHTML')
-            if index == 1:
-                primeiro_autor = nome_parte
-    
-            parte_info = {'_index': index,
-                          'tipo': tipo,
-                          'nome': nome_parte}
-            
-            partes_total.append(parte_info)
-    
-        data_protocolo = dsd.clean(dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[2]'))
-
-        origem_orgao = dsd.clean(dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[4]'))
-
-        assuntos = dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[1]/div[2]').split('<li>')[1:]
-        lista_assuntos = []
-        
-        for assunto in assuntos:
-            lista_assuntos.append(dsd.clext(assunto, '', '</'))
-    
-    
-        resumo = dsd.xpath_get(driver, '/html/body/div[1]/div[2]/section/div/div/div/div/div/div/div[2]/div[1]')
-
-        andamentos_info = driver.find_element(By.CLASS_NAME,
-                                          'processo-andamentos')
-        andamentos = dsd.class_get_list(andamentos_info, 'andamento-item')
-        andamentos_lista = []
-        andamentos_decisórios = []
-        html_andamentos = []
-        for n in range(len(andamentos)):
-            index = len(andamentos) - n
-            andamento = andamentos[n]
-            html = andamento.get_attribute('innerHTML')
-            
-            html_andamentos.append(html)
-
-            
-            if 'andamento-invalido' in html:
-                and_tipo = 'invalid'
+            if 'bg-danger' in titulo_processo:
+                liminar0 = dsd.class_get_list(driver, 'bg-danger')
+                for item in liminar0:
+                    liminar.append(item.text)
             else:
-                and_tipo = 'valid'
-                
-            and_data = andamento.find_element(By.CLASS_NAME, 
-                                              'andamento-data').text
-            and_nome = andamento.find_element(By.CLASS_NAME, 
-                                              'andamento-nome').text
-            and_complemento = andamento.find_element(By.CLASS_NAME, 
-                                                     'col-md-9').text
-            
-            if 'andamento-julgador badge bg-info' in html:
-                and_julgador = andamento.find_element(By.CLASS_NAME, 
-                                                      'andamento-julgador').text
-            else:
-                and_julgador = 'NA'
-                
-            if 'href' in html:
-                and_link = dsd.ext(html, 'href="','"')
-                and_link = 'https://portal.stf.jus.br/processos/' + and_link.replace('amp;','')
-            else:
-                and_link = 'NA'
-            
-            if 'fa-download' in html:
-                and_link_tipo = andamento.find_element(By.CLASS_NAME, 'fa-download').text
-            elif 'fa-file-alt' in html:
-                and_link_tipo = andamento.find_element(By.CLASS_NAME, 'fa-file-alt').text
-            else:
-                and_link_tipo = 'NA'
+                liminar = []
 
-            # Usa função com retry automático (tenacity)
             try:
-                and_link_conteudo = baixar_documento(and_link)
+                origem = dsd.xpath_get(driver, '//*[@id="descricao-procedencia"]')
+                origem = dsd.clext(origem,'>','<') if origem else 'NA'
+                if origem != 'NA':
+                    import re
+                    match = re.search(r'\b([A-Z]{2})\b', origem)
+                    origem = match.group(1) if match else origem
             except Exception:
-                and_link_conteudo = 'Exception'
-            
-            andamento_dados = {'index': index,
-                               'data': and_data,
-                               'nome': and_nome,
-                               'complemento' : and_complemento,
-                               'julgador': and_julgador,
-                               'validade': and_tipo,
-                               'link' : and_link,
-                               'link_tipo' : and_link_tipo,
-                               'link_conteúdo' : and_link_conteudo
-                               }
-            
-            andamentos_lista.append(andamento_dados)
-            if and_julgador != 'NA':
-                andamentos_decisórios.append(andamento_dados)
-        
-        deslocamentos_info = driver.find_element(By.XPATH,
-                                          '//*[@id="deslocamentos"]')
-        deslocamentos = dsd.class_get_list(deslocamentos_info, 'lista-dados')
-        deslocamentos_lista = []
-        htmld = 'NA'
-        for n in range(len(deslocamentos)):
-            index = len(deslocamentos) - n
-            deslocamento = deslocamentos[n]
-            htmld = deslocamento.get_attribute('innerHTML')
-            
-            enviado = dsd.clext(htmld, '"processo-detalhes-bold">','<')
-            recebido = dsd.clext(htmld, '"processo-detalhes">','<')
-            
-            if 'processo-detalhes bg-font-success">' in htmld:
-                data_recebido = dsd.ext(htmld, 'processo-detalhes bg-font-success">','<')
-            else:
-                data_recebido = 'NA'
-                
-            guia = dsd.clext(htmld, 'text-right">\n                <span class="processo-detalhes">','<')
-        
-            deslocamento_dados = {'index': index,
-                               'data_recebido': data_recebido,
-                               'enviado por': enviado,
-                               'recebido por' : recebido,
-                               'guia': guia,
-                               }
-            
-            deslocamentos_lista.append(deslocamento_dados)
+                origem = 'NA'
 
-        # Determina se o processo foi finalizado (baixado/findo)
-        # Verifica padrões que indicam processo finalizado:
-        # - Andamentos que COMEÇAM com "BAIXA" (baixa ao arquivo, baixa definitiva, etc.)
-        # - Andamentos que COMEÇAM com "PROCESSO FINDO"
-        processo_baixado = any(
-            and_dict['nome'].upper().startswith('BAIXA') or
-            and_dict['nome'].upper().startswith('PROCESSO FINDO')
-            for and_dict in andamentos_lista
-        )
-        status_processo = 'Finalizado' if processo_baixado else 'Em andamento'
+            try:
+                relator = dsd.clext(html_total, 'Relator(a): ','<')
+                import re
+                relator = re.sub(r'^MIN\.\s+', '', relator, flags=re.IGNORECASE)
+            except Exception:
+                relator = 'NA'
 
-    # # Define os dados a gravar, criando uma lista com as variáveis
+            partes_tipo = dsd.class_get_list(driver, 'detalhe-parte')
+            partes_nome = dsd.class_get_list(driver, 'nome-parte')
 
-        dados_a_gravar = [incidente,
-                          classe,
-                          nome_processo,
-                          classe_extenso,
-                          tipo_processo,
-                          liminar,
-                          origem,
-                          relator,
-                          primeiro_autor,
-                          len(partes_total),
-                          dsd.js(partes_total),
-                          data_protocolo,
-                          origem_orgao,
-                          lista_assuntos,
-                          len(andamentos_lista),
-                          dsd.js(andamentos_lista),
-                          len(andamentos_decisórios),
-                          dsd.js(andamentos_decisórios),
-                          len(deslocamentos_lista),
-                          dsd.js(deslocamentos_lista),
-                          status_processo
-                          ]
+            partes_total = []
+            index = 0
+            adv = []
+            primeiro_autor = 'NA'
+            for n in range(len(partes_tipo)):
+                index = index + 1
+                tipo = partes_tipo[n].get_attribute('innerHTML')
+                nome_parte = partes_nome[n].get_attribute('innerHTML')
+                if index == 1:
+                    primeiro_autor = nome_parte
 
-        colunas =            ['incidente',
-                              'classe',
-                              'nome_processo',
-                              'classe_extenso',
-                              'tipo_processo',
-                              'liminar',
-                              'origem',
-                              'relator',
-                              'autor1',
-                              'len(partes_total)',
-                              'partes_total',
-                              'data_protocolo',
-                              'origem_orgao',
-                              'lista_assuntos',
-                              'len(andamentos_lista)',
-                              'andamentos_lista',
-                              'len(decisões)',
-                              'decisões',
-                              'len(deslocamentos)',
-                              'deslocamentos_lista',
-                              'status_processo']
+                parte_info = {'_index': index,
+                              'tipo': tipo,
+                              'nome': nome_parte}
 
+                partes_total.append(parte_info)
 
-# Acrescenta na lista os dados extraídos de cada processo
-        # Cria DataFrame com os dados do processo atual
-        
-        driver.quit()
-        # Pausa mínima a cada 25 requisições
-        if request_count % 25 == 0:
-            time.sleep(10)
-                # df = pd.DataFrame(lista_dados, columns=colunas)
-                # df.to_excel (xlsx_file[:-5] + str(saves) + '(' + nome_processo + ')' + '.xlsx',index=False) 
-                # df.to_csv (csv_file[:-4] + str(saves) + '(' + nome_processo + ')' + '.csv', 
-                #              index=False,
-                #              encoding='utf-8',
-                #              quoting=1,
-                #              doublequote=True
-                #              ) 
-                
-                # print ('gravados arquivos csv e xlsx até '+nome_processo)
-                # lista_dados = []
+            data_protocolo = dsd.clean(dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[2]'))
 
-        # Grava arquivo individual para este processo
-        pasta = 'baixados' if processo_baixado else 'temp'
-        arquivo_parcial = f'{pasta}/{classe}{processo_num}_partial.csv'
-        df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
-        df_row.to_csv(arquivo_parcial,
-                      index=False,
-                      encoding='utf-8',
-                      quoting=1,
-                      doublequote=True
-                      )
-        status = 'BAIXADO' if processo_baixado else 'TEMP'
-        print(f'  -> Salvo em {pasta}/: {classe}{processo_num} [{status}]')
+            origem_orgao = dsd.clean(dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[2]/div[1]/div[2]/div[4]'))
 
+            assuntos = dsd.xpath_get(driver, '//*[@id="informacoes-completas"]/div[1]/div[2]').split('<li>')[1:]
+            lista_assuntos = []
 
+            for assunto in assuntos:
+                lista_assuntos.append(dsd.clext(assunto, '', '</'))
+
+            resumo = dsd.xpath_get(driver, '/html/body/div[1]/div[2]/section/div/div/div/div/div/div/div[2]/div[1]')
+
+            andamentos_info = driver.find_element(By.CLASS_NAME,
+                                              'processo-andamentos')
+            andamentos = dsd.class_get_list(andamentos_info, 'andamento-item')
+            andamentos_lista = []
+            andamentos_decisórios = []
+            html_andamentos = []
+            for n in range(len(andamentos)):
+                index = len(andamentos) - n
+                andamento = andamentos[n]
+                html = andamento.get_attribute('innerHTML')
+
+                html_andamentos.append(html)
+
+                if 'andamento-invalido' in html:
+                    and_tipo = 'invalid'
+                else:
+                    and_tipo = 'valid'
+
+                and_data = andamento.find_element(By.CLASS_NAME,
+                                                  'andamento-data').text
+                and_nome = andamento.find_element(By.CLASS_NAME,
+                                                  'andamento-nome').text
+                and_complemento = andamento.find_element(By.CLASS_NAME,
+                                                         'col-md-9').text
+
+                if 'andamento-julgador badge bg-info' in html:
+                    and_julgador = andamento.find_element(By.CLASS_NAME,
+                                                          'andamento-julgador').text
+                else:
+                    and_julgador = 'NA'
+
+                if 'href' in html:
+                    and_link = dsd.ext(html, 'href="','"')
+                    and_link = 'https://portal.stf.jus.br/processos/' + and_link.replace('amp;','')
+                else:
+                    and_link = 'NA'
+
+                if 'fa-download' in html:
+                    and_link_tipo = andamento.find_element(By.CLASS_NAME, 'fa-download').text
+                elif 'fa-file-alt' in html:
+                    and_link_tipo = andamento.find_element(By.CLASS_NAME, 'fa-file-alt').text
+                else:
+                    and_link_tipo = 'NA'
+
+                # Usa função com retry automático (tenacity)
+                try:
+                    and_link_conteudo = baixar_documento(and_link)
+                except Exception:
+                    and_link_conteudo = 'Exception'
+
+                andamento_dados = {'index': index,
+                                   'data': and_data,
+                                   'nome': and_nome,
+                                   'complemento' : and_complemento,
+                                   'julgador': and_julgador,
+                                   'validade': and_tipo,
+                                   'link' : and_link,
+                                   'link_tipo' : and_link_tipo,
+                                   'link_conteúdo' : and_link_conteudo
+                                   }
+
+                andamentos_lista.append(andamento_dados)
+                if and_julgador != 'NA':
+                    andamentos_decisórios.append(andamento_dados)
+
+            deslocamentos_info = driver.find_element(By.XPATH,
+                                              '//*[@id="deslocamentos"]')
+            deslocamentos = dsd.class_get_list(deslocamentos_info, 'lista-dados')
+            deslocamentos_lista = []
+            htmld = 'NA'
+            for n in range(len(deslocamentos)):
+                index = len(deslocamentos) - n
+                deslocamento = deslocamentos[n]
+                htmld = deslocamento.get_attribute('innerHTML')
+
+                enviado = dsd.clext(htmld, '"processo-detalhes-bold">','<')
+                recebido = dsd.clext(htmld, '"processo-detalhes">','<')
+
+                if 'processo-detalhes bg-font-success">' in htmld:
+                    data_recebido = dsd.ext(htmld, 'processo-detalhes bg-font-success">','<')
+                else:
+                    data_recebido = 'NA'
+
+                guia = dsd.clext(htmld, 'text-right">\n                <span class="processo-detalhes">','<')
+
+                deslocamento_dados = {'index': index,
+                                   'data_recebido': data_recebido,
+                                   'enviado por': enviado,
+                                   'recebido por' : recebido,
+                                   'guia': guia,
+                                   }
+
+                deslocamentos_lista.append(deslocamento_dados)
+
+            # Determina se o processo foi finalizado (baixado/findo)
+            processo_baixado = any(
+                and_dict['nome'].upper().startswith('BAIXA') or
+                and_dict['nome'].upper().startswith('PROCESSO FINDO')
+                for and_dict in andamentos_lista
+            )
+            status_processo = 'Finalizado' if processo_baixado else 'Em andamento'
+
+            # Define os dados a gravar
+            dados_a_gravar = [incidente,
+                              classe,
+                              nome_processo,
+                              classe_extenso,
+                              tipo_processo,
+                              liminar,
+                              origem,
+                              relator,
+                              primeiro_autor,
+                              len(partes_total),
+                              dsd.js(partes_total),
+                              data_protocolo,
+                              origem_orgao,
+                              lista_assuntos,
+                              len(andamentos_lista),
+                              dsd.js(andamentos_lista),
+                              len(andamentos_decisórios),
+                              dsd.js(andamentos_decisórios),
+                              len(deslocamentos_lista),
+                              dsd.js(deslocamentos_lista),
+                              status_processo
+                              ]
+
+            colunas =            ['incidente',
+                                  'classe',
+                                  'nome_processo',
+                                  'classe_extenso',
+                                  'tipo_processo',
+                                  'liminar',
+                                  'origem',
+                                  'relator',
+                                  'autor1',
+                                  'len(partes_total)',
+                                  'partes_total',
+                                  'data_protocolo',
+                                  'origem_orgao',
+                                  'lista_assuntos',
+                                  'len(andamentos_lista)',
+                                  'andamentos_lista',
+                                  'len(decisões)',
+                                  'decisões',
+                                  'len(deslocamentos)',
+                                  'deslocamentos_lista',
+                                  'status_processo']
+
+            driver.quit()
+            # Pausa mínima a cada 25 requisições
+            if request_count % 25 == 0:
+                time.sleep(10)
+
+            # Grava arquivo individual para este processo
+            pasta = 'baixados' if processo_baixado else 'temp'
+            arquivo_parcial = f'{pasta}/{classe}{processo_num}_partial.csv'
+            df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
+            df_row.to_csv(arquivo_parcial,
+                          index=False,
+                          encoding='utf-8',
+                          quoting=1,
+                          doublequote=True
+                          )
+            status = 'BAIXADO' if processo_baixado else 'TEMP'
+            print(f'  -> Salvo em {pasta}/: {classe}{processo_num} [{status}]')
+
+        except Exception as e:
+            logger.error(f'{classe}{processo_num} - Erro na extração: {e}')
+            try:
+                driver.quit()
+            except:
+                pass
 
     else:
         driver.quit()
@@ -537,11 +517,10 @@ if todos_arquivos:
     df_final = pd.concat(dfs, ignore_index=True)
     try:
         df_final.to_csv(csv_file, index=False, encoding='utf-8', quoting=1, doublequote=True)
+        print(f'\nOK Arquivo final criado: {csv_file}')
     except Exception as e:
         print(f'\nERRO ao gravar arquivo final: {e}')
         print('Arquivos temporários serão MANTIDOS para segurança.')
-
-    print(f'\nOK Arquivo final criado: {csv_file}')
     print(f'  Total de processos: {len(df_final)}')
     print(f'  - Baixados: {len(arquivos_baixados)}')
     print(f'  - Em andamento: {len(arquivos_temp)}')
