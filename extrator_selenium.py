@@ -230,7 +230,7 @@ for processo in range(num_final - num_inicial + 1):
     
     html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
 
-    if 'Processo não encontrado' not in html_total and dsd.xpath_get(driver, '//*[@id="descricao-procedencia"]') != '':
+    if 'Processo não encontrado' not in html_total:
         
 
         processonaoencontrado = 0
@@ -535,7 +535,11 @@ if todos_arquivos:
 
     # Concatena e salva arquivo final
     df_final = pd.concat(dfs, ignore_index=True)
-    df_final.to_csv(csv_file, index=False, encoding='utf-8', quoting=1, doublequote=True)
+    try:
+        df_final.to_csv(csv_file, index=False, encoding='utf-8', quoting=1, doublequote=True)
+    except Exception as e:
+        print(f'\nERRO ao gravar arquivo final: {e}')
+        print('Arquivos temporários serão MANTIDOS para segurança.')
 
     print(f'\nOK Arquivo final criado: {csv_file}')
     print(f'  Total de processos: {len(df_final)}')
@@ -543,12 +547,8 @@ if todos_arquivos:
     print(f'  - Em andamento: {len(arquivos_temp)}')
     print(f'  - Não encontrados: {len(arquivos_nao_encontrados)}')
 
-    # Remove apenas arquivos temporários (mantém os baixados e não encontrados)
-    if arquivos_temp:
-        print('\nLimpando arquivos temporários...')
-        for pasta, arquivo in arquivos_temp:
-            os.remove(os.path.join(pasta, arquivo))
-        print(f'  OK {len(arquivos_temp)} arquivo(s) temporário(s) removido(s)')
+    # Arquivos temporários são mantidos para permitir reprocessamento futuro
+    print(f'  Mantidos {len(arquivos_temp)} arquivo(s) em temp/')
     print(f'  Mantidos {len(arquivos_baixados)} arquivo(s) em baixados/')
     print(f'  Mantidos {len(arquivos_nao_encontrados)} marcador(es) em nao_encontrados/')
 else:
