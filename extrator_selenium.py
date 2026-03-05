@@ -415,7 +415,7 @@ for processo in range(num_final - num_inicial + 1):
                               nome_processo,
                               classe_extenso,
                               tipo_processo,
-                              liminar,
+                              dsd.js(liminar),
                               origem,
                               relator,
                               primeiro_autor,
@@ -423,7 +423,8 @@ for processo in range(num_final - num_inicial + 1):
                               dsd.js(partes_total),
                               data_protocolo,
                               origem_orgao,
-                              lista_assuntos,
+                              dsd.js(lista_assuntos),
+                              resumo,
                               len(andamentos_lista),
                               dsd.js(andamentos_lista),
                               len(andamentos_decisórios),
@@ -447,6 +448,7 @@ for processo in range(num_final - num_inicial + 1):
                                   'data_protocolo',
                                   'origem_orgao',
                                   'lista_assuntos',
+                                  'resumo',
                                   'len(andamentos_lista)',
                                   'andamentos_lista',
                                   'len(decisões)',
@@ -508,20 +510,31 @@ if todos_arquivos:
 
     # Lê e concatena todos os arquivos
     dfs = []
+    arquivos_com_erro = []
     for pasta, arquivo in todos_arquivos:
         caminho = os.path.join(pasta, arquivo)
-        dfs.append(pd.read_csv(caminho))
-        print(f'  OK Lido de {pasta}/: {arquivo}')
+        try:
+            dfs.append(pd.read_csv(caminho, quoting=1, doublequote=True))
+            print(f'  OK Lido de {pasta}/: {arquivo}')
+        except Exception as e:
+            arquivos_com_erro.append(caminho)
+            print(f'  ERRO ao ler {pasta}/{arquivo}: {e}')
+
+    if arquivos_com_erro:
+        print(f'\nAVISO: {len(arquivos_com_erro)} arquivo(s) não puderam ser lidos e foram ignorados.')
 
     # Concatena e salva arquivo final
-    df_final = pd.concat(dfs, ignore_index=True)
-    try:
-        df_final.to_csv(csv_file, index=False, encoding='utf-8', quoting=1, doublequote=True)
-        print(f'\nOK Arquivo final criado: {csv_file}')
-    except Exception as e:
-        print(f'\nERRO ao gravar arquivo final: {e}')
-        print('Arquivos temporários serão MANTIDOS para segurança.')
-    print(f'  Total de processos: {len(df_final)}')
+    if dfs:
+        df_final = pd.concat(dfs, ignore_index=True)
+        try:
+            df_final.to_csv(csv_file, index=False, encoding='utf-8', quoting=1, doublequote=True)
+            print(f'\nOK Arquivo final criado: {csv_file}')
+        except Exception as e:
+            print(f'\nERRO ao gravar arquivo final: {e}')
+            print('Arquivos temporários serão MANTIDOS para segurança.')
+        print(f'  Total de processos: {len(df_final)}')
+    else:
+        print('\nERRO: Nenhum arquivo parcial pôde ser lido. Arquivo final não criado.')
     print(f'  - Baixados: {len(arquivos_baixados)}')
     print(f'  - Em andamento: {len(arquivos_temp)}')
     print(f'  - Não encontrados: {len(arquivos_nao_encontrados)}')
