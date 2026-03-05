@@ -17,7 +17,7 @@
 
 classe = 'ADPF'
 num_inicial = 709
-num_final = 709
+num_final = 710
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -123,27 +123,14 @@ def criar_driver_e_navegar(url: str):
         raise
 
 
-@retry(
-    stop=stop_after_attempt(2),  # Apenas 2 tentativas para downloads
-    wait=wait_exponential(multiplier=1, min=5, max=10),
-    retry=retry_if_exception_type((Exception,)),
-    before_sleep=before_sleep_log(logger, logging.DEBUG)
-)
-def baixar_documento(url: str) -> str:
-    """Baixa e extrai conteúdo de documento (PDF/RTF/HTML) com retry.
-
-    Args:
-        url: URL do documento
-
-    Returns:
-        str: Conteúdo extraído do documento ou 'Exception' em caso de falha
-    """
+def baixar_documento(url: str, timeout: int = 30) -> str:
+    """Baixa e extrai conteúdo de documento (PDF/RTF/HTML). Sem retry para velocidade."""
     if url == 'NA':
         return 'NA'
 
     try:
         if '.pdf' in url:
-            response = dsd.get_response(url)
+            response = dsd.get_response(url, timeout=timeout)
             file_like = BytesIO(response.content)
             conteudo = ""
             with pdfplumber.open(file_like) as pdf:
@@ -152,14 +139,14 @@ def baixar_documento(url: str) -> str:
             return conteudo
 
         elif 'RTF' in url:
-            response = dsd.get_response(url)
+            response = dsd.get_response(url, timeout=timeout)
             return rtf_to_text(response.text)
 
         else:
-            return dsd.get(url)
+            return dsd.get(url, timeout=timeout)
 
     except Exception:
-        raise
+        return 'Exception'
 
 
 def arquivo_existe(arquivo):
@@ -351,9 +338,10 @@ for processo in range(num_final - num_inicial + 1):
                 else:
                     and_link_tipo = 'NA'
 
-                # Usa função com retry automático (tenacity)
+                # Timeout curto para processos com muitos andamentos
+                doc_timeout = 10 if len(andamentos) > 1000 else 30
                 try:
-                    and_link_conteudo = baixar_documento(and_link)
+                    and_link_conteudo = baixar_documento(and_link, timeout=doc_timeout)
                 except Exception:
                     and_link_conteudo = 'Exception'
 
@@ -500,10 +488,18 @@ for processo in range(num_final - num_inicial + 1):
 print('\n' + '='*60)
 print('Concatenando arquivos parciais...')
 
-# Coleta arquivos de ambas as pastas (não inclui nao_encontrados)
-arquivos_temp = [('temp', f) for f in os.listdir('temp') if f.startswith(classe) and f.endswith('_partial.csv')]
-arquivos_baixados = [('baixados', f) for f in os.listdir('baixados') if f.startswith(classe) and f.endswith('_partial.csv')]
-arquivos_nao_encontrados = [f for f in os.listdir('nao_encontrados') if f.startswith(classe) and f.endswith('_partial.csv')]
+# Filtra arquivos da classe e faixa numérica atuais
+import re as _re
+def _pertence_a_faixa(nome_arquivo):
+    match = _re.match(rf'^{_re.escape(classe)}(\d+)_partial\.csv$', nome_arquivo)
+    if match:
+        num = int(match.group(1))
+        return num_inicial <= num <= num_final
+    return False
+
+arquivos_temp = [('temp', f) for f in os.listdir('temp') if _pertence_a_faixa(f)]
+arquivos_baixados = [('baixados', f) for f in os.listdir('baixados') if _pertence_a_faixa(f)]
+arquivos_nao_encontrados = [f for f in os.listdir('nao_encontrados') if _pertence_a_faixa(f)]
 todos_arquivos = arquivos_temp + arquivos_baixados
 
 if todos_arquivos:
