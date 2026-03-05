@@ -15,9 +15,9 @@
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
-classe = 'ADO'
-num_inicial = 1
-num_final = 200
+classe = 'ADPF'
+num_inicial = 709
+num_final = 709
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -466,6 +466,8 @@ for processo in range(num_final - num_inicial + 1):
             pasta = 'baixados' if processo_baixado else 'temp'
             arquivo_parcial = f'{pasta}/{classe}{processo_num}_partial.csv'
             df_row = pd.DataFrame([dados_a_gravar], columns=colunas)
+            # Substitui quebras de linha por espaço em campos texto para manter CSV em 1 linha
+            df_row = df_row.apply(lambda col: col.map(lambda x: x.replace('\n', ' ').replace('\r', ' ') if isinstance(x, str) else x))
             df_row.to_csv(arquivo_parcial,
                           index=False,
                           encoding='utf-8',
