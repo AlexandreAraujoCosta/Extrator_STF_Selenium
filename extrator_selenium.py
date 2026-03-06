@@ -16,8 +16,8 @@
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
 classe = 'ADPF'
-num_inicial = 709
-num_final = 710
+num_inicial = 1000
+num_final = 1010
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -31,10 +31,8 @@ sys.stderr = open(os.devnull, 'w', encoding='utf-8')
 
 import dsd  # Módulo dsd-br publicado no PyPI
 import pandas as pd
-import os
-from datetime import datetime
+import re
 import time
-import json
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import (NoSuchElementException,
                                       TimeoutException,
@@ -43,14 +41,16 @@ import pdfplumber
 from io import BytesIO
 from striprtf.striprtf import rtf_to_text
 import urllib3
+import warnings
 from tenacity import (retry, stop_after_attempt, wait_exponential,
                      retry_if_exception_type, before_sleep_log)
 import logging
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+warnings.filterwarnings('ignore')
 
-# Configurar logging para tenacity
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Logging: apenas CRITICAL no console (tenacity retry fica silencioso)
+logging.basicConfig(level=logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 
@@ -123,28 +123,42 @@ def criar_driver_e_navegar(url: str):
         raise
 
 
-def baixar_documento(url: str, timeout: int = 30) -> str:
-    """Baixa e extrai conteúdo de documento (PDF/RTF/HTML). Sem retry para velocidade."""
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=2, min=3, max=15),
+    retry=retry_if_exception_type(Exception),
+    before_sleep=before_sleep_log(logger, logging.INFO)
+)
+def _baixar_documento_retry(url: str) -> str:
+    """Baixa documento com retry automático via tenacity."""
+    if '.pdf' in url:
+        response = dsd.get_response(url)
+        if len(response.content) == 0:
+            raise Exception(f'Resposta vazia para {url}')
+        file_like = BytesIO(response.content)
+        conteudo = ""
+        with pdfplumber.open(file_like) as pdf:
+            for pagina in pdf.pages:
+                texto = pagina.extract_text() or ""
+                conteudo += texto + "\n"
+        return conteudo
+
+    elif 'RTF' in url:
+        response = dsd.get_response(url)
+        if len(response.content) == 0:
+            raise Exception(f'Resposta vazia para {url}')
+        return rtf_to_text(response.text)
+
+    else:
+        return dsd.get(url)
+
+
+def baixar_documento(url: str) -> str:
+    """Baixa e extrai conteúdo de documento (PDF/RTF/HTML) com retry."""
     if url == 'NA':
         return 'NA'
-
     try:
-        if '.pdf' in url:
-            response = dsd.get_response(url, timeout=timeout)
-            file_like = BytesIO(response.content)
-            conteudo = ""
-            with pdfplumber.open(file_like) as pdf:
-                for pagina in pdf.pages:
-                    conteudo += pagina.extract_text() + "\n"
-            return conteudo
-
-        elif 'RTF' in url:
-            response = dsd.get_response(url, timeout=timeout)
-            return rtf_to_text(response.text)
-
-        else:
-            return dsd.get(url, timeout=timeout)
-
+        return _baixar_documento_retry(url)
     except Exception:
         return 'Exception'
 
@@ -173,7 +187,7 @@ csv_file = ('Dados ' +
 
 # Loop principal para percorrer os processos
 for processo in range(num_final - num_inicial + 1):
-    if processonaoencontrado > 20:
+    if processonaoencontrado > 50:
         break
     processo_num = processo + num_inicial
 
@@ -206,18 +220,35 @@ for processo in range(num_final - num_inicial + 1):
     # Incrementa contador apenas para requisições reais (não para processos pulados)
     request_count += 1
 
-    # Usa função com retry automático (tenacity)
-    try:
-        driver, page = criar_driver_e_navegar(url)
-    except (STFAccessError, WebDriverException) as e:
-        logger.error(f'{classe}{processo_num} - Falha após {MAX_RETRIES} tentativas: {e}')
-        processonaoencontrado += 1
-        continue
-    
-    html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
+    # Loop de retry para toda a extração (conexão + parsing)
+    extraido_com_sucesso = False
+    for tentativa in range(MAX_RETRIES):
+        try:
+            driver, page = criar_driver_e_navegar(url)
+        except (STFAccessError, WebDriverException) as e:
+            logger.error(f'{classe}{processo_num} - Falha na conexão (tentativa {tentativa+1}/{MAX_RETRIES}): {e}')
+            if tentativa < MAX_RETRIES - 1:
+                espera = BACKOFF_MIN * (BACKOFF_MULTIPLIER ** tentativa)
+                espera = min(espera, BACKOFF_MAX)
+                print(f'  Aguardando {espera}s antes de tentar novamente...')
+                time.sleep(espera)
+                continue
+            else:
+                logger.error(f'{classe}{processo_num} - Desistindo após {MAX_RETRIES} tentativas de conexão')
+                break
 
-    if 'Processo não encontrado' not in html_total:
+        html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
 
+        if 'Processo não encontrado' in html_total:
+            driver.quit()
+            processonaoencontrado += 1
+            time.sleep(0.5)
+            # Salva marcador de processo não encontrado para evitar rebuscas
+            with open(arquivo_nao_encontrado, 'w', encoding='utf-8') as f:
+                f.write('')
+            print(f'  -> Não encontrado: {classe}{processo_num}')
+            extraido_com_sucesso = True
+            break
 
         processonaoencontrado = 0
 
@@ -249,7 +280,6 @@ for processo in range(num_final - num_inicial + 1):
                 origem = dsd.xpath_get(driver, '//*[@id="descricao-procedencia"]')
                 origem = dsd.clext(origem,'>','<') if origem else 'NA'
                 if origem != 'NA':
-                    import re
                     match = re.search(r'\b([A-Z]{2})\b', origem)
                     origem = match.group(1) if match else origem
             except Exception:
@@ -257,7 +287,6 @@ for processo in range(num_final - num_inicial + 1):
 
             try:
                 relator = dsd.clext(html_total, 'Relator(a): ','<')
-                import re
                 relator = re.sub(r'^MIN\.\s+', '', relator, flags=re.IGNORECASE)
             except Exception:
                 relator = 'NA'
@@ -266,17 +295,17 @@ for processo in range(num_final - num_inicial + 1):
             partes_nome = dsd.class_get_list(driver, 'nome-parte')
 
             partes_total = []
-            index = 0
+            parte_index = 0
             adv = []
             primeiro_autor = 'NA'
             for n in range(len(partes_tipo)):
-                index = index + 1
+                parte_index = parte_index + 1
                 tipo = partes_tipo[n].get_attribute('innerHTML')
                 nome_parte = partes_nome[n].get_attribute('innerHTML')
-                if index == 1:
+                if parte_index == 1:
                     primeiro_autor = nome_parte
 
-                parte_info = {'_index': index,
+                parte_info = {'_index': parte_index,
                               'tipo': tipo,
                               'nome': nome_parte}
 
@@ -338,10 +367,8 @@ for processo in range(num_final - num_inicial + 1):
                 else:
                     and_link_tipo = 'NA'
 
-                # Timeout curto para processos com muitos andamentos
-                doc_timeout = 10 if len(andamentos) > 1000 else 30
                 try:
-                    and_link_conteudo = baixar_documento(and_link, timeout=doc_timeout)
+                    and_link_conteudo = baixar_documento(and_link)
                 except Exception:
                     and_link_conteudo = 'Exception'
 
@@ -464,34 +491,41 @@ for processo in range(num_final - num_inicial + 1):
                           )
             status = 'BAIXADO' if processo_baixado else 'TEMP'
             print(f'  -> Salvo em {pasta}/: {classe}{processo_num} [{status}]')
+            extraido_com_sucesso = True
+            break  # Sucesso — sai do loop de retry
+
+        except (WebDriverException, STFAccessError) as e:
+            # Erro de sessão/conexão — tenta novamente
+            logger.error(f'{classe}{processo_num} - Sessão derrubada (tentativa {tentativa+1}/{MAX_RETRIES}): {e}')
+            try:
+                driver.quit()
+            except:
+                pass
+            if tentativa < MAX_RETRIES - 1:
+                espera = BACKOFF_MIN * (BACKOFF_MULTIPLIER ** tentativa)
+                espera = min(espera, BACKOFF_MAX)
+                print(f'  Aguardando {espera}s antes de tentar novamente...')
+                time.sleep(espera)
+                continue
+            else:
+                logger.error(f'{classe}{processo_num} - Desistindo após {MAX_RETRIES} tentativas')
 
         except Exception as e:
+            # Erro não relacionado a conexão — não tenta novamente
             logger.error(f'{classe}{processo_num} - Erro na extração: {e}')
             try:
                 driver.quit()
             except:
                 pass
-
-    else:
-        driver.quit()
-        processonaoencontrado += 1
-        time.sleep(0.5)
-
-        # Salva marcador de processo não encontrado para evitar rebuscas
-        arquivo_nao_encontrado = f'nao_encontrados/{classe}{processo_num}_partial.csv'
-        # Cria arquivo vazio como marcador
-        with open(arquivo_nao_encontrado, 'w', encoding='utf-8') as f:
-            f.write('')
-        print(f'  -> Não encontrado: {classe}{processo_num}')
+            break
 
 # Concatena todos os arquivos parciais
 print('\n' + '='*60)
 print('Concatenando arquivos parciais...')
 
 # Filtra arquivos da classe e faixa numérica atuais
-import re as _re
 def _pertence_a_faixa(nome_arquivo):
-    match = _re.match(rf'^{_re.escape(classe)}(\d+)_partial\.csv$', nome_arquivo)
+    match = re.match(rf'^{re.escape(classe)}(\d+)_partial\.csv$', nome_arquivo)
     if match:
         num = int(match.group(1))
         return num_inicial <= num <= num_final
