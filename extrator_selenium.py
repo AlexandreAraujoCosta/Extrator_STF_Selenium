@@ -15,9 +15,9 @@
 # Defina aqui a classe a ser buscada e um número inicial e final.
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
-classe = 'ADPF'
-num_inicial = 1000
-num_final = 1010
+classe = 'ADI'
+num_inicial = 6972
+num_final = 7500
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -28,6 +28,12 @@ num_final = 1010
 import sys
 import os
 sys.stderr = open(os.devnull, 'w', encoding='utf-8')
+
+# Define o diretório de trabalho (pasta 'extrator_selenium' ao lado do script)
+_dir_script = os.path.dirname(os.path.abspath(__file__))
+_dir_trabalho = os.path.join(_dir_script, 'extrator_selenium')
+os.makedirs(_dir_trabalho, exist_ok=True)
+os.chdir(_dir_trabalho)
 
 import dsd  # Módulo dsd-br publicado no PyPI
 import pandas as pd
@@ -45,6 +51,7 @@ import warnings
 from tenacity import (retry, stop_after_attempt, wait_exponential,
                      retry_if_exception_type, before_sleep_log)
 import logging
+import psutil
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 warnings.filterwarnings('ignore')
@@ -55,6 +62,22 @@ logger = logging.getLogger(__name__)
 
 
 request_count = 0  # Contador de requisições
+_tempo_inicio = time.time()
+
+
+def log_recursos():
+    """Exibe uso de RAM, CPU e processos Chrome para detectar degradação do SO."""
+    mem = psutil.virtual_memory()
+    proc = psutil.Process()
+    chrome_procs = [p for p in psutil.process_iter(['name']) if 'chrome' in (p.info['name'] or '').lower()]
+    elapsed = time.time() - _tempo_inicio
+    mins = int(elapsed // 60)
+    secs = int(elapsed % 60)
+    print(f'\n  [MONITOR t={mins}m{secs:02d}s | req={request_count}] '
+          f'RAM: {mem.percent}% ({mem.used / 1024**3:.1f}/{mem.total / 1024**3:.1f} GB) | '
+          f'Script: {proc.memory_info().rss / 1024**2:.0f} MB | '
+          f'Chrome procs: {len(chrome_procs)} | '
+          f'CPU: {psutil.cpu_percent(interval=0.5)}%\n')
 processonaoencontrado = 0
 
 # Configuração do Chrome será feita via dsd.create_stf_webdriver()
@@ -237,22 +260,21 @@ for processo in range(num_final - num_inicial + 1):
                 logger.error(f'{classe}{processo_num} - Desistindo após {MAX_RETRIES} tentativas de conexão')
                 break
 
-        html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
-
-        if 'Processo não encontrado' in html_total:
-            driver.quit()
-            processonaoencontrado += 1
-            time.sleep(0.5)
-            # Salva marcador de processo não encontrado para evitar rebuscas
-            with open(arquivo_nao_encontrado, 'w', encoding='utf-8') as f:
-                f.write('')
-            print(f'  -> Não encontrado: {classe}{processo_num}')
-            extraido_com_sucesso = True
-            break
-
-        processonaoencontrado = 0
-
         try:
+            html_total = dsd.xpath_get(driver, '//*[@id="conteudo"]')
+
+            if 'Processo não encontrado' in html_total:
+                driver.quit()
+                processonaoencontrado += 1
+                time.sleep(0.5)
+                # Salva marcador de processo não encontrado para evitar rebuscas
+                with open(arquivo_nao_encontrado, 'w', encoding='utf-8') as f:
+                    f.write('')
+                print(f'  -> Não encontrado: {classe}{processo_num}')
+                extraido_com_sucesso = True
+                break
+
+            processonaoencontrado = 0
             incidente = dsd.id_get(driver, 'incidente').get_attribute('value')
 
             nome_processo = dsd.id_get(driver, 'classe-numero-processo').get_attribute('value')
@@ -473,8 +495,9 @@ for processo in range(num_final - num_inicial + 1):
                                   'status_processo']
 
             driver.quit()
-            # Pausa mínima a cada 25 requisições
+            # Pausa mínima e diagnóstico a cada 25 requisições
             if request_count % 25 == 0:
+                log_recursos()
                 time.sleep(10)
 
             # Grava arquivo individual para este processo
