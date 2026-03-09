@@ -16,8 +16,8 @@
 # O nome da classe é sensível a maiúsculas. Utilize a sigla constante da página do STF.
 
 classe = 'ADI'
-num_inicial = 6972
-num_final = 7500
+num_inicial = 2052
+num_final = 2052
 
 # É possível definir uma lista de processos para processar. Esta, por exemplo, é a lista dos processos estruturais.
 # Nese caso, desative as linhas 152 e 153 (inserindo um # que transforma o código em comentário) e ative as linhas 148 a 150.
@@ -541,6 +541,17 @@ for processo in range(num_final - num_inicial + 1):
             except:
                 pass
             break
+
+# Remove marcadores dos últimos processos não encontrados consecutivos
+# (são processos futuros que encerraram o loop, não devem ficar gravados)
+if processonaoencontrado > 0:
+    print(f'\nRemovendo {processonaoencontrado} marcador(es) de processos futuros em nao_encontrados/...')
+    for i in range(processonaoencontrado):
+        num_remover = processo_num - i
+        marcador = f'nao_encontrados/{classe}{num_remover}_partial.csv'
+        if os.path.exists(marcador):
+            os.remove(marcador)
+            print(f'  Removido: {marcador}')
 
 # Concatena todos os arquivos parciais
 print('\n' + '='*60)
